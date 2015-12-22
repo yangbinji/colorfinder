@@ -1,0 +1,25 @@
+body {
+	background-color: #f0ebf7; 
+	margin: 0px;
+}
+
+.ribbon {
+	background: black;
+	height: 50px;
+}
+.content{
+	background-color: white;
+}
+.logo-finder {
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo-paleta{
+	height: 50px;
+	width: 50px;
+	margin: 0 auto;
+}
+.login{
+	display: inherit;
+}
