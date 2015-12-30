@@ -1,25 +1,43 @@
-body {
-	background-color: #f0ebf7; 
+html, body{
+	background-color: #f3f3f3;
 	margin: 0px;
 }
-
-.ribbon {
-	background: black;
+.ribbon{
+	background-color: black;
 	height: 50px;
 }
-.content{
+.login-box{
 	background-color: white;
+	margin: 20px 10px 20px 10px;
+	padding:20px 10px 10px 10px;
+	max-width: 400px;
+	min-height: 300px;
 }
-.logo-finder {
-	height: 100px;
+.login-box p {
+	color: blue;
+	bottom: 0;
+
+}
+
+.login-form{
+	display:table;
+	-webkit-transform:translateY(-50%);
+	position: relative;
 	margin: 0 auto;
-	text-align: center;
+	top: 50%;
+}
+
+.logo-finder{
+	height: 100px;
 }
 .logo-paleta{
-	height: 50px;
-	width: 50px;
-	margin: 0 auto;
+	height: 70px;
 }
-.login{
-	display: inherit;
+
+footer{
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
 }
