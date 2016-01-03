@@ -1,5 +1,5 @@
 html, body{
-	background-color: #f3f3f3;
+	background-color: #f3f3f3 !important;
 	margin: 0px;
 }
 .ribbon{
@@ -9,9 +9,9 @@ html, body{
 .login-box{
 	background-color: white;
 	margin: 20px 10px 20px 10px;
-	padding:20px 10px 10px 10px;
+	padding:10px 40px 0px 40px;
 	max-width: 400px;
-	min-height: 300px;
+	min-height: 275px;
 }
 .login-box p {
 	color: blue;
@@ -20,15 +20,11 @@ html, body{
 }
 
 .login-form{
-	display:table;
-	-webkit-transform:translateY(-50%);
-	position: relative;
-	margin: 0 auto;
-	top: 50%;
+
 }
 
 .logo-finder{
-	height: 100px;
+	height: 125px;
 }
 .logo-paleta{
 	height: 70px;
@@ -36,8 +32,28 @@ html, body{
 
 footer{
 	bottom: 0;
-	position: absolute;
+
 	text-align: center;
 	left: 0;
 	right: 0;
 }
+
+.inputdemoIcons {
+  /*
+.right-icon {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  left: auto;
+  margin-top: 0;
+}
+*/ }
+  .inputdemoIcons .inputIconDemo {
+    min-height: 48px; }
+  .inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+    color: green; }
+  .inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue; }
+  .inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
+  .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+    color: red; }

@@ -1,32 +1,49 @@
 <!DOCTYPE html>
-<html lang="Es" ng-app="">
+<html lang="Es">
 	<head>
 		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width">
-	    <title>Color Finder</title>
-  	    <link rel="stylesheet" href="css/style.css">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Color Finder</title>
+		<link rel="stylesheet" href="css/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
 
 	</head>
 
-<body >
-	<!-- login-->
+<body ng-app="myApp" ng-controller="DemoCtrl" layout="column" ng-cloak="" class="md-inline-form inputdemoBasicUsage" >
+
+
+	<!-- login -->
 	<div align="center" class="login">
 		<div class="ribbon"></div>
 
-	<div class="login-box">
+	<div align="center" ng-controller="DemoCtrl" layout="column" layout-padding ng-cloak class="login-box">
 		<img class="logo-finder" src="img/logo-finder.png" alt="">
+		<md-content>
 			<form action="" class="login-form">
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Contraseña">
-				<button>Entrar</button>
+				<md-input-container class="md-icon-float md-block">
+					<label>Email</label>
+					<md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
+					<input type="text">
+				</md-input-container>
+				<md-input-container class="md-block">
+					<label>Contraseña</label>
+					<md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
+					<input type="password" >
+				</md-input-container>
+				<md-button class="md-warn md-raised md-hue-2">Acceder</md-button>
 			</form>
-
-		<p>¿Olvidaste tu contrasena?</p>
+		</md-content>
+		<p>¿Olvidaste tu Contraseña?</p>
 
 	</div>
 	<img class="logo-paleta" src="img/logo-paleta.png" alt="">
 </div>
 <!--end login-->
+
+
+
 	<footer align="">
 
 		<p>2016 Pinturas Paleta | Grupo Solid</p>
@@ -35,7 +52,18 @@
 
 
 
+	<!-- Angular Material requires Angular.js Libraries -->
+   <script type="text/javascript" src="js/lib/angular.min.js"></script>
+   <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+   <script type="text/javascript" src="js/lib/angular-aria.min.js"></script>
 
+   <script type="text/javascript" src="js/lib/angular-material.min.js"></script>
+   <script type="text/javascript" src="js/lib/angular-messages.min.js"></script>
+	 <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+
+
+   <!-- Angular Material Library -->
+   <script type="text/javascript" src="js/lib/app.js"></script>
 
 
 </body>
