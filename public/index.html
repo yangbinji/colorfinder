@@ -15,7 +15,7 @@
 
 
 	<!-- login -->
-	<div align="center" class="login">
+	<div align="center" class="login ng-hide">
 		<div class="ribbon"></div>
 
 	<div align="center" ng-controller="DemoCtrl" layout="column" layout-padding ng-cloak class="login-box">
@@ -25,7 +25,7 @@
 				<md-input-container class="md-icon-float md-block">
 					<label>Email</label>
 					<md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
-					<input type="text">
+					<input type="email">
 				</md-input-container>
 				<md-input-container class="md-block">
 					<label>Contraseña</label>
@@ -41,6 +41,54 @@
 	<img class="logo-paleta" src="img/logo-paleta.png" alt="">
 </div>
 <!--end login-->
+
+
+<!--cartillas-->
+<div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage">
+	<!--sidenavLeft-->
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
+
+	      <md-toolbar class="" ng-controller="LeftCtrl">
+					 <div class="md-toolbar-tools colorblack">
+					<md-button class="md-icon-button" aria-label="Settings">
+						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
+	 			 </md-button>
+				 <h2>
+					 <span>nameuser</span>
+				 </h2>
+				 <span flex></span>
+				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
+					 <md-icon md-svg-icon="img/icons/close-icon.svg"></md-icon>
+				 </md-button>
+
+	      </md-toolbar>
+			</div>
+	      <md-content align="center" layout-padding="" class="colorblack">
+					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
+			  </md-content>
+  </md-sidenav>
+	<!--sidenavLeft-->
+
+	<md-toolbar class="" >
+		 <div class="md-toolbar-tools colorblack">
+			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings">
+				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
+			 </md-button>
+			 <h2>
+				 <span>_</span>
+			 </h2>
+			 <span flex></span>
+
+			 <md-button class="md-icon-button" aria-label="search">
+				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
+			 </md-button>
+		 </div>
+	 </md-toolbar>
+
+
+</div>
+
+<!--end-cartillas-->
 
 
 

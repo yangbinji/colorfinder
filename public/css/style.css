@@ -2,9 +2,13 @@ html, body{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
 }
+
+.colorblack{
+	background-color: black !important;
+}
 .ribbon{
 	background-color: black;
-	height: 50px;
+	height: 56px;
 }
 .login-box{
 	background-color: white;
@@ -24,7 +28,7 @@ html, body{
 }
 
 .logo-finder{
-	height: 125px;
+	height: 110px;
 }
 .logo-paleta{
 	height: 70px;
