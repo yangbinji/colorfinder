@@ -34,12 +34,17 @@ html, body{
 	height: 70px;
 }
 
-footer{
+#footer{
 	bottom: 0;
-
+	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
+}
+#sideNav ul li{
+	color: white;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
 .inputdemoIcons {

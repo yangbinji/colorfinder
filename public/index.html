@@ -11,7 +11,7 @@
 
 	</head>
 
-<body ng-app="myApp" ng-controller="DemoCtrl" layout="column" ng-cloak="" class="md-inline-form inputdemoBasicUsage" >
+<body ng-app="myApp" ng-controller="DemoCtrl" layout="column"   >
 
 
 	<!-- login -->
@@ -44,7 +44,7 @@
 
 
 <!--cartillas-->
-<div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage">
+<div id="sideNav"ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage ">
 	<!--sidenavLeft-->
 	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
@@ -65,6 +65,23 @@
 			</div>
 	      <md-content align="center" layout-padding="" class="colorblack">
 					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
+
+
+
+					<ul layout="column" layout-align="start start" class="md-icon-float  md-block">
+						<div class="" layout="row">
+						<md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon><li>Favoritos</li>
+						</div>
+						<div class="" layout="row">
+						<md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon><li>ColorCards</li>
+						</div>
+						<div class="" layout="row">
+						<md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon><li>Salir</li>
+						</div>
+
+
+
+					</ul>
 			  </md-content>
   </md-sidenav>
 	<!--sidenavLeft-->
@@ -92,11 +109,11 @@
 
 
 
-	<footer align="">
+	<div  layout="row" layout-align="center end">
 
-		<p>2016 Pinturas Paleta | Grupo Solid</p>
+		<div>2016 Pinturas Paleta | Grupo Solid</div>
 
-	</footer>
+	</div>
 
 
 
