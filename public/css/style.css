@@ -33,6 +33,48 @@ html, body{
 .logo-paleta{
 	height: 70px;
 }
+.menu-list{
+
+	text-align: left !important;
+
+}
+.lineas{
+	color: white;
+	text-transform: none;
+	text-align: left !important;
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+	font-size: 25px;
+	background-color: red;
+
+
+}
+.ultra{
+	background: #09a8e4 !important;
+
+}
+.plus{
+	background: #77d03b !important;
+
+}
+.gloss{
+	background: #710092 !important;
+
+}
+.lineas md-icon{
+	height: 50px !important;
+	width: 50px !important;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.lineas:not([disabled]):hover{
+    background-color: #888888 !important;
+}
+.menu-list md-icon{
+	margin-right: 20px;
+}
 
 #footer{
 	bottom: 0;
@@ -41,11 +83,7 @@ html, body{
 	left: 0;
 	right: 0;
 }
-#sideNav ul li{
-	color: white;
-	margin-left: 20px;
-	margin-top: 10px;
-}
+
 
 .inputdemoIcons {
   /*

@@ -54,7 +54,7 @@
 						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
 	 			 </md-button>
 				 <h2>
-					 <span>nameuser</span>
+					 <span>user</span>
 				 </h2>
 				 <span flex></span>
 				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
@@ -66,41 +66,43 @@
 	      <md-content align="center" layout-padding="" class="colorblack">
 					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
 
-
-
-					<ul layout="column" layout-align="start start" class="md-icon-float  md-block">
-						<div class="" layout="row">
-						<md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon><li>Favoritos</li>
-						</div>
-						<div class="" layout="row">
-						<md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon><li>ColorCards</li>
-						</div>
-						<div class="" layout="row">
-						<md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon><li>Salir</li>
-						</div>
-
-
-
-					</ul>
+					<md-card-actions layout="column" layout-align="">
+          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
+          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>
+          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
+         </md-card-actions>
 			  </md-content>
   </md-sidenav>
-	<!--sidenavLeft-->
+	<!--end-sidenavLeft-->
 
 	<md-toolbar class="" >
 		 <div class="md-toolbar-tools colorblack">
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings">
 				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
 			 </md-button>
-			 <h2>
-				 <span>_</span>
-			 </h2>
-			 <span flex></span>
+
+			 	<span flex></span>
 
 			 <md-button class="md-icon-button" aria-label="search">
 				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
 			 </md-button>
 		 </div>
 	 </md-toolbar>
+
+	<!--lineas-buttons-->
+	<div id="lineas" layout="row" layout-wrap>
+		 <div flex="">
+			 <md-card-actions style="color:white;" layout="column" layout-align="">
+				 <md-button class="lineas a"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Wall</md-button>
+				 <md-button class="lineas ultra"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Ultra</md-button>
+				 <md-button class="lineas plus"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Plus </md-button>			 <md-button class="lineas gloss"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss</md-button>
+			</md-card-actions>
+	 	 </div>
+	   <div >
+
+	   </div>
+	</div>
+	<!--end-lineas-buttons-->
 
 
 </div>
