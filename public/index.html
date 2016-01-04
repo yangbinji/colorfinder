@@ -44,7 +44,7 @@
 
 
 <!--cartillas-->
-<div id="sideNav"ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage ">
+<div id="sideNav"ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage">
 	<!--sidenavLeft-->
 	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
@@ -90,7 +90,7 @@
 	 </md-toolbar>
 
 	<!--lineas-buttons-->
-	<div id="lineas" layout="row" layout-wrap>
+	<div id="lineas" layout="row" layout-wrap class="ng-hide">
 		 <div flex="">
 			 <md-card-actions style="color:white;" layout="column" layout-align="">
 				 <md-button class="lineas a"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Wall</md-button>
@@ -104,14 +104,86 @@
 	</div>
 	<!--end-lineas-buttons-->
 
-
 </div>
+
 
 <!--end-cartillas-->
 
+<!--paleta-->
+<div ng-controller="BottomSheetExample" class="md-padding bottomSheetdemoBasicUsage" ng-cloak="" ng-app="MyApp">
+
+	<div class="" layout-align="space-around">
 
 
-	<div  layout="row" layout-align="center end">
+	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+		<div ng-click="showListBottomSheet($event)"><p>254A</p></div>
+	  <div ng-click="showListBottomSheet($event)">two</div>
+	  <div ng-click="showListBottomSheet($event)">three</div>
+		<div ng-click="showListBottomSheet($event)">four</div>
+	</div>
+	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+		<div >one</div>
+	  <div>two</div>
+	  <div>three</div>
+		<div>four</div>
+	</div>
+	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+		<div >one</div>
+	  <div>two</div>
+	  <div>three</div>
+		<div>four</div>
+	</div>
+	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+		<div >one</div>
+	  <div>two</div>
+	  <div>three</div>
+		<div>four</div>
+	</div>
+	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+		<div >one</div>
+	  <div>two</div>
+	  <div>three</div>
+		<div>four</div>
+	</div>
+
+	</div>
+
+  <script type="text/ng-template" id="bottom-sheet-list-template.html">
+    <md-bottom-sheet class="md-list md-has-header" ng-cloak>
+  <md-subheader>254A</md-subheader>
+  <md-list>
+	<ul>
+	"_id": "56529a7dc94d83341c940116",
+	 "nombre": "ORANGE TORCH",
+	 "codigo": "254A",
+	 "hexadecimal": "",
+	 "rgb": "",
+	 "cartilla": "SOLID",
+	 "linea": "43X",
+	 "marca": [
+		 "Paleta"
+	 ],
+	 "base": [
+		 "Accent"
+	 ]
+	 </ul>
+
+  </md-list>
+</md-bottom-sheet>
+</script>
+
+</div>
+
+
+
+
+
+
+<!--end-paleta-->
+
+
+
+	<div layout="row" layout-align="center end">
 
 		<div>2016 Pinturas Paleta | Grupo Solid</div>
 
@@ -123,7 +195,6 @@
    <script type="text/javascript" src="js/lib/angular.min.js"></script>
    <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
    <script type="text/javascript" src="js/lib/angular-aria.min.js"></script>
-
    <script type="text/javascript" src="js/lib/angular-material.min.js"></script>
    <script type="text/javascript" src="js/lib/angular-messages.min.js"></script>
 	 <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
