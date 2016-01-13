@@ -44,9 +44,9 @@
 
 
 <!--cartillas-->
-<div id="sideNav"ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage">
+<div id="sideNav" ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
 	<!--sidenavLeft-->
-	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
 
 	      <md-toolbar class="" ng-controller="LeftCtrl">
 					 <div class="md-toolbar-tools colorblack">
@@ -83,41 +83,45 @@
 
 			 	<span flex></span>
 
-			 <md-button class="md-icon-button" aria-label="search">
+			 <md-button  class="md-icon-button" aria-label="search">
 				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
 			 </md-button>
 		 </div>
 	 </md-toolbar>
 
+<!-- contenedor-app-->
+<div  layout="row" layout-xs="column" ng-controller="coloresController as cartillaCtrl" ng-controller="tabsController as tabs">
 	<!--lineas-buttons-->
-	<div id="lineas" layout="row" layout-wrap class="">
+	<div id="lineas" layout="row" layout-wrap class=""   flex>
 		 <div flex="">
 			 <md-card-actions style="color:white;" layout="column" layout-align="">
-				 <md-button class="lineas a"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Wall</md-button>
-				 <md-button class="lineas ultra"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Ultra</md-button>
-				 <md-button class="lineas plus"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Plus </md-button>			 <md-button class="lineas gloss"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss</md-button>
+				 <md-button  ng-repeat="cartilla in cartillaCtrl.color.cartilla" class="lineas {{cartilla | lowercase}}" ><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon><a ng-click="tabs.selecTab(2)">{{ cartilla }}</a></md-button>
+
+
+				 <!--<md-button class="lineas ultra"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon></md-button>
+				 <md-button class="lineas plus"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Plus </md-button>
+				 <md-button class="lineas gloss"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss</md-button>-->
 			</md-card-actions>
 	 	 </div>
-	   <div >
 
-	   </div>
 	</div>
+
 	<!--end-lineas-buttons-->
 
-</div>
+
 
 
 <!--end-cartillas-->
 
 <!--paleta-->
-<div ng-controller="BottomSheetExample" class="md-padding bottomSheetdemoBasicUsage ng-hide" ng-cloak="" ng-app="MyApp">
+<div ng-controller="BottomSheetExample" class="md-padding bottomSheetdemoBasicUsage" ng-cloak="" ng-show="tabs.tab === 2" flex>
 
 	<div class="" layout-align="space-around">
 
 
 	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
 		<div ng-click="showListBottomSheet($event)"><p>254A</p></div>
-	  <div ng-click="showListBottomSheet($event)">two</div>
+	  <div ng-click="showListBottomSheet($event)">{{ cartillaCtrl.color.codigo }}</div>
 	  <div ng-click="showListBottomSheet($event)">three</div>
 		<div ng-click="showListBottomSheet($event)">four</div>
 	</div>
@@ -149,12 +153,12 @@
 	</div>
 
   <script type="text/ng-template" id="bottom-sheet-list-template.html">
-    <md-bottom-sheet class="md-list md-has-header" ng-cloak>
+    <md-bottom-sheet class="md-list md-has-header"  ng-controller="coloresController as cartillaCtrl" ng-cloak>
   <md-subheader>254A</md-subheader>
   <md-list>
 	<ul>
-	"_id": "56529a7dc94d83341c940116",
-	 "nombre": "ORANGE TORCH",
+	{{cartillaCtrl.color.nombre | lowercase }}
+
 	 "codigo": "254A",
 	 "hexadecimal": "",
 	 "rgb": "",
@@ -171,6 +175,11 @@
   </md-list>
 </md-bottom-sheet>
 </script>
+
+</div>
+<!--/paleta-->
+</div>
+<!-- /contenedor-app-->
 
 </div>
 

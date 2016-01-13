@@ -1,6 +1,7 @@
 
   (function () {
-  var app = angular.module('myApp', ['ngMaterial', 'ngMessages'])
+  var app = angular.module('myApp', ['ngMaterial', 'ngMessages']);
+
   app.controller('DemoCtrl',  function ($scope) {
 
 
@@ -98,6 +99,44 @@ app.controller('ListBottomSheetCtrl', function($scope, $mdBottomSheet) {
     $mdBottomSheet.hide(clickedItem);
   };
 })
+
+app.controller('coloresController', function(){
+  this.color = {
+    nombre: 'ORANGE TORCH',
+    codigo: '254A',
+    hexadecimal: 'ff6600',
+    cartilla: [
+      'Magic Book',
+      'Domestic Wall',
+      'Domestic Ultra',
+      'Domestic Plus'
+    ],
+    linea: '43',
+    base: 'Accent',
+    marca: 'Paleta',
+    cuarto1: 'R   0 Y 40 PTS',
+    cuarto2: 'T   3 Y 12 PTS',
+    cuarto3: 'V   0 Y 7 PTS',
+    cuarto4: 'KX   0 Y 47 PTS',
+    galon1: 'R   3 Y 16 PTS',
+    galon2: 'T   13 Y 0 PTS',
+    galon3: 'V   0 Y 28 PTS',
+    galon4: 'KX   3 Y 44 PTS',
+    cubeta1: 'R   16 Y 32 PTS',
+    cubeta2: 'T   65 Y 0 PTS',
+    cubeta3: 'V   2 Y 44 PTS',
+    cubeta4: 'KX   19 Y 28 PTS'
+
+  };
+});
+
+app.controller('tabsController', function(){
+  this.tab = 1;
+  this.selecTab = function(tab){
+    this.tab = tab;
+  }
+});
+
 
 
 })();
