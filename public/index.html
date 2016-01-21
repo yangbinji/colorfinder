@@ -11,7 +11,7 @@
 
 	</head>
 
-<body ng-app="myApp" ng-controller="DemoCtrl" layout="column"   >
+<body ng-app="myApp"  layout="column"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
 
 
 	<!-- login -->
@@ -39,14 +39,14 @@
 
 	</div>
 	<img class="logo-paleta" src="img/logo-paleta.png" alt="">
-</div>
+ </div>
 <!--end login-->
 
 
-<!--cartillas-->
+
 <div id="sideNav" ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
 	<!--sidenavLeft-->
-	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
 	      <md-toolbar class="" ng-controller="LeftCtrl">
 					 <div class="md-toolbar-tools colorblack">
@@ -74,7 +74,7 @@
 			  </md-content>
   </md-sidenav>
 	<!--end-sidenavLeft-->
-
+ <!--navbar-->
 	<md-toolbar class="" >
 		 <div class="md-toolbar-tools colorblack">
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings">
@@ -83,101 +83,98 @@
 
 			 	<span flex></span>
 
-			 <md-button  class="md-icon-button" aria-label="search">
+			 <md-button class="md-icon-button" aria-label="search">
 				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
 			 </md-button>
 		 </div>
 	 </md-toolbar>
-
+	<!--/navbar-->
 <!-- contenedor-app-->
-<div  layout="row" layout-xs="column" ng-controller="coloresController as cartillaCtrl" ng-controller="tabsController as tabs">
+<div  layout="row" layout-xs="column">
+
+<!--cartillas-->
+
 	<!--lineas-buttons-->
-	<div id="lineas" layout="row" layout-wrap class=""   flex>
+	<div id="lineas" layout="row" layout-wrap class="" ng-hide="tabs.tab === 2"   flex>
 		 <div flex="">
 			 <md-card-actions style="color:white;" layout="column" layout-align="">
-				 <md-button  ng-repeat="cartilla in cartillaCtrl.color.cartilla" class="lineas {{cartilla | lowercase}}" ><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon><a ng-click="tabs.selecTab(2)">{{ cartilla }}</a></md-button>
 
-
-				 <!--<md-button class="lineas ultra"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon></md-button>
-				 <md-button class="lineas plus"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Plus </md-button>
-				 <md-button class="lineas gloss"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss</md-button>-->
+				 <md-button ng-click="tabs.selecTab(2)"  ng-repeat="cartilla in cartillaCtrl.color.cartilla | limitTo: 5  " class="lineas {{cartilla | lowercase}}">
+					 <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartilla}}
+				 </md-button>
 			</md-card-actions>
 	 	 </div>
-
 	</div>
-
 	<!--end-lineas-buttons-->
-
-
-
 
 <!--end-cartillas-->
 
-<!--paleta-->
-<div ng-controller="BottomSheetExample" class="md-padding bottomSheetdemoBasicUsage" ng-cloak="" ng-show="tabs.tab === 2" flex>
+	<!--paleta-->
+	<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
 
-	<div class="" layout-align="space-around">
+		<div class="" layout-align="space-around">
 
 
-	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-		<div ng-click="showListBottomSheet($event)"><p>254A</p></div>
-	  <div ng-click="showListBottomSheet($event)">{{ cartillaCtrl.color.codigo }}</div>
-	  <div ng-click="showListBottomSheet($event)">three</div>
-		<div ng-click="showListBottomSheet($event)">four</div>
+		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+			<div ng-click="showListBottomSheet($event)"><p>254A</p></div>
+		  <div ng-click="showListBottomSheet($event)">{{ cartillaCtrl.color.codigo }}</div>
+		  <div ng-click="showListBottomSheet($event)">three</div>
+			<div ng-click="showListBottomSheet($event)">four</div>
+		</div>
+		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+			<div >one</div>
+		  <div>two</div>
+		  <div>three</div>
+			<div>four</div>
+		</div>
+		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+			<div >one</div>
+		  <div>two</div>
+		  <div>three</div>
+			<div>four</div>
+		</div>
+		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+			<div >one</div>
+		  <div>two</div>
+		  <div>three</div>
+			<div>four</div>
+		</div>
+		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+			<div >one</div>
+		  <div>two</div>
+		  <div>three</div>
+			<div>four</div>
+		</div>
+
+		</div>
+
+	  <script type="text/ng-template" id="bottom-sheet-list-template.html">
+	    <md-bottom-sheet class="md-list md-has-header"  ng-controller="coloresController as cartillaCtrl" ng-cloak>
+	  <md-subheader>254A</md-subheader>
+	  <md-list>
+		<ul>
+		{{cartillaCtrl.color.nombre | lowercase }}
+
+		 "codigo": "254A",
+		 "hexadecimal": "",
+		 "rgb": "",
+		 "cartilla": "SOLID",
+		 "linea": "43X",
+		 "marca": [
+			 "Paleta"
+		 ],
+		 "base": [
+			 "Accent"
+		 ]
+		 </ul>
+
+	  </md-list>
+	</md-bottom-sheet>
+	</script>
+
 	</div>
-	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-		<div >one</div>
-	  <div>two</div>
-	  <div>three</div>
-		<div>four</div>
-	</div>
-	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-		<div >one</div>
-	  <div>two</div>
-	  <div>three</div>
-		<div>four</div>
-	</div>
-	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-		<div >one</div>
-	  <div>two</div>
-	  <div>three</div>
-		<div>four</div>
-	</div>
-	<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-		<div >one</div>
-	  <div>two</div>
-	  <div>three</div>
-		<div>four</div>
-	</div>
+	<!--/paleta-->
 
-	</div>
-
-  <script type="text/ng-template" id="bottom-sheet-list-template.html">
-    <md-bottom-sheet class="md-list md-has-header"  ng-controller="coloresController as cartillaCtrl" ng-cloak>
-  <md-subheader>254A</md-subheader>
-  <md-list>
-	<ul>
-	{{cartillaCtrl.color.nombre | lowercase }}
-
-	 "codigo": "254A",
-	 "hexadecimal": "",
-	 "rgb": "",
-	 "cartilla": "SOLID",
-	 "linea": "43X",
-	 "marca": [
-		 "Paleta"
-	 ],
-	 "base": [
-		 "Accent"
-	 ]
-	 </ul>
-
-  </md-list>
-</md-bottom-sheet>
-</script>
-
-</div>
-<!--/paleta-->
 </div>
 <!-- /contenedor-app-->
 
@@ -192,9 +189,9 @@
 
 
 
-	<div layout="row" layout-align="center end">
+	<div layout="row" layout-align="center end" >
 
-		<div>2016 Pinturas Paleta | Grupo Solid</div>
+		<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
 
 	</div>
 
@@ -210,7 +207,7 @@
 
 
    <!-- Angular Material Library -->
-   <script type="text/javascript" src="js/lib/app.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
 
 
 </body>

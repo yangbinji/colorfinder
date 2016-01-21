@@ -41,13 +41,20 @@ html, body{
 .lineas{
 	color: white;
 	text-transform: none;
-	text-align: left !important;
+	text-align: left !important ;
 	height: 50px;
 	padding-top: 20px;
 	padding-bottom: 70px;
-	font-size: 25px;
+	padding-left: 20px;
+	font-size: 30px;
 	background-color: red;
 
+
+}
+
+.paleta{
+	padding-top: 0px;
+	margin-top: -6px;
 
 }
 .ultra{

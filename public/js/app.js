@@ -109,7 +109,10 @@ app.controller('coloresController', function(){
       'Magic Book',
       'Domestic Wall',
       'Domestic Ultra',
-      'Domestic Plus'
+      'Domestic Plus',
+      'una mas',
+      'otra mas',
+      ' aun mas'
     ],
     linea: '43',
     base: 'Accent',
@@ -128,6 +131,7 @@ app.controller('coloresController', function(){
     cubeta4: 'KX   19 Y 28 PTS'
 
   };
+
 });
 
 app.controller('tabsController', function(){
