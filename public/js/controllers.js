@@ -1,5 +1,13 @@
 (function(){
   angular.module('colors.controller',[])
+  .controller('cartillasController', ['$scope', '$http', function($scope, $http){
+    #scope.colores = [];
+
+    $http.get('/colores.json')
+    .success(function (data) {
+        $scope.colores = data;
+      });
+  }])
 
   .controller('DemoCtrl',  function ($scope) {
 

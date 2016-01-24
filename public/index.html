@@ -14,7 +14,7 @@
 <body ng-app="myApp"  layout="column"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
 
 
-	<div class="" ng-view></div>
+
 
 
 
@@ -66,87 +66,17 @@
 <!-- contenedor-app-->
 <div  layout="row" layout-xs="column">
 
+	<div class="" ng-view></div>
 <!--cartillas-->
 
 	<!--lineas-buttons-->
-	<div id="lineas" layout="row" layout-wrap class="" ng-hide="tabs.tab === 2"   flex>
-		 <div flex="">
-			 <md-card-actions style="color:white;" layout="column" layout-align="">
 
-				 <md-button ng-click="tabs.selecTab(2)"  ng-repeat="cartilla in cartillaCtrl.color.cartilla | limitTo: 5  " class="lineas {{cartilla | lowercase}}">
-					 <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartilla}}
-				 </md-button>
-			</md-card-actions>
-	 	 </div>
-	</div>
 	<!--end-lineas-buttons-->
 
 <!--end-cartillas-->
 
 	<!--paleta-->
-	<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
 
-		<div class="" layout-align="space-around">
-
-
-		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-			<div ng-click="showListBottomSheet($event)"><p>254A</p></div>
-		  <div ng-click="showListBottomSheet($event)">{{ cartillaCtrl.color.codigo }}</div>
-		  <div ng-click="showListBottomSheet($event)">three</div>
-			<div ng-click="showListBottomSheet($event)">four</div>
-		</div>
-		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-			<div >one</div>
-		  <div>two</div>
-		  <div>three</div>
-			<div>four</div>
-		</div>
-		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-			<div >one</div>
-		  <div>two</div>
-		  <div>three</div>
-			<div>four</div>
-		</div>
-		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-			<div >one</div>
-		  <div>two</div>
-		  <div>three</div>
-			<div>four</div>
-		</div>
-		<div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-			<div >one</div>
-		  <div>two</div>
-		  <div>three</div>
-			<div>four</div>
-		</div>
-
-		</div>
-
-	  <script type="text/ng-template" id="bottom-sheet-list-template.html">
-	    <md-bottom-sheet class="md-list md-has-header"  ng-controller="coloresController as cartillaCtrl" ng-cloak>
-	  <md-subheader>254A</md-subheader>
-	  <md-list>
-		<ul>
-		{{cartillaCtrl.color.nombre | lowercase }}
-
-		 "codigo": "254A",
-		 "hexadecimal": "",
-		 "rgb": "",
-		 "cartilla": "SOLID",
-		 "linea": "43X",
-		 "marca": [
-			 "Paleta"
-		 ],
-		 "base": [
-			 "Accent"
-		 ]
-		 </ul>
-
-	  </md-list>
-	</md-bottom-sheet>
-	</script>
-
-	</div>
 	<!--/paleta-->
 
 </div>

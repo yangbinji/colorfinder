@@ -9,9 +9,16 @@
 
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider
-      .when('/cartillas', {
+      .when('/', {
         templateUrl: 'views/cartillas.html'
+        controller: 'cartillasController'
       })
+      .when('/colores', {
+        templateUrl: 'views/colores.html',
+        controller: 'BottomSheetExample'
+
+      })
+
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'DemoCtrl'

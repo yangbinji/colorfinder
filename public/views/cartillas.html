@@ -1,5 +1,10 @@
-<div class="">
-  <div class="">
-    <p>Hola</p>
-  </div>
+<div id="lineas" layout="row" layout-wrap class="" ng-hide="tabs.tab === 2"   flex>
+   <div flex="">
+     <md-card-actions style="color:white;" layout="column" layout-align="">
+
+       <md-button ng-click="tabs.selecTab(2)"  ng-repeat="cartilla in cartillaCtrl.color.cartilla | limitTo: 5  " class="lineas {{cartilla | lowercase}}">
+         <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartilla}}
+       </md-button>
+    </md-card-actions>
+   </div>
 </div>

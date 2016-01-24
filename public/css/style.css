@@ -10,6 +10,24 @@ html, body{
 	background-color: black;
 	height: 56px;
 }
+.ficha{
+	height: 200px;
+}
+.fichaRoseta{
+	background: green;
+
+
+}
+.fichaInfo{
+	background: red;
+
+}
+
+.fichaBotones{
+	background: purple;
+
+}
+
 .login-box{
 	background-color: white;
 	margin: 20px 10px 20px 10px;
