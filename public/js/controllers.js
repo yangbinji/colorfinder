@@ -1,12 +1,16 @@
 (function(){
   angular.module('colors.controller',[])
-  .controller('cartillasController', ['$scope', '$http', function($scope, $http){
-    #scope.colores = [];
-
-    $http.get('/colores.json')
-    .success(function (data) {
+  .controller('cartillasController', ['$scope', '$routeParams','colorService', function($scope, $routeParams, colorService){
+    var cartilla = $routeParams.cartilla;
+    if(cartilla){
+      colorService.byCartilla(cartilla).then(function(data){
         $scope.colores = data;
       });
+    } else{
+    colorService.all().then(function(data){
+      $scope.colores = data;
+    });
+    }
   }])
 
   .controller('DemoCtrl',  function ($scope) {
@@ -81,8 +85,8 @@
   $scope.showListBottomSheet = function($event) {
     $scope.alert = '';
     $mdBottomSheet.show({
-      templateUrl: 'bottom-sheet-list-template.html',
-      controller: 'ListBottomSheetCtrl',
+      templateUrl: 'ficha.html',
+      controller: 'coloresController',
       targetEvent: $event
     }).then(function(clickedItem) {
       $scope.alert = clickedItem['name'] + ' clicked!';
@@ -92,54 +96,16 @@
 
 })
 
-.controller('ListBottomSheetCtrl', function($scope, $mdBottomSheet) {
 
-  $scope.items = [
-    { name: 'Share', icon: 'share-arrow' },
-    { name: 'Upload', icon: 'upload' },
-    { name: 'Copy', icon: 'copy' },
-    { name: 'Print this page', icon: 'print' },
-  ];
+.controller('coloresController', ['$scope', '$routeParams', 'colorService', function($scope, $routeParams, colorService){
+  var codigo = $routeParams.codigo
+  $scope.colores = {};
+    colorService.byCodigo()
+    .then(function(data){
+      $scope.colores = data;
+    });
 
-  $scope.listItemClick = function($index) {
-    var clickedItem = $scope.items[$index];
-    $mdBottomSheet.hide(clickedItem);
-  };
-})
-
-.controller('coloresController', function(){
-  this.color = {
-    nombre: 'ORANGE TORCH',
-    codigo: '254A',
-    hexadecimal: 'ff6600',
-    cartilla: [
-      'Magic Book',
-      'Domestic Wall',
-      'Domestic Ultra',
-      'Domestic Plus',
-      'una mas',
-      'otra mas',
-      ' aun mas'
-    ],
-    linea: '43',
-    base: 'Accent',
-    marca: 'Paleta',
-    cuarto1: 'R   0 Y 40 PTS',
-    cuarto2: 'T   3 Y 12 PTS',
-    cuarto3: 'V   0 Y 7 PTS',
-    cuarto4: 'KX   0 Y 47 PTS',
-    galon1: 'R   3 Y 16 PTS',
-    galon2: 'T   13 Y 0 PTS',
-    galon3: 'V   0 Y 28 PTS',
-    galon4: 'KX   3 Y 44 PTS',
-    cubeta1: 'R   16 Y 32 PTS',
-    cubeta2: 'T   65 Y 0 PTS',
-    cubeta3: 'V   2 Y 44 PTS',
-    cubeta4: 'KX   19 Y 28 PTS'
-
-  };
-
-})
+}])
 
 .controller('tabsController', function(){
   this.tab = 1;

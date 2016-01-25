@@ -2,9 +2,10 @@
    <div flex="">
      <md-card-actions style="color:white;" layout="column" layout-align="">
 
-       <md-button ng-click="tabs.selecTab(2)"  ng-repeat="cartilla in cartillaCtrl.color.cartilla | limitTo: 5  " class="lineas {{cartilla | lowercase}}">
-         <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartilla}}
+       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5  " class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartillas.cartilla}}</a>
        </md-button>
+
     </md-card-actions>
    </div>
 </div>

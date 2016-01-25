@@ -3,11 +3,9 @@
   <div class="" layout-align="space-around">
 
 
-  <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
-    <div ng-click="showListBottomSheet($event)"><p>254A</p></div>
-    <div ng-click="showListBottomSheet($event)">{{ cartillaCtrl.color.codigo }}</div>
-    <div ng-click="showListBottomSheet($event)">three</div>
-    <div ng-click="showListBottomSheet($event)">four</div>
+  <div ng-repeat="chip in colores | limitTo: 100 "  id="paleta" layout="row" layout-wrap layout-align="space-around start" >
+
+    <div ng-click="showListBottomSheet($event)">{{ chip.codigo }}</div>
   </div>
   <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
     <div >one</div>
@@ -36,11 +34,14 @@
 
   </div>
 
-  <script type="text/ng-template" id="bottom-sheet-list-template.html" >
-    <md-bottom-sheet layout="column" class="md-grid "  ng-controller="coloresController as cartillaCtrl" ng-cloak>
+  <script type="text/ng-template" id="ficha.html" >
+    <md-bottom-sheet layout="column" class="md-grid "   ng-cloak>
       <div layout="row" layout-align="center center">
 
-        <div class="fichaRoseta ficha" flex></div>
+        <div class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
+          <div class="circulo">{{color.codigo}}</div>
+
+        </div>
         <div class="fichaInfo ficha" flex></div>
         <div class="fichaBotones ficha" flex></div>
       </div>

@@ -4,18 +4,23 @@
     'ngRoute',
     'ngMaterial',
     'ngMessages',
-    'colors.controller'
+    'colors.controller',
+    'colores.services'
   ]);
 
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider
       .when('/', {
-        templateUrl: 'views/cartillas.html'
+        templateUrl: 'views/cartillas.html',
         controller: 'cartillasController'
       })
-      .when('/colores', {
+      .when('/:cartilla', {
         templateUrl: 'views/colores.html',
-        controller: 'BottomSheetExample'
+        controller: 'cartillasController'
+      })
+      .when('/colores/', {
+        templateUrl: 'views/colores.html',
+        controller: 'coloresController'
 
       })
 
