@@ -1,11 +1,59 @@
-<div id="lineas" layout="row" layout-wrap class="" ng-hide="tabs.tab === 2"   flex>
+<div  layout="row">
+
+<div id="lineas" layout="row" layout-wrap flex>
    <div flex="">
      <md-card-actions style="color:white;" layout="column" layout-align="">
 
-       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5  " class="lineas {{cartillas | lowercase}}">
+       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5
+         " class="lineas {{cartillas | lowercase}}">
         <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartillas.cartilla}}</a>
        </md-button>
 
     </md-card-actions>
+
    </div>
+</div>
+
+<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
+
+  <div class="" layout-align="space-around">
+
+
+  <div ng-repeat="chip in colores | limitTo: 4 "  id="paleta" layout="row" layout-wrap layout-align="space-around start" >
+
+    <div href="/#{{chip.codigo}}" ng-click="showListBottomSheet($event)">{{ chip.codigo }}</div>
+
+  </div>
+  <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+    <div >one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+  </div>
+  <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+    <div >one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+  </div>
+  <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+    <div >one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+  </div>
+  <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
+    <div >one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+  </div>
+
+
+
+  </div>
+
+
+
+</div>
 </div>

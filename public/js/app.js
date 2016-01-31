@@ -5,6 +5,7 @@
     'ngMaterial',
     'ngMessages',
     'colors.controller',
+    'color.directives',
     'colores.services'
   ]);
 
@@ -23,6 +24,11 @@
         controller: 'coloresController'
 
       })
+      .when('/partials/ficha/', {
+        templateUrl: 'partials/color-ficha.html',
+        controller: 'coloresController'
+
+      })
 
       .when('/login', {
         templateUrl: 'views/login.html',
@@ -33,6 +39,8 @@
         redirectTo: '/'
       });
   }]);
+
+
 
 
 })();

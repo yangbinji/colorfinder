@@ -15,7 +15,9 @@ a {
 	height: 56px;
 }
 .ficha{
-	height: 2h00px;
+	height: 150px;
+	color: black;
+
 }
 .fichaRoseta{
 	background: ;
@@ -23,25 +25,38 @@ a {
 
 }
 .circulo {
-     width: 100px;
-     height: 100px;
+     width: 85px !important;
+     height: 85px !important;
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
-     background: green;
+     background: green !important;
 		 text-align: center;
 		 color: white;
 		 display: inline-block;
 		 line-height: 6em;
 }
 .fichaInfo{
-	background: red;
+	background: ;
+	text-align: center;
+	display: inline-block;
+	padding-top: 10px;
+	margin-left: 0;
 
 }
+.fichaInfo div{
+	border-bottom: 1px solid #D2D2D2;
+	padding: 5px 0 5px 0;
+}
 
-.fichaBotones{
-	background: purple;
+.fichaBotones {
+	text-align: center;;
+	display: inline-block;
+	padding-top:10p;
 
+}
+.fichaBotones div{
+	padding: 5px 0px 5px 0px;
 }
 
 .login-box{
@@ -66,6 +81,10 @@ a {
 }
 .logo-paleta{
 	height: 70px;
+}
+md-bottom-sheet.md-grid{
+	padding-left: 15px !important;
+	padding-right: 15px !important;
 }
 .menu-list{
 
@@ -143,6 +162,7 @@ a {
 #paleta div p{
 	vertical-align: text-bottom; !important;
 	margin-bottom: 0px;
+
 }
 
 

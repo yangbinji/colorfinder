@@ -1,11 +1,28 @@
+<div  layout="row">
+
+<div id="lineas" layout="row" layout-wrap flex>
+   <div flex="">
+     <md-card-actions style="color:white;" layout="column" layout-align="">
+
+       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5
+         " class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartillas.cartilla}}</a>
+       </md-button>
+
+    </md-card-actions>
+
+   </div>
+</div>
+
 <div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
 
   <div class="" layout-align="space-around">
 
 
-  <div ng-repeat="chip in colores | limitTo: 100 "  id="paleta" layout="row" layout-wrap layout-align="space-around start" >
+  <div ng-repeat="chip in colores | limitTo: 4 "  id="paleta" layout="row" layout-wrap layout-align="space-around start" >
 
-    <div ng-click="showListBottomSheet($event)">{{ chip.codigo }}</div>
+    <div href="/#{{chip.codigo}}" ng-click="showListBottomSheet($event)">{{ chip.codigo }}</div>
+
   </div>
   <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
     <div >one</div>
@@ -32,20 +49,11 @@
     <div>four</div>
   </div>
 
+
+
   </div>
 
-  <script type="text/ng-template" id="ficha.html" >
-    <md-bottom-sheet layout="column" class="md-grid "   ng-cloak>
-      <div layout="row" layout-align="center center">
 
-        <div class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
-          <div class="circulo">{{color.codigo}}</div>
 
-        </div>
-        <div class="fichaInfo ficha" flex></div>
-        <div class="fichaBotones ficha" flex></div>
-      </div>
-    </md-bottom-sheet>
-  </script>
-
+</div>
 </div>

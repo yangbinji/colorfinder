@@ -79,22 +79,20 @@
     })
 
 
-    .controller('BottomSheetExample', function($scope, $timeout, $mdBottomSheet, $mdToast) {
+    .controller('BottomSheetExample', ['$scope','$routeParams', 'colorService', '$timeout', '$mdBottomSheet', '$mdToast', function( $scope, $routeParams, colorService, $timeout, $mdBottomSheet, $mdToast) {
   $scope.alert = '';
 
   $scope.showListBottomSheet = function($event) {
     $scope.alert = '';
     $mdBottomSheet.show({
-      templateUrl: 'ficha.html',
-      controller: 'coloresController',
+      templateUrl: 'partials/color-ficha.html',
+      controller: '',
       targetEvent: $event
-    }).then(function(clickedItem) {
-      $scope.alert = clickedItem['name'] + ' clicked!';
-    });
+    })
   };
 
 
-})
+}])
 
 
 .controller('coloresController', ['$scope', '$routeParams', 'colorService', function($scope, $routeParams, colorService){
