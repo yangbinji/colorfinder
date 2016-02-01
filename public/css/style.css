@@ -1,6 +1,7 @@
 html, body,{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
+	overflow:hidden;
 
 }
 a {
@@ -9,6 +10,13 @@ a {
 
 .colorblack{
 	background-color: black !important;
+}
+.colorblack span{
+	text-align: center;
+	padding-top: 10px;
+}
+.content-cartilla{
+	margin-top: 10px;
 }
 .ribbon{
 	background-color: black;
@@ -81,6 +89,7 @@ a {
 }
 .logo-paleta{
 	height: 70px;
+	margin-top: 10px;
 }
 md-bottom-sheet.md-grid{
 	padding-left: 15px !important;
@@ -135,14 +144,21 @@ md-bottom-sheet.md-grid{
 .menu-list md-icon{
 	margin-right: 20px;
 }
+.scrolling{
+	overflow: auto;
+	height: 400px;
+
+
+}
 
 #footer{
-	bottom: 0;
+
 	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
 }
+
 
 #paleta{
 	margin-top: 12px;
@@ -225,3 +241,42 @@ md-bottom-sheet.md-grid{
 
 		.bottomSheetdemoBasicUsage md-toast > * {
 		  font-weight: bolder; }
+
+		@media only screen and (max-width: 600px) {
+
+		.cajon{
+			display: none;
+		}
+
+		}
+
+		@media only screen and (min-height: 601px) {
+
+			.scrolling{
+				overflow: auto;
+				height: 500px;
+			}
+
+
+
+		}
+		@media (min-width: 768px) {
+
+
+		}
+
+		@media (min-width: 1304px) {
+
+
+			.scrolling{
+				overflow: auto;
+				height: 600px;
+			}
+
+		}
+
+		.md-grid-list md-grid-tile md-grid-tile-footer {
+  background: rgba(0, 0, 0, 0.68);
+  height: 36px; }
+.md-grid-list md-grid-tile-footer figcaption {
+  width: 100%; }

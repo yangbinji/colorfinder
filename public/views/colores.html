@@ -1,20 +1,52 @@
-<div  layout="row">
+<div class="content-cartilla"  layout="row">
+  <!--cartillas-->
 
-<div id="lineas" layout="row" layout-wrap flex>
-   <div flex="">
-     <md-card-actions style="color:white;" layout="column" layout-align="">
+  <div class="cajon" id="lineas" layout="row" layout-wrap ng-cloak flex>
+    <!--lineas-buttons-->
+     <div class="scrolling" flex="">
+       <md-card-actions style="color:white;" layout="column" layout-align="">
 
-       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5
-         " class="lineas {{cartillas | lowercase}}">
-        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartillas.cartilla}}</a>
-       </md-button>
+         <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
+         </md-button>
 
-    </md-card-actions>
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
+         <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
+         </md-button>
 
-   </div>
-</div>
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
 
-<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
+
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
+
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
+
+         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         </md-button>
+
+
+      </md-card-actions>
+
+
+     </div>
+      <!--end-lineas-buttons-->
+  </div>
+  <!--end-cartillas-->
+
+<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak flex>
 
   <div class="" layout-align="space-around">
 

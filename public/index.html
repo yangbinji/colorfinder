@@ -5,17 +5,12 @@
 	  <meta name="viewport" content="width=device-width">
 	  <title>Color Finder</title>
 		<link rel="stylesheet" href="css/angular-material.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 
 
 	</head>
 
 <body ng-app="myApp"  layout="column"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
-
-
-
-
 
 
 <div id="sideNav" ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
@@ -51,15 +46,14 @@
   </md-sidenav>
 	<!--end-sidenavLeft-->
  <!--navbar-->
-	<md-toolbar class="" >
+	<md-toolbar>
 		 <div class="md-toolbar-tools colorblack">
-			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings">
+			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
 				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
 			 </md-button>
+				<span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
 
-			 	<span flex></span>
-
-			 <md-button class="md-icon-button" aria-label="search">
+			 <md-button class="md-icon-button" aria-label="search" >
 				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
 			 </md-button>
 		 </div>
@@ -69,13 +63,9 @@
 
 
 	<div class="" ng-view></div>
-<!--cartillas-->
 
-	<!--lineas-buttons-->
 
-	<!--end-lineas-buttons-->
 
-<!--end-cartillas-->
 
 	<!--paleta-->
 
@@ -84,6 +74,11 @@
 
 <!-- /contenedor-app-->
 
+<div  id="footer" layout="row" layout-align="center end" >
+
+	<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
+
+</div>
 </div>
 
 
@@ -95,11 +90,7 @@
 
 
 
-	<div layout="row" layout-align="center end" >
 
-		<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
-
-	</div>
 
 
 
@@ -110,6 +101,7 @@
    <script type="text/javascript" src="js/lib/angular-material.min.js"></script>
    <script type="text/javascript" src="js/lib/angular-messages.min.js"></script>
 	 <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+
 
 
    <!-- Angular Material Library -->

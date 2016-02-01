@@ -1,9 +1,9 @@
-<md-bottom-sheet layout="column" class="md-grid " ng-controller="cartillasController"  ng-cloak>
+
+<md-bottom-sheet layout="column"  class="md-grid " ng-controller="cartillasController"  ng-cloak>
   <div layout="row" layout-align="center center">
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
       <md-button ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" md-ripple-size>{{chip.codigo}}</md-button>
-
     </div>
     <div class="fichaInfo ficha" layout-align="center center" flex>
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>

@@ -16,11 +16,16 @@
         controller: 'cartillasController'
       })
       .when('/:cartilla', {
-        templateUrl: 'views/colores.html',
+        templateUrl: 'views/coloresT.html',
         controller: 'cartillasController'
       })
       .when('/colores/', {
         templateUrl: 'views/colores.html',
+        controller: 'coloresController'
+
+      })
+      .when('/views/coloresT/', {
+        templateUrl: 'views/coloresT.html',
         controller: 'coloresController'
 
       })
@@ -30,7 +35,7 @@
 
       })
 
-      .when('/login', {
+      .when('/views/login/', {
         templateUrl: 'views/login.html',
         controller: 'DemoCtrl'
 

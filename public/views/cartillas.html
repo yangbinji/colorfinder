@@ -1,27 +1,60 @@
-<div  layout="row">
 
-<div id="lineas" layout="row" layout-wrap flex>
-   <div flex="">
+<div class="content-cartilla" layout="row">
+<!--cartillas-->
+
+<div layout="row" layout-wrap flex ng-cloak >
+  <!--lineas-buttons-->
+   <div class="scrolling" flex="">
      <md-card-actions style="color:white;" layout="column" layout-align="">
 
-       <md-button href="/#{{cartillas.cartilla}}" ng-repeat="cartillas in colores | limitTo: 5
-         " class="lineas {{cartillas | lowercase}}">
-        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>{{ cartillas.cartilla}}</a>
+       <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
        </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+       <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
+       </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+
+       <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
+        <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+       </md-button>
+
 
     </md-card-actions>
 
-   </div>
-</div>
 
-<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak="" flex>
+   </div>
+   	<!--end-lineas-buttons-->
+</div>
+<!--end-cartillas-->
+
+<div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage cajon" ng-cloak flex>
 
   <div class="" layout-align="space-around">
 
 
   <div ng-repeat="chip in colores | limitTo: 4 "  id="paleta" layout="row" layout-wrap layout-align="space-around start" >
 
-    <div href="/#{{chip.codigo}}" ng-click="showListBottomSheet($event)">{{ chip.codigo }}</div>
+    <div href="/#{{chip.codigo}}" ng-click="showListBottomSheet($event)">{{ .codigo }}</div>
 
   </div>
   <div id="paleta" layout="row" layout-wrap layout-align="space-around start">
