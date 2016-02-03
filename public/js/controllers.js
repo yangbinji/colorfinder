@@ -12,6 +12,18 @@
     });
     }
   }])
+  .controller('codigoController', ['$scope', '$routeParams','colorService', function($scope, $routeParams, colorService){
+    var codigo = $routeParams.codigo;
+    if(codigo){
+      colorService.byCodigo(codigo).then(function(data){
+        $scope.colores = data;
+      });
+    } else{
+    colorService.all().then(function(data){
+      $scope.colores = data;
+    });
+    }
+  }])
 
   .controller('DemoCtrl',  function ($scope) {
 
@@ -86,7 +98,7 @@
     $scope.alert = '';
     $mdBottomSheet.show({
       templateUrl: 'partials/color-ficha.html',
-      controller: '',
+      controller: 'codigoController',
       targetEvent: $event
     })
   };

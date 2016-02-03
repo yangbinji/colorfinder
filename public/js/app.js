@@ -15,6 +15,10 @@
         templateUrl: 'views/cartillas.html',
         controller: 'cartillasController'
       })
+      .when('/colores/:codigo', {
+        templateUrl: 'partials/color-ficha.html',
+        controller: 'codigoController'
+      })
       .when('/:cartilla', {
         templateUrl: 'views/coloresT.html',
         controller: 'cartillasController'

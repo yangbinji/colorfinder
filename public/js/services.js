@@ -18,13 +18,7 @@
         var results = data.filter(function(color){
           return color.codigo === codigo;
         });
-        if (results.length > 0){
-          deferred.resolve(results[0]);
-
-        }else{
-          //fallar!
-          deferred.reject();
-        }
+          deferred.resolve(results);
       });
       return deferred.promise;
     }
