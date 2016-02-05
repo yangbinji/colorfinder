@@ -38,7 +38,6 @@ a {
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
-     background: green !important;
 		 text-align: center;
 		 color: white;
 		 display: inline-block;
@@ -109,18 +108,34 @@ md-bottom-sheet.md-grid{
 	padding-bottom: 70px;
 	padding-left: 20px;
 	font-size: 30px;
-	background-color: red;
+	background: red;
+
 
 
 }
+
+
 
 .paleta{
 	padding-top: 0px;
 	margin-top: -6px;
 
 }
+.enammel{
+	font-size: 24px;
+	background: #ffd00a
+}
+.estandar{
+	background: #0bb6ff;
+}
+.gloss{
+	background: #ff7a00;
+}
+.moods{
+	background: #00742b;
+}
 .ultra{
-	background: #09a8e4 !important;
+	background: #337ABE !important;
 
 }
 .plus{
@@ -259,6 +274,7 @@ md-bottom-sheet.md-grid{
 
 
 
+
 		}
 		@media (min-width: 768px) {
 
@@ -273,10 +289,12 @@ md-bottom-sheet.md-grid{
 				height: 600px;
 			}
 
+
+
 		}
 
 		.md-grid-list md-grid-tile md-grid-tile-footer {
   background: rgba(0, 0, 0, 0.68);
-  height: 36px; }
+  height: 6px; }
 .md-grid-list md-grid-tile-footer figcaption {
   width: 100%; }

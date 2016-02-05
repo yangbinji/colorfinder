@@ -5,8 +5,10 @@
 
 
     <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="" md-row-height="1:1">
-      <md-grid-tile ng-repeat="chip in colores | limitTo: 20" style="background-color: red; text-align:center;" ng-click="showListBottomSheet($event)">
-        <md-grid-tile-footer> {{ chip.codigo }} {{ chip.linea }}</md-grid-tile-footer>
+
+      <md-grid-tile ng-repeat="chip in colores | limitTo: 20" style="background: red;" ng-click="showListBottomSheet($event)">
+        <md-grid-tile-footer> {{ chip.codigo }}</md-grid-tile-footer>
+
 
       </md-grid-tile>
 
