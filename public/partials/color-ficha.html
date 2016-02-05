@@ -1,20 +1,20 @@
 
-<md-bottom-sheet layout="column"  class="md-grid " ng-controller="cartillasController"  ng-cloak>
-  <div layout="row" layout-align="center center">
+<md-bottom-sheet layout="column"  class="md-grid " ng-controller="codigoController"  ng-cloak>
+  <div  layout="row" layout-align="center center">
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
-      <md-button ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" md-ripple-size>{{chip.codigo}}</md-button>
+      <md-button  ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size ngclipboard data-clipboard-target="#c">{{chip.codigo}}</md-button>
     </div>
     <div class="fichaInfo ficha" layout-align="center center" flex>
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>
-      <div ng-repeat="chip in colores | limitTo: 1">{{chip.codigo}}</div>
-      <div ng-repeat="chip in colores | limitTo: 1">{{chip.linea}}</div>
+      <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.hexadecimal}}</div>
+      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
 
     </div>
     <div class="fichaBotones ficha"   layout-align="center center" flex>
       <div flex>
-        <md-button class="md-icon-button " aria-label="More">
-          <md-icon md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
+        <md-button id="btnSave" onClick="save()" class="md-icon-button " aria-label="More">
+          <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
       <div flex>

@@ -2,11 +2,13 @@
   (function () {
   var app = angular.module('myApp', [
     'ngRoute',
+    'ngclipboard',
     'ngMaterial',
     'ngMessages',
     'colors.controller',
     'color.directives',
     'colores.services'
+
   ]);
 
   app.config(['$routeProvider', function($routeProvider){
@@ -31,7 +33,7 @@
       })
       .when('/partials/ficha/', {
         templateUrl: 'partials/color-ficha.html',
-        controller: 'coloresController'
+        controller: 'codigoController'
 
       })
 
