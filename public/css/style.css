@@ -118,7 +118,7 @@ md-bottom-sheet.md-grid{
 
 .paleta{
 	padding-top: 0px;
-	margin-top: -6px;
+	margin-top: 0px;
 
 }
 .enammel{
@@ -257,6 +257,10 @@ md-bottom-sheet.md-grid{
 		.bottomSheetdemoBasicUsage md-toast > * {
 		  font-weight: bolder; }
 
+			.md-grid-list  md-grid-tile-footer{
+				height: 24px !important;
+			}
+
 		@media only screen and (max-width: 600px) {
 
 		.cajon{
@@ -286,15 +290,9 @@ md-bottom-sheet.md-grid{
 
 			.scrolling{
 				overflow: auto;
-				height: 600px;
+				height: 900px;
 			}
 
 
 
 		}
-
-		.md-grid-list md-grid-tile md-grid-tile-footer {
-  background: rgba(0, 0, 0, 0.68);
-  height: 6px; }
-.md-grid-list md-grid-tile-footer figcaption {
-  width: 100%; }

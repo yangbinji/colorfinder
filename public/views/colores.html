@@ -6,37 +6,36 @@
      <div class="scrolling" flex="">
        <md-card-actions style="color:white;" layout="column" layout-align="">
 
-         <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
+         <md-button href="/#/DOMESTIC-WALL"  class="lineas wall">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic Wall
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/SOLID"  class="lineas magic-book">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Magic Book
          </md-button>
-         <md-button href="/#/DOMESTIC"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Dometic</a>
-         </md-button>
-
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/DOMESTIC-PLUS"  class="lineas plus">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Plus
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/DOMESTIC-ULTRA"  class="lineas ultra">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Ultra
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/DOMESTIC-GLOSS"  class="lineas gloss">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/DOMESTIC-ENAMMEL"  class="lineas enammel">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Enammel</a>
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas {{cartillas | lowercase}}">
-          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Solid</a>
+         <md-button href="/#/ESTANDAR"  class="lineas estandar">
+          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Estandar</a>
          </md-button>
 
+         <md-button href="/#/MOODS"  class="lineas moods">
+           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Moods</a>
+          </md-button>
 
       </md-card-actions>
 
@@ -48,10 +47,14 @@
 
 <div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak flex>
 
-  <div class="" layout-align="space-around">
+  <div class="scrolling" layout-align="space-around">
 
 
-  
+    <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="" md-row-height="1:1">
+      <md-grid-tile ng-repeat="chip in colores | limitTo: 120" style="background: #{{chip.hexadecimal}};" ng-click="showListBottomSheet($event)">
+        <md-grid-tile-footer> {{ chip.codigo }}</md-grid-tile-footer>
+
+      </md-grid-tile>
 
 
   </div>

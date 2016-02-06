@@ -38,11 +38,6 @@
          <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Moods</a>
         </md-button>
 
-
-
-
-
-
     </md-card-actions>
 
 
@@ -51,26 +46,27 @@
 </div>
 <!--end-cartillas-->
 
+<!--COLORES-->
 <div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage cajon" ng-cloak flex>
-
+    <!--CHIPS-->
   <div class="content-cartilla"  layout="row">
-
 
     <div ng-controller="BottomSheetExample" class="scrolling paleta md-padding bottomSheetdemoBasicUsage" ng-cloak flex>
 
-
       <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="" md-row-height="1:1">
-        <md-grid-tile ng-repeat="chip in colores | limitTo: 120" style="background: red;" ng-click="showListBottomSheet($event)">
-          <md-grid-tile-footer> {{ chip.codigo }}</md-grid-tile-footer>
-
+        <md-grid-tile ng-repeat="chip in colores | limitTo: 20" style="background: #{{chip.hexadecimal}};" ng-click="showListBottomSheet($event)">
+          <md-grid-tile-footer md-rowspan="3"> {{ chip.codigo }}</md-grid-tile-footer>
         </md-grid-tile>
 
-      </md-grid-list
+      </md-grid-list>
+
     </div>
 
   </div>
-
-
+  <!--CHIPS-->
 
 </div>
+<!--END-COLORES-->
+
+
 </div>

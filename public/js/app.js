@@ -22,7 +22,7 @@
         controller: 'codigoController'
       })
       .when('/:cartilla', {
-        templateUrl: 'views/coloresT.html',
+        templateUrl: 'views/colores.html',
         controller: 'cartillasController'
       })
       .when('/colores/', {
