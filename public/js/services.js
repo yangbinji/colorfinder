@@ -38,4 +38,13 @@
       byCartilla: byCartilla
     }
   }])
+  .factory('captura',  function(){
+    var codigo = '4322';
+
+    return{
+      getCodes: function(){
+        return codigo;
+      }
+    }
+  })
 })();

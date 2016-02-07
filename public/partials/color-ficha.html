@@ -10,7 +10,7 @@
     <div class="fichaInfo ficha" layout-align="center center" flex>
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>
       <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.hexadecimal}}</div>
-      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
+      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}{{hola.codigo}}</div>
 
     </div>
     <div class="fichaBotones ficha"   layout-align="center center" flex>

@@ -12,8 +12,9 @@
     });
     }
   }])
-  .controller('codigoController', ['$scope', '$routeParams','colorService', function($scope, $routeParams, colorService){
-    var codigo = $routeParams.codigo;
+  .controller('codigoController', ['$scope','colorService','captura', function($scope, colorService, captura){
+     $scope.hola = captura.getCodes();
+     var codigo = $scope.hola;
     if(codigo){
       colorService.byCodigo(codigo).then(function(data){
         $scope.colores = data;
@@ -91,7 +92,7 @@
     })
 
 
-    .controller('BottomSheetExample', ['$scope','$routeParams', 'colorService', '$timeout', '$mdBottomSheet', '$mdToast', function( $scope, $routeParams, colorService, $timeout, $mdBottomSheet, $mdToast) {
+    .controller('BottomSheetExample', ['$scope','$routeParams', 'colorService', '$timeout', '$mdBottomSheet', '$mdToast', 'captura', function( $scope, $routeParams, colorService, $timeout, $mdBottomSheet, $mdToast, captura) {
   $scope.alert = '';
 
   $scope.showListBottomSheet = function($event) {

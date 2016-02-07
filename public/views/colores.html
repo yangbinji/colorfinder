@@ -51,7 +51,7 @@
 
 
     <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="" md-row-height="1:1">
-      <md-grid-tile ng-repeat="chip in colores | limitTo: 120" style="background: #{{chip.hexadecimal}};" ng-click="showListBottomSheet($event)">
+      <md-grid-tile id="chipo" ng-repeat="chip in colores | limitTo: 120" style="background: #{{chip.hexadecimal}};" ng-click="showListBottomSheet($event)">
         <md-grid-tile-footer> {{ chip.codigo }}</md-grid-tile-footer>
 
       </md-grid-tile>
