@@ -39,12 +39,15 @@
     }
   }])
   .factory('captura',  function(){
-    var codigo = '4322';
-
+    var  codigo = "initial value"; // <== variable que reciba del controllar capturaCtrl
     return{
       getCodes: function(){
         return codigo;
+      },
+      setCodes: function(value) {
+        codigo = value;
+        return value;
       }
     }
-  })
+  });
 })();

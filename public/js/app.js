@@ -25,16 +25,6 @@
         templateUrl: 'views/colores.html',
         controller: 'cartillasController'
       })
-      .when('/colores/', {
-        templateUrl: 'views/colores.html',
-        controller: 'coloresController'
-
-      })
-      .when('/views/coloresT/', {
-        templateUrl: 'views/coloresT.html',
-        controller: 'coloresController'
-
-      })
       .when('/partials/ficha/', {
         templateUrl: 'partials/color-ficha.html',
         controller: 'codigoController'

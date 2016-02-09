@@ -12,9 +12,20 @@
     });
     }
   }])
+
+  .controller('capturaCtrl', ['$scope', 'captura', function($scope, captura){
+   $scope.capturame = '4334';
+   $scope.setCodigo = captura.setCodes;
+
+ }])
+
+ .controller('recibeCtrl', ['$scope', 'captura', function($scope, captura){
+  	$scope.codigo = captura.getCodes;
+
+  }])
+
   .controller('codigoController', ['$scope','colorService','captura', function($scope, colorService, captura){
-     $scope.hola = captura.getCodes();
-     var codigo = $scope.hola;
+     var codigo = captura.getCodes();
     if(codigo){
       colorService.byCodigo(codigo).then(function(data){
         $scope.colores = data;
