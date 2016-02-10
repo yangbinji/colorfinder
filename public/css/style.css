@@ -173,6 +173,11 @@ md-bottom-sheet.md-grid{
 	left: 0;
 	right: 0;
 }
+.md-grid-tile-footer.ng-scope{
+	height: 24px !important;
+	font-size: 14px !important;
+
+}
 
 
 #paleta{
@@ -196,6 +201,10 @@ md-bottom-sheet.md-grid{
 
 }
 
+tile-footer{
+	height: 24px !important;
+}
+
 
 
 .inputdemoIcons {
@@ -217,9 +226,6 @@ md-bottom-sheet.md-grid{
   .inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
   .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
     color: red; }
-
-
-
 
 
 
@@ -290,7 +296,7 @@ md-bottom-sheet.md-grid{
 
 			.scrolling{
 				overflow: auto;
-				height: 900px;
+				height: 700px;
 			}
 
 

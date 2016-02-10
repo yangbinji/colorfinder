@@ -25,6 +25,7 @@
         templateUrl: 'views/colores.html',
         controller: 'cartillasController'
       })
+      
       .when('/partials/ficha/', {
         templateUrl: 'partials/color-ficha.html',
         controller: 'codigoController'

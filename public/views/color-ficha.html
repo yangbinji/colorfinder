@@ -1,7 +1,7 @@
 
 <md-bottom-sheet layout="column"  class="md-grid " ng-controller="codigoController"  ng-cloak>
 
-  <div  layout="row" layout-align="center center">
+  <div id="chartdiv"  layout="row" layout-align="center center">
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
@@ -25,7 +25,7 @@
         </md-button>
       </div>
       <div flex>
-        <md-button class="md-icon-button " aria-label="More">
+        <md-button ng-click="close()" class="md-icon-button " aria-label="More">
           <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
