@@ -2,7 +2,7 @@
 <html lang="Es">
 	<head>
 		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>Color Finder</title>
 		<link rel="stylesheet" href="css/angular-material.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,10 +10,61 @@
 
 	</head>
 
-<body ng-app="myApp"  layout="column"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
+<body ng-app="myApp"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
 
 
-<div id="sideNav" ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
+<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
+	<md-toolbar>
+		 <div class="md-toolbar-tools colorblack">
+			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
+				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
+			 </md-button>
+				<span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
+
+			 <md-button ng-click="toggleRight()" class="md-icon-button" aria-label="search" >
+				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
+			 </md-button>
+		 </div>
+	 </md-toolbar>
+
+ <section >
+	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 " md-component-id="right">
+      <md-toolbar class="md-theme-light colorblack">
+        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      </md-toolbar>
+      <md-content ng-controller="RightCtrl" layout-padding>
+
+          <md-input-container>
+            <label for="testInput">Test input</label>
+            <input type="text" id="testInput"
+                   ng-model="chipModel" >
+          </md-input-container>
+
+					<div ng-controller="cartillasController">
+					<div ng-repeat="chip in colores | filter: chipModel">
+						<div class="">
+							{{chip.codigo  + '-' + chip.nombre}}
+						</div>
+
+					</div>
+					</div>
+
+
+        <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+        </md-button>
+      </md-content>
+    </md-sidenav>
+	<md-content>
+		<!--navbar-->
+
+	 	<!--/navbar-->
+
+		<div class="" ng-view></div>
+
+
+
+	</md-content>
 	<!--sidenavLeft-->
 	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
@@ -45,24 +96,12 @@
 			  </md-content>
   </md-sidenav>
 	<!--end-sidenavLeft-->
- <!--navbar-->
-	<md-toolbar>
-		 <div class="md-toolbar-tools colorblack">
-			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
-				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
-			 </md-button>
-				<span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
 
-			 <md-button class="md-icon-button" aria-label="search" >
-				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
-			 </md-button>
-		 </div>
-	 </md-toolbar>
-	<!--/navbar-->
+
 <!-- contenedor-app-->
 
 
-	<div class="" ng-view></div>
+
 
 
 
@@ -74,15 +113,15 @@
 
 <!-- /contenedor-app-->
 
+</section>
+</div>
+
+
 <div  id="footer" layout="row" layout-align="center end" >
 
 	<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
 
 </div>
-</div>
-
-
-
 
 
 
