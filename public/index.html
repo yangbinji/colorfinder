@@ -15,15 +15,25 @@
 
 <div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
 	<md-toolbar>
-		 <div class="md-toolbar-tools colorblack">
+		 <div class="md-toolbar-tools colorblack md-whiteframe-5dp">
+				<span layout-align="" flex>	
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
 				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
 			 </md-button>
-				<span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
+			 </span>	 
+			 	<span layout-align="end center" flex>
+			 	<img class="letras-paleta" src="img/letras-paleta.svg" alt="">
+			 	</span>
+				<span layout-align="center center" flex>
+				<img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt="">
+				</span>
+				<span layout-align="end end" flex></span>
+				<div layout-align="end center" flex>
 
 			 <md-button ng-click="toggleRight()" class="md-icon-button" aria-label="search" >
 				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
-			 </md-button>
+			 </md-button> 
+			 </div>	 
 		 </div>
 	 </md-toolbar>
 
@@ -92,7 +102,7 @@
 	      </md-toolbar>
 			</div>
 	      <md-content align="center" layout-padding="" class="colorblack">
-					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
+					<img class="logo-finder" src="img/LOGO-FINDER-BLANCO.SVG" alt="">
 
 					<md-card-actions layout="column" layout-align="">
 						<md-button href="/#/" class="menu-list"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Cartillas</md-button>
