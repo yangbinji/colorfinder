@@ -29,27 +29,35 @@
 
  <section >
 	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 " md-component-id="right">
-      <md-toolbar class="md-theme-light colorblack">
-        <h1 class="md-toolbar-tools">Sidenav Right</h1>
-      </md-toolbar>
-      <md-content ng-controller="RightCtrl" layout-padding>
+      <md-toolbar class="md-theme-light colorblack" ng-controller="RightCtrl">
 
+					 <div class="md-toolbar-tools colorblack">
+						<md-button ng-click="close()"  class="md-icon-button" aria-label="Settings">
+							<md-icon md-svg-icon="img/icons/close-icon.svg"></md-icon>
+		 			 </md-button>
+					 <h2>
+						 <span></span>
+					 </h2>
+					 <span flex></span>
+					 <md-button  class="md-icon-button" aria-label="search">
+
+					 </md-button>
+					</div>
+	   </md-toolbar>
+
+      <md-content ng-controller="RightCtrl" layout-padding>
           <md-input-container>
-            <label for="testInput">Test input</label>
+            <label for="testInput">Buscar...</label>
             <input type="text" id="testInput"
                    ng-model="chipModel" >
           </md-input-container>
-
 					<div ng-controller="cartillasController">
 					<div ng-repeat="chip in colores | filter: chipModel">
 						<div class="">
 							{{chip.codigo  + '-' + chip.nombre}}
 						</div>
-
 					</div>
 					</div>
-
-
         <md-button ng-click="close()" class="md-primary">
           Close Sidenav Right
         </md-button>
