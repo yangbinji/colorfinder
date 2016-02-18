@@ -10,10 +10,10 @@
 
 	</head>
 
-<body ng-app="myApp"  ng-controller="coloresController as cartillaCtrl" ng-cloack>
+<body ng-app="myApp"  data-ng-controller="MeCtrl" ng-cloack>
 
 
-<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
+<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" ng-hide>
 	<md-toolbar>
 		 <div class="md-toolbar-tools colorblack">
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
@@ -52,11 +52,11 @@
                    ng-model="chipModel" >
           </md-input-container>
 					<div ng-controller="cartillasController">
-					<div ng-repeat="chip in colores | filter: chipModel">
+				<!--	<div ng-repeat="chip in colores | filter: chipModel">
 						<div class="">
 							{{chip.codigo  + '-' + chip.nombre}}
 						</div>
-					</div>
+					</div>-->
 					</div>
         <md-button ng-click="close()" class="md-primary">
           Close Sidenav Right
@@ -74,7 +74,7 @@
 
 	</md-content>
 	<!--sidenavLeft-->
-	<md-sidenav class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
+	<md-sidenav  class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
 	      <md-toolbar class="" ng-controller="LeftCtrl">
 					 <div class="md-toolbar-tools colorblack">
@@ -82,7 +82,7 @@
 						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
 	 			 </md-button>
 				 <h2>
-					 <span>user</span>
+					 <span>{{myDetails.data.email}}</span>
 				 </h2>
 				 <span flex></span>
 				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
@@ -94,12 +94,12 @@
 	      <md-content align="center" layout-padding="" class="colorblack">
 					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
 
-					<md-card-actions layout="column" layout-align="">
+					<md-card-actions layout="column" layout-align="" data-ng-controller="HomeCtrl">
 						<md-button href="/#/" class="menu-list"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Cartillas</md-button>
           	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
           	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>
 						<md-button class="menu-list"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
-          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
+          	<md-button class="menu-list" ng-click="logout()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
          </md-card-actions>
 			  </md-content>
   </md-sidenav>
@@ -150,6 +150,8 @@
 	 <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
 	 <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
 	 <script src="js/lib/ngclipboard.min.js"></script>
+	 <script src="js/lib/ngStorage.js"></script>
+
 
    <!-- My Librarys -->
    <script type="text/javascript" src="js/app.js"></script>
