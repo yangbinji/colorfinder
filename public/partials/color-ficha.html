@@ -1,19 +1,19 @@
 
-<md-bottom-sheet layout="column"  class="md-grid " ng-controller="codigoController"  ng-cloak>
+<md-bottom-sheet  layout="column"  class="md-grid " ng-controller="copiadoCtrl"  ng-cloak>
 
   <div  layout="row" layout-align="center center">
 
 
-    <div  class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
-      <md-button  ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size ngclipboard data-clipboard-target="#c">{{chip.codigo}}</md-button>
+    <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
+      <md-button ng-click="colorCopiado()" ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size ngclipboard data-clipboard-target="#c" >{{chip.codigo}}</md-button>
     </div>
-    <div class="fichaInfo ficha" layout-align="center center" flex>
+    <div class="fichaInfo ficha" layout-align="center center"  flex="50">
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>
       <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.hexadecimal}}</div>
-      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}{{hola.codigo}}</div>
+      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
 
     </div>
-    <div class="fichaBotones ficha"   layout-align="center center" flex>
+    <div class="fichaBotones ficha"   layout-align="end center"  flex>
       <div flex>
         <md-button id="btnSave" onClick="save()" class="md-icon-button " aria-label="More">
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>

@@ -1,7 +1,8 @@
-html, body,{
+html, body{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
-	
+	overflow: hidden !important;
+
 
 }
 a {
@@ -53,11 +54,11 @@ a {
 }
 .fichaInfo div{
 	border-bottom: 1px solid #D2D2D2;
-	padding: 5px 0 5px 0;
+	padding: 10px 0 10px 0;
 }
 
 .fichaBotones {
-	text-align: center;;
+	text-align: end;
 	display: inline-block;
 	padding-top:10p;
 
@@ -281,7 +282,9 @@ tile-footer{
 				overflow: auto;
 				height: 500px;
 			}
-
+			.fichaBotones {
+				text-align: center;;
+			}
 
 
 
@@ -298,7 +301,9 @@ tile-footer{
 				overflow: auto;
 				height: 700px;
 			}
-
+			.fichaBotones {
+				text-align: center;;
+			}
 
 
 		}

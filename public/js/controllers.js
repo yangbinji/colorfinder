@@ -152,7 +152,6 @@
           Main.signin(formData, function(res) {
               $localStorage.token = res.data.token;
               $location.path('/');
-              $route.reload();
           }, function() {
               $rootScope.error = 'Failed to signin';
           })
@@ -189,7 +188,7 @@
 
       $scope.logout = function() {
           Main.logout(function() {
-              $location.path('/');
+              $location.path('/signin');
           }, function() {
               $rootScope.error = 'Failed to logout';
           });
@@ -204,6 +203,20 @@
           $rootScope.error = 'Failed to fetch details';
       })
 }])
+
+
+.controller('copiadoCtrl', function($scope, $mdToast) {
+
+  $scope.colorCopiado = function() {
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent(' Color copiado :D')
+        .position('bottom right')
+        .hideDelay(300)
+    );
+  };
+})
+
 
 .controller('tabsController', function(){
   this.tab = 1;

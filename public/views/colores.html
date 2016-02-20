@@ -55,7 +55,7 @@
 
 
     <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
-      <md-grid-tile  ng-repeat="chip in colores | limitTo: 50" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
+      <md-grid-tile  ng-repeat="chip in colores | limitTo: 150" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
         <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
 
       </md-grid-tile>
