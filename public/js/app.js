@@ -23,6 +23,11 @@
         controller: 'DemoCtrl'
 
       })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'DemoCtrl'
+
+      })
       .when('/me', {
           templateUrl: 'partials/me.html',
           controller: 'HomeCtrl'

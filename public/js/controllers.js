@@ -36,6 +36,17 @@
     });
     }
   }])
+  .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', 'colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, colorService, captura, Main) {
+
+    $rootScope.chipsColores = function (data) {
+        $rootScope.fav = $filter('filter')($scope.colores, {checked: true});
+}
+  $scope.$storage =  $localStorage.$default({
+    hola: $scope.username
+});
+
+
+}])
 
   .controller('DemoCtrl',  function ($scope) {
 
@@ -116,7 +127,7 @@
   })
 
 
-    .controller('BottomSheetExample', ['$scope','$routeParams', 'colorService', '$timeout', '$mdBottomSheet', '$mdToast', 'captura', function( $scope, $routeParams, colorService, $timeout, $mdBottomSheet, $mdToast, captura) {
+    .controller('BottomSheetExample', ['$scope','$routeParams', '$log', '$timeout', 'colorService',  '$mdBottomSheet', '$mdToast', 'captura', function( $scope, $routeParams, $log, $timeout, colorService,  $mdBottomSheet, $mdToast, captura) {
   $scope.alert = '';
 
   $scope.showListBottomSheet = function($event) {
@@ -126,8 +137,19 @@
       controller: 'codigoController',
       targetEvent: $event
     })
-  };
+  }
 
+
+
+}])
+
+.controller('closeFicha',['$scope', '$mdBottomSheet', '$log', '$timeout',  function($scope, $mdBottomSheet, $log, $timeout){
+  $scope.close = function () {
+    $mdBottomSheet('fi').close()
+      .then(function () {
+        $log.debug("close ficha is done");
+      });
+  };
 
 }])
 
@@ -141,7 +163,7 @@
     });
 
 }])
-.controller('HomeCtrl', ['$rootScope', '$scope', '$location', '$route', '$localStorage', 'Main', function($rootScope, $scope, $location, $route, $localStorage, Main) {
+.controller('HomeCtrl', ['$rootScope', '$scope', '$location',  '$localStorage', 'Main', function($rootScope, $scope, $location, $localStorage, Main) {
 
       $scope.signin = function() {
           var formData = {
@@ -150,26 +172,35 @@
           }
 
           Main.signin(formData, function(res) {
-              $localStorage.token = res.data.token;
-              $location.path('/');
-          }, function() {
-              $rootScope.error = 'Failed to signin';
-          })
+                 if (res.type == false) {
+                     $scope.errorAuth = res.data;
+                 } else {
+                     $localStorage.token = res.data.token;
+                     $location.path('/');
+                 }
+             }, function() {
+                 $rootScope.error = 'Failed to signin';
+             })
       };
 
       $scope.signup = function() {
-          var formData = {
-              email: $scope.email,
-              password: $scope.password
-          }
+            var formData = {
+                username: $scope.username,
+                email: $scope.email,
+                password: $scope.password
+            }
 
-          Main.save(formData, function(res) {
-              $localStorage.token = res.data.token;
-              $location.path('/me');
-          }, function() {
-              $rootScope.error = 'Failed to signup';
-          })
-      };
+            Main.save(formData, function(res) {
+                if (res.type == false) {
+                    $scope.errorSignup = res.data;
+                } else {
+                    $localStorage.token = res.data.token;
+                    $location.path('/signin');
+                }
+            }, function() {
+                $rootScope.error = 'Failed to signup';
+            })
+        };
 
       $scope.me = function() {
           Main.me(function(res) {

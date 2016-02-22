@@ -17,12 +17,15 @@
         <label>Contraseña</label>
         <md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
         <input type="password" id="password" ng-model="password">
+          <p class="errorMessage">{{errorAuth}}</p>
       </md-input-container>
+
       <md-button type="submit" class="md-warn md-raised md-hue-2">Acceder</md-button>
     </form>
 
   </md-content>
   <p>¿Olvidaste tu Contraseña?</p>
+
 
 </div>
 <img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt="">

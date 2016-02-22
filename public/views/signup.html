@@ -1,6 +1,33 @@
-<!-- views/signup.html -->
-<form ng-submit="signup.signup()" method="post">
-    <input type="email" ng-model="signup.email"/>
-    <input type="password" ng-model="signup.password"/>
-    <button type="submit">Registrarse</button>
-</form>
+<div align="center" class="login" >
+  <div class="ribbon"></div>
+
+<div align="center" ng-controller="HomeCtrl" layout="column" layout-padding ng-cloak class="login-box">
+  <h1>Registro de nuevo usuario</h1>
+  <md-content>
+
+    <form role="form" class="login-form"  ng-submit="signup()">
+      <md-input-container class="md-icon-float md-block">
+        <label>nombre</label>
+        <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
+        <input type="text" id="nombre" ng-model="username">
+      </md-input-container>
+      <md-input-container class="md-icon-float md-block">
+        <label>Email</label>
+        <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
+        <input type="email" id="email" ng-model="email">
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Contraseña</label>
+        <md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
+        <input type="password" id="password" ng-model="password">
+          <p class="errorMessage">{{errorSignup}}</p>
+      </md-input-container>
+
+      <md-button type="submit" class="md-warn md-raised md-hue-2">Crear cuenta</md-button>
+    </form>
+
+  </md-content>
+
+
+</div>
+</div>

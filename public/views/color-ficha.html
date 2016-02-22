@@ -1,7 +1,7 @@
 
-<md-bottom-sheet layout="column"  class="md-grid " ng-controller="codigoController"  ng-cloak>
+<md-bottom-sheet layout="column"  class="md-grid " ng-controller="closeFicha" md-component-id="fi" ng-cloak>
 
-  <div id="chartdiv"  layout="row" layout-align="center center">
+  <div id="chartdiv"  layout="row" layout-align="center center" ng-controller="codigoController" >
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row" flex>
@@ -13,7 +13,7 @@
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}{{hola.codigo}}</div>
 
     </div>
-    <div class="fichaBotones ficha"   layout-align="center center" flex>
+    <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl" flex>
       <div flex>
         <md-button id="btnSave" onClick="save()" class="md-icon-button " aria-label="More">
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
@@ -24,10 +24,8 @@
           <md-icon md-svg-icon="img/icons/star-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
-      <div flex>
-        <md-button ng-click="close()" class="md-icon-button " aria-label="More">
-          <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
-        </md-button>
+      <div ng-repeat="chip in colores | limitTo: 5" flex>
+        <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-change="chipsColores()" ng-init="checked: true" ng-click="$storage[myDetails.data.username]">
       </div>
 
     </div>

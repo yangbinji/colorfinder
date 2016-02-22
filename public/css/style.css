@@ -80,7 +80,8 @@ a {
 
 }
 
-.login-form{
+.errorMessage{
+	color: rgb(221,44,0) !important;
 
 }
 

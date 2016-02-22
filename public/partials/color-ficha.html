@@ -1,7 +1,7 @@
 
 <md-bottom-sheet  layout="column"  class="md-grid " ng-controller="copiadoCtrl"  ng-cloak>
 
-  <div  layout="row" layout-align="center center">
+  <div  layout="row" layout-align="center center" >
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
@@ -13,18 +13,17 @@
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
 
     </div>
-    <div class="fichaBotones ficha"   layout-align="end center"  flex>
+    <div class="fichaBotones ficha"   layout-align="end center" ng-controller="favCtrl"  flex>
       <div flex>
-        <md-button id="btnSave" onClick="save()" class="md-icon-button " aria-label="More">
+        <md-button id="btnSave"  class="md-icon-button " aria-label="More">
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
-      <div flex>
-        <md-button class="md-icon-button " aria-label="More">
-          <md-icon md-svg-icon="img/icons/star-icon.svg" md-ripple-size	></md-icon>
-        </md-button>
+      <div ng-repeat="chip in colores | limitTo: 1" flex>
+        <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-change="chipsColores()" ng-click="$storage.alejandra = fav">
+        {{chip.codigo}}
       </div>
-      <div flex>
+      <div  flex>
         <md-button class="md-icon-button " aria-label="More">
           <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
         </md-button>

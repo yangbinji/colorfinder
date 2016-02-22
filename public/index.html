@@ -13,8 +13,8 @@
 <body ng-app="myApp"  data-ng-controller="MeCtrl" ng-cloack>
 
 
-<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" ng-hide>
-	<md-toolbar>
+<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
+	<md-toolbar ng-hide>
 		 <div class="md-toolbar-tools colorblack">
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
 				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
@@ -82,7 +82,7 @@
 						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
 	 			 </md-button>
 				 <h2>
-					 <span>{{myDetails.data.email}}</span>
+					 <span>{{myDetails.data.username}}</span>
 				 </h2>
 				 <span flex></span>
 				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
@@ -91,7 +91,7 @@
 
 	      </md-toolbar>
 			</div>
-	      <md-content align="center" layout-padding="" class="colorblack">
+	      <md-content align="center" layout-padding="" class="colorblack" ng-controller="favCtrl">
 					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
 
 					<md-card-actions layout="column" layout-align="" data-ng-controller="HomeCtrl">
@@ -101,6 +101,9 @@
 						<md-button class="menu-list"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
           	<md-button class="menu-list" ng-click="logout()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
          </md-card-actions>
+				 <div style="color:white;" ng-repeat="favorite in $storage[myDetails.data.username] ">
+						 {{favorite.codigo}}
+				 </div>
 			  </md-content>
   </md-sidenav>
 	<!--end-sidenavLeft-->

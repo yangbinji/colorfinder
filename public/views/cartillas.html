@@ -3,7 +3,7 @@
 <div class="content-cartilla" layout="row" data-ng-controller="MeCtrl">
 <!--cartillas-->
 
-<div layout="row" layout-wrap flex ng-cloak >
+<div layout="row" layout-wrap flex ng-cloak ng-controller="HomeCtrl">
   <!--lineas-buttons-->
    <div class="scrolling" flex="">
      <md-card-actions style="color:white;" layout="column" layout-align="">
@@ -62,6 +62,29 @@
 
     </md-grid-tile>
   </md-grid-list>
+
+
+
+      <br>
+      <br>
+      <h1>{{myDetails.data.username}}</h1>
+      <h1>{{myDetails.data.email}}</h1>
+
+
+
+      <div ng-controller="favCtrl">
+
+        <div ng-repeat="chip in colores | limitTo: 5">
+            <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-change="chipsColores()" ng-click="$storage[myDetails.data.username] = fav">
+            <label for="{{chip.codigo}}">{{chip.codigo}}</label>
+        </div>
+
+
+                <div ng-repeat="favorite in $storage[myDetails.data.username] ">
+                    {{favorite.codigo}}
+                </div>
+
+     </div>
 
 </div>
 <!--CHIPS COLORES-->
