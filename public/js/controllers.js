@@ -38,12 +38,10 @@
   }])
   .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', 'colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, colorService, captura, Main) {
 
-    $rootScope.chipsColores = function (data) {
-        $rootScope.fav = $filter('filter')($scope.colores, {checked: true});
-}
-  $scope.$storage =  $localStorage.$default({
-    hola: $scope.username
-});
+    $scope.$storage =  $localStorage.$default({
+
+         a: {}
+        });
 
 
 }])
@@ -194,7 +192,6 @@
                 if (res.type == false) {
                     $scope.errorSignup = res.data;
                 } else {
-                    $localStorage.token = res.data.token;
                     $location.path('/signin');
                 }
             }, function() {

@@ -11,12 +11,12 @@
       <md-input-container class="md-icon-float md-block">
         <label>Email</label>
         <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
-        <input type="email" id="email" ng-model="email">
+        <input type="email" id="email" ng-model="email" required>
       </md-input-container>
       <md-input-container class="md-block">
         <label>Contraseña</label>
         <md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
-        <input type="password" id="password" ng-model="password">
+        <input type="password" id="password" ng-model="password" required>
           <p class="errorMessage">{{errorAuth}}</p>
       </md-input-container>
 
@@ -24,7 +24,7 @@
     </form>
 
   </md-content>
-  <p>¿Olvidaste tu Contraseña?</p>
+  <a href="/#/signup">Registrate!</a>
 
 
 </div>

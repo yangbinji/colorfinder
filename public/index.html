@@ -15,7 +15,7 @@
 
 <div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
 	<md-toolbar ng-hide>
-		 <div class="md-toolbar-tools colorblack">
+		 <div class="md-toolbar-tools colorblack md-whiteframe-12dp">
 			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
 				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
 			 </md-button>
@@ -74,7 +74,7 @@
 
 	</md-content>
 	<!--sidenavLeft-->
-	<md-sidenav  class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
+	<md-sidenav   class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
 
 	      <md-toolbar class="" ng-controller="LeftCtrl">
 					 <div class="md-toolbar-tools colorblack">
@@ -101,9 +101,13 @@
 						<md-button class="menu-list"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
           	<md-button class="menu-list" ng-click="logout()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
          </md-card-actions>
-				 <div style="color:white;" ng-repeat="favorite in $storage[myDetails.data.username] ">
-						 {{favorite.codigo}}
-				 </div>
+
+				 <div style="color:white;" ng-repeat="(key, value) in $storage.a" ng-controller="BottomSheetExample" >
+             <div ng-if="value" ng-controller="capturaCtrl">
+
+							<div ng-click="setCodigo(capturame = key); showListBottomSheet($event)">{{key}}</div>
+             </div>
+ 				 </div>
 			  </md-content>
   </md-sidenav>
 	<!--end-sidenavLeft-->

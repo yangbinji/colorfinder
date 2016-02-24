@@ -1,7 +1,7 @@
 
 <md-bottom-sheet  layout="column"  class="md-grid " ng-controller="copiadoCtrl"  ng-cloak>
 
-  <div  layout="row" layout-align="center center" >
+  <div  layout="row" layout-align="center center" data-ng-controller="MeCtrl">
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
@@ -19,9 +19,9 @@
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
-      <div ng-repeat="chip in colores | limitTo: 1" flex>
-        <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-change="chipsColores()" ng-click="$storage.alejandra = fav">
-        {{chip.codigo}}
+      <div ng-repeat="chip in colores | limitTo: 1" flex >
+        <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage.a[chip.codigo]" ng-click="$storage.a[chip.codigo] = chip.checked">
+        
       </div>
       <div  flex>
         <md-button class="md-icon-button " aria-label="More">

@@ -8,18 +8,18 @@
     <form role="form" class="login-form"  ng-submit="signup()">
       <md-input-container class="md-icon-float md-block">
         <label>nombre</label>
-        <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
-        <input type="text" id="nombre" ng-model="username">
+        <md-icon md-svg-src="img/icons/user-icon.svg" ></md-icon>
+        <input type="text" id="nombre" ng-model="username"required>
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <label>Email</label>
         <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
-        <input type="email" id="email" ng-model="email">
+        <input type="email" id="email" ng-model="email" required>
       </md-input-container>
       <md-input-container class="md-block">
         <label>Contraseña</label>
         <md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
-        <input type="password" id="password" ng-model="password">
+        <input type="password" id="password" ng-model="password" required>
           <p class="errorMessage">{{errorSignup}}</p>
       </md-input-container>
 
