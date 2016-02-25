@@ -6,6 +6,7 @@
 	  <title>Color Finder</title>
 		<link rel="stylesheet" href="css/angular-material.min.css">
     <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 
 	</head>
@@ -28,7 +29,7 @@
 	 </md-toolbar>
 
  <section >
-	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 " md-component-id="right">
+	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right">
       <md-toolbar class="md-theme-light colorblack" ng-controller="RightCtrl">
 
 					 <div class="md-toolbar-tools colorblack">
@@ -74,9 +75,9 @@
 
 	</md-content>
 	<!--sidenavLeft-->
-	<md-sidenav   class="md-sidenav-left md-whiteframe-z2 colorblack" md-component-id="left">
-
-	      <md-toolbar class="" ng-controller="LeftCtrl">
+	<md-sidenav    class="md-sidenav-left md-whiteframe-z2 colorblack nav-overflow" md-component-id="left">
+				<div ng-controller="LeftCtrl">
+	      <md-toolbar class="" >
 					 <div class="md-toolbar-tools colorblack">
 					<md-button class="md-icon-button" aria-label="Settings">
 						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
@@ -96,19 +97,18 @@
 
 					<md-card-actions layout="column" layout-align="" data-ng-controller="HomeCtrl">
 						<md-button href="/#/" class="menu-list"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Cartillas</md-button>
-          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
-          	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>
+          	<md-button ng-click="showAdvanced($event); close()" class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
+          <!--	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>-->
 						<md-button class="menu-list"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
           	<md-button class="menu-list" ng-click="logout()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
          </md-card-actions>
 
-				 <div style="color:white;" ng-repeat="(key, value) in $storage.a" ng-controller="BottomSheetExample" >
-             <div ng-if="value" ng-controller="capturaCtrl">
 
-							<div ng-click="setCodigo(capturame = key); showListBottomSheet($event)">{{key}}</div>
-             </div>
- 				 </div>
+
+
+
 			  </md-content>
+			</div>
   </md-sidenav>
 	<!--end-sidenavLeft-->
 
@@ -158,6 +158,7 @@
 	 <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
 	 <script src="js/lib/ngclipboard.min.js"></script>
 	 <script src="js/lib/ngStorage.js"></script>
+	 <script type="text/javascript" src="http://ngmaterial.assets.s3.amazonaws.com/svg-assets-cache.js"></script>
 
 
    <!-- My Librarys -->

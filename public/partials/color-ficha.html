@@ -13,15 +13,15 @@
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
 
     </div>
-    <div class="fichaBotones ficha"   layout-align="end center" ng-controller="favCtrl"  flex>
+    <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl"  flex>
       <div flex>
         <md-button id="btnSave"  class="md-icon-button " aria-label="More">
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
-      <div ng-repeat="chip in colores | limitTo: 1" flex >
-        <input type="checkbox" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage.a[chip.codigo]" ng-click="$storage.a[chip.codigo] = chip.checked">
-        
+      <div ng-repeat="chip in colores | limitTo: 1" flex ng-controller="favoriteCtrl">
+        <input type="checkbox" class="glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
+
       </div>
       <div  flex>
         <md-button class="md-icon-button " aria-label="More">

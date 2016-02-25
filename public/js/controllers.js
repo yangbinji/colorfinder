@@ -36,12 +36,23 @@
     });
     }
   }])
-  .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', 'colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, colorService, captura, Main) {
+  .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', '$mdDialog', '$mdMedia','colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, $mdDialog, $mdMedia, colorService, captura, Main) {
 
     $scope.$storage =  $localStorage.$default({
 
-         a: {}
+         a: {},
+         b:{}
         });
+
+        $scope.showAdvanced = function(ev) {
+          $mdDialog.show({
+            controller: DialogController,
+            templateUrl: '/partials/favoritos.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose:true
+          })
+        };
 
 
 }])
@@ -244,14 +255,32 @@
     );
   };
 })
+.controller('favoriteCtrl', function($scope, $mdToast) {
+
+  $scope.colorFav = function() {
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent(' Favorito :D')
+        .position('bottom left')
+        .hideDelay(300)
+    );
+  };
+})
 
 
-.controller('tabsController', function(){
-  this.tab = 1;
-  this.selecTab = function(tab){
-    this.tab = tab;
-  }
-});
+function DialogController($scope, $mdDialog) {
+
+
+  $scope.cancel = function() {
+    $mdDialog.cancel();
+  };
+
+
+}
+
+
+
+
 
 
 })();

@@ -23,6 +23,27 @@ a {
 	background-color: black;
 	height: 56px;
 }
+
+/*  favorite   */
+
+.glyphicon:before {
+ visibility: visible;
+}
+.glyphicon.glyphicon-star-empty:checked:before {
+  color: #FFD800;
+   content: "\e006";
+}
+input[type=checkbox].glyphicon{
+  font-size: 30px;
+    visibility: hidden;
+
+}
+
+
+
+
+/*  favorite   */
+
 .ficha{
 	height: 150px;
 	color: black;
@@ -100,6 +121,9 @@ md-bottom-sheet.md-grid{
 
 	text-align: left !important;
 
+}
+nav-overflow{
+	overflow: hidden !important;
 }
 .lineas{
 	color: white;

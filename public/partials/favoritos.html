@@ -1,0 +1,40 @@
+<md-dialog aria-label="Favoritos"  ng-cloak ng-controller="MeCtrl">
+<form>
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Favoritos de {{myDetails.data.username}}</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div class="md-dialog-content" ng-controller="favCtrl">
+<div layout="row">
+    <div flex>
+      <div  ng-repeat="(key, value) in $storage[myDetails.data.username]" ng-controller="BottomSheetExample" >
+          <div  ng-if="value" ng-controller="capturaCtrl" >
+
+           <div  ng-click="setCodigo(capturame = key); showListBottomSheet($event); cancel()" flex>{{key}}</div>
+          </div>
+      </div>
+    </div>
+    <div flex>
+
+      <div  ng-repeat="(x, y) in $storage[myDetails.data.username + '-hex']" ng-controller="BottomSheetExample" >
+          <div  ng-if="y" ng-controller="capturaCtrl" >
+
+           <div  ng-click="setCodigo(capturame = x); showListBottomSheet($event); cancel()" style="background:#{{x}};" flex>___</div>
+          </div>
+      </div>
+   </div>
+</div>
+
+    </div>
+  </md-dialog-content>
+
+
+</form>
+</md-dialog>

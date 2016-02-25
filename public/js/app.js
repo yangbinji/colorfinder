@@ -6,6 +6,7 @@
     'ngclipboard',
     'ngMaterial',
     'ngMessages',
+    'material.svgAssetsCache',
     'colors.controller',
     'color.directives',
     'colores.services'
