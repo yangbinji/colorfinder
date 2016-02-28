@@ -1,5 +1,5 @@
 
-<md-bottom-sheet  layout="column"  class="md-grid " ng-controller="copiadoCtrl"  ng-cloak>
+<md-bottom-sheet  layout="column"   class="md-grid" ng-class="Var" ng-controller="copiadoCtrl"  ng-cloak>
 
   <div  layout="row" layout-align="center center" data-ng-controller="MeCtrl">
 
@@ -7,7 +7,7 @@
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
       <md-button ng-click="colorCopiado()" ng-repeat="chip in colores | limitTo: 1" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size ngclipboard data-clipboard-target="#c" >{{chip.codigo}}</md-button>
     </div>
-    <div class="fichaInfo ficha" layout-align="center center"  flex="50">
+    <div class="fichaInfo ficha tam" class="tam" ng-class="myVar" layout-align="center center"  flex="50">
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>
       <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.hexadecimal}}</div>
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
@@ -19,14 +19,18 @@
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
       </div>
-      <div ng-repeat="chip in colores | limitTo: 1" flex ng-controller="favoriteCtrl">
-        <input type="checkbox" class="glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
+      <div flex>
+        <div   ng-controller="favoriteCtrl" >
+          <md-icon>
+          <input style="right: 5px;top: -10px;" ng-repeat="chip in colores | limitTo: 1" type="checkbox" class="glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
+         </md-icon>
 
+        </div>
       </div>
       <div  flex>
-        <md-button class="md-icon-button " aria-label="More">
+        <button type="button" ng-click="Var='tuclass'" class="md-icon-button " >
           <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
-        </md-button>
+        </button>
       </div>
 
     </div>

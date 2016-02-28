@@ -9,7 +9,8 @@
     'material.svgAssetsCache',
     'colors.controller',
     'color.directives',
-    'colores.services'
+    'colores.services',
+    'sf.virtualScroll'
 
   ]);
 

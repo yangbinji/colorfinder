@@ -88,6 +88,19 @@ input[type=checkbox].glyphicon{
 	padding: 5px 0px 5px 0px;
 }
 
+.fichaCambio{
+	height: 400px !important;
+
+}
+.md-grid{
+	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s !important;
+
+}
+.tam.my-class {
+	height: 300px  !important;
+  background-color:  red !important;
+}
+
 .login-box{
 	background-color: white;
 	margin: 20px 10px 20px 10px;
@@ -113,7 +126,9 @@ input[type=checkbox].glyphicon{
 	height: 70px;
 	margin-top: 10px;
 }
-md-bottom-sheet.md-grid{
+.md-grid.tuclass{
+
+height: 300px !important;
 	padding-left: 15px !important;
 	padding-right: 15px !important;
 }
@@ -168,6 +183,7 @@ nav-overflow{
 	background: #77d03b !important;
 
 }
+
 .wall{
 	background: #710092 !important;
 
