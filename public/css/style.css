@@ -246,8 +246,17 @@ nav-overflow{
 tile-footer{
 	height: 24px !important;
 }
+.searching{
+	height: 15px;
+}
 
+#chips.viewport{
+	height: 500px;
+}
 
+.viewport{
+	height: 400px;
+}
 
 .inputdemoIcons {
   /*

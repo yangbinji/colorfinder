@@ -174,18 +174,26 @@
 }])
 .controller('HomeCtrl', ['$rootScope', '$scope', '$location',  '$localStorage', 'Main', function($rootScope, $scope, $location, $localStorage, Main) {
 
+    $rootScope.texto = 'alexanderlopez';
       $scope.signin = function() {
+
           var formData = {
               email: $scope.email,
               password: $scope.password
           }
 
+
+
           Main.signin(formData, function(res) {
                  if (res.type == false) {
                      $scope.errorAuth = res.data;
                  } else {
+                   $scope.$storage = $localStorage.$default({
+                              counter: true
+                            });
                      $localStorage.token = res.data.token;
-                     $location.path('/');
+                     $location.path('/DOMESTIC-WALL');
+
                  }
              }, function() {
                  $rootScope.error = 'Failed to signin';

@@ -1,3 +1,19 @@
+<div ng-controller="AppCtrl">
+<md-toolbar >
+   <div class="md-toolbar-tools colorblack md-whiteframe-12dp">
+     <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
+       <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
+     </md-button>
+      <span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
+
+     <md-button ng-click="toggleRight()" class="md-icon-button" aria-label="search" >
+       <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
+     </md-button>
+   </div>
+ </md-toolbar>
+</div>
+
+
 <div class="content-cartilla"  layout="row" data-ng-controller="MeCtrl">
   <!--cartillas-->
 
@@ -55,7 +71,7 @@
 
 
     <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
-      <md-grid-tile  ng-repeat="chip in colores | limitTo: 150" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
+      <md-grid-tile  ng-repeat="chip in ::colores | limitTo: 150" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
         <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
 
       </md-grid-tile>

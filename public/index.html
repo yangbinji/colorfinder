@@ -15,18 +15,8 @@
 
 
 <div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
-	<md-toolbar ng-hide>
-		 <div class="md-toolbar-tools colorblack md-whiteframe-12dp">
-			 <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
-				 <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
-			 </md-button>
-				<span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
 
-			 <md-button ng-click="toggleRight()" class="md-icon-button" aria-label="search" >
-				 <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
-			 </md-button>
-		 </div>
-	 </md-toolbar>
+
 
  <section >
 	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right">
@@ -53,11 +43,13 @@
                    ng-model="chipModel" >
           </md-input-container>
 					<div class="viewport"  ng-controller="cartillasController">
-					<div sf-virtual-repeat="chip in colores | filter: chipModel">
-						<div class="">
+						<div>
+					<div class="searching" sf-virtual-repeat="chip in ::colores" ng-show="([chip] | filter:chipModel).length > 0">
+
 							{{chip.codigo}}
-						</div>
+
 					</div>
+				</div>
 					</div>
 
       </md-content>
@@ -86,6 +78,7 @@
 				 <span flex></span>
 				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
 					 <md-icon md-svg-icon="img/icons/close-icon.svg"></md-icon>
+
 				 </md-button>
 
 	      </md-toolbar>
@@ -130,11 +123,11 @@
 </div>
 
 
-<div  id="footer" layout="row" layout-align="center end" >
+<!--<div  id="footer" layout="row" layout-align="center end" >
 
 	<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
 
-</div>
+</div>-->
 
 
 
