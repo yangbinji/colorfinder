@@ -6,6 +6,7 @@ html, body{
 
 }
 a {
+	color: #ffffff !important;
 	text-decoration: none;
 }
 
@@ -25,6 +26,11 @@ a {
 }
 
 /*  favorite   */
+
+.fav{
+	right: 5px !important;
+	top: -10px !important;
+}
 
 .glyphicon:before {
  visibility: visible;
@@ -100,6 +106,10 @@ input[type=checkbox].glyphicon{
 	height: 300px  !important;
   background-color:  red !important;
 }
+.login{
+	background: #f3f3f3 !important;
+
+}
 
 .login-box{
 	background-color: white;
@@ -120,7 +130,7 @@ input[type=checkbox].glyphicon{
 }
 
 .logo-finder{
-	height: 110px;
+	height: 100px;
 }
 .logo-paleta{
 	height: 70px;
@@ -161,19 +171,38 @@ nav-overflow{
 	padding-top: 0px;
 	margin-top: 5px;
 
+
 }
+
+.antigua{
+	font-size: 24px;
+	background: #8e0224;
+}
+
 .enammel{
 	font-size: 24px;
-	background: #ffd00a
+	background: #903651;
 }
 .estandar{
-	background: #0bb6ff;
+	background: #ffc20b;
 }
 .gloss{
 	background: #ff7a00;
 }
+.historico{
+	font-size: 24px;
+	background: #4184a4;
+}
 .moods{
-	background: #00742b;
+	background: #2d018b;
+}
+.quetzal{
+	font-size: 24px;
+	background: #722b75;
+}
+.royal{
+
+	background: #0b8804;
 }
 .ultra{
 	background: #337ABE !important;
@@ -196,7 +225,7 @@ nav-overflow{
 	margin-right: 20px;
 }
 .lineas:not([disabled]):hover{
-    background-color: #888888 !important;
+    background-color: #079ba4 !important;
 }
 .menu-list md-icon{
 	margin-right: 20px;
@@ -323,6 +352,10 @@ tile-footer{
 		.cajon{
 			display: none;
 		}
+		.fav{
+			right: 20px !important;
+			top: -10px !important;
+		}
 
 		}
 
@@ -335,6 +368,8 @@ tile-footer{
 			.fichaBotones {
 				text-align: center;;
 			}
+
+
 
 
 

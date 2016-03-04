@@ -22,7 +22,7 @@
       <div flex>
         <div   ng-controller="favoriteCtrl" >
           <md-icon>
-          <input style="right: 5px;top: -10px;" ng-repeat="chip in colores | limitTo: 1" type="checkbox" class="glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
+          <input ng-repeat="chip in colores | limitTo: 1" type="checkbox" class="fav glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
          </md-icon>
 
         </div>
