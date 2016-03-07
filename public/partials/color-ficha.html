@@ -1,7 +1,8 @@
 
-<md-bottom-sheet  layout="column"   class="md-grid" ng-class="Var" ng-controller="copiadoCtrl"  ng-cloak>
+<md-bottom-sheet  layout="column"   class="md-grid" ng-class="Var" ng-controller="MeCtrl"  ng-cloak>
+<div >
 
-  <div  layout="row" layout-align="center center" data-ng-controller="MeCtrl">
+  <div  layout="row" layout-align="center center" data-ng-controller="copiadoCtrl">
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
@@ -15,34 +16,57 @@
     </div>
 
     <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl"  flex>
-      <div flex>
+      <!--<div flex>
         <md-button id="btnSave"  class="md-icon-button " aria-label="More">
           <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
         </md-button>
-      </div>
-      <div flex>
-        <div   ng-controller="favoriteCtrl" >
+      </div>-->
+      <div ng-controller="favoriteCtrl" flex>
           <md-icon>
-          <input ng-repeat="chip in colores | limitTo: 1" type="checkbox" class="fav glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()">
+          <input ng-repeat="chip in colores | limitTo: 1" type="checkbox" class=" glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()" style="cursor: pointer;">
          </md-icon>
 
-        </div>
       </div>
-      <div flex>
-        <button type="button" ng-click="Var='tuclass'" class="md-icon-button">
+
+      <div ng-controller="formCtrl" flex>
+        <!--<button type="button" ng-click="Var='tuclass'" class="md-icon-button">
           <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
-        </button>
+        </button>-->
+        <input type="checkbox" class=" glyphicon glyphicon-tint" ng-model="datos.mensaje" style="cursor: pointer;">
       </div>
 
     </div>
   </div>
 
-  <div class="fichaInfo ficha tam" class="tam" ng-class="myVar" layout-align="center center">
-    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cuarto1}}</div>
-    <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.cuarto2}}</div>
-    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cuarto3}}</div>
+
+
+<div layout="row" layout-align="center center" ng-controller="formCtrl"   class="ficha formulas"  ng-class="myVar"  ng-show="datos.mensaje" >
+
+  <div layout="column"   layout-align="center center"  flex>
+    <div ng-repeat="chip in colores | limitTo: 11">{{chip.cuarto1}}</div>
+    <div ng-repeat="chip in colores | limitTo: 11">{{chip.cuarto2}}</div>
+    <div ng-repeat="chip in colores | limitTo: 11">{{chip.cuarto3}}</div>
+    <div ng-repeat="chip in colores | limitTo: 11">{{chip.cuarto4}}</div>
 
   </div>
+  <div layout="column"  layout-align="center center"  flex>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.galon1}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.galon2}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.galon3}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.galon4}}</div>
+
+  </div>
+  <div layout="column"  layout-align="center center"  flex>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cubeta1}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cubeta2}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cubeta3}}</div>
+    <div ng-repeat="chip in colores | limitTo: 1">{{chip.cubeta4}}</div>
+  </div>
+
+</div>
+
+
+</div>
 
 
 </md-bottom-sheet>

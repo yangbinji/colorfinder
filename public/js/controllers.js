@@ -52,6 +52,7 @@
             targetEvent: ev,
             clickOutsideToClose:true
           })
+
         };
 
 
@@ -192,7 +193,7 @@
                               counter: true
                             });
                      $localStorage.token = res.data.token;
-                     $location.path('/DOMESTIC-WALL');
+                     $location.path('/');
 
                  }
              }, function() {
@@ -273,6 +274,16 @@
         .hideDelay(300)
     );
   };
+})
+.controller('formCtrl', function($scope,$timeout, formulasServices ) {
+
+  $scope.datos = formulasServices;
+
+/*  if($scope.datos){
+    $timeout(function(){$scope.datos.mensaje = false}, 3000);
+
+  } */
+
 })
 
 

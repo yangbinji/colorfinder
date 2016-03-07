@@ -51,6 +51,10 @@
       }
     }
   })
+  .factory('formulasServices', function(){
+    return {mensaje: false}
+
+  })
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
         var baseUrl = "http://localhost:3001";
         function changeUser(user) {

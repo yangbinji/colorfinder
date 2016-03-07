@@ -27,20 +27,35 @@ a {
 
 /*  favorite   */
 
-.fav{
-	right: 5px !important;
-	top: -10px !important;
-}
+
 
 .glyphicon:before {
  visibility: visible;
 }
 .glyphicon.glyphicon-star-empty:checked:before {
-  color: #FFD800;
-   content: "\e006";
+  	color: #FFD800;
+   	content: "\e006";
 }
+
+
 input[type=checkbox].glyphicon{
-  font-size: 30px;
+  	font-size: 35px;
+    visibility: hidden;
+
+}
+
+.glyphicon:before {
+ visibility: visible;
+}
+
+
+.glyphicon.glyphicon-tint:checked:before {
+  color: rgb(14, 209, 21);
+   content: "\e064";
+}
+
+input[type=checkbox].glyphicon{
+  	font-size: 35px;
     visibility: hidden;
 
 }
@@ -87,11 +102,12 @@ input[type=checkbox].glyphicon{
 .fichaBotones {
 	text-align: end;
 	display: inline-block;
-	padding-top:10p;
+	padding-top:10px 0px 0px 0px;
 
 }
 .fichaBotones div{
-	padding: 5px 0px 5px 0px;
+	padding: 15px 5px 15px 0px;
+	margin: 0px 10px 0px 0px;
 }
 
 .fichaCambio{
@@ -352,10 +368,7 @@ tile-footer{
 		.cajon{
 			display: none;
 		}
-		.fav{
-			right: 20px !important;
-			top: -10px !important;
-		}
+
 
 		}
 
