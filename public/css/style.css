@@ -114,13 +114,14 @@ input[type=checkbox].glyphicon{
 	height: 400px !important;
 
 }
+
 .md-grid{
 	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s !important;
 
 }
-.tam.my-class {
-	height: 300px  !important;
-  background-color:  red !important;
+
+.letras-paleta{
+	height: 60px;
 }
 .login{
 	background: #f3f3f3 !important;
@@ -129,7 +130,7 @@ input[type=checkbox].glyphicon{
 
 .login-box{
 	background-color: white;
-	margin: 20px 10px 20px 10px;
+	margin: 50px 10px 10px 10px;
 	padding:10px 40px 0px 40px;
 	max-width: 400px;
 	min-height: 275px;
@@ -150,7 +151,6 @@ input[type=checkbox].glyphicon{
 }
 .logo-paleta{
 	height: 70px;
-	margin-top: 10px;
 }
 .md-grid.tuclass{
 
@@ -220,6 +220,18 @@ nav-overflow{
 
 	background: #0b8804;
 }
+.titulo {
+    color: white !important;
+    background: #4C4C4C;
+    padding: 1px 0px 1px 10px;
+    margin-bottom: 5px;
+}
+.titulo md-icon {
+    color: white;
+    height: 45px !important;
+    width: 45px;
+    margin-right: 10px;
+}
 .ultra{
 	background: #337ABE !important;
 
@@ -243,6 +255,11 @@ nav-overflow{
 .lineas:not([disabled]):hover{
     background-color: #079ba4 !important;
 }
+.logo-paleta {
+    margin: 15px 0px 0px 50px;
+    height: 80px;
+}
+
 .menu-list md-icon{
 	margin-right: 20px;
 }
@@ -369,8 +386,22 @@ tile-footer{
 			display: none;
 		}
 
-
+		.login-box{
+			margin: 10px 10px 10px 10px;
 		}
+		.logo-paleta{
+			height: 70px;
+			display: none;
+		}
+		.letras-paleta{
+			display: none;
+		}
+		.logo-paleta-movil{
+			height: 70px;
+		}
+
+
+}
 
 		@media only screen and (min-height: 601px) {
 
@@ -388,6 +419,9 @@ tile-footer{
 
 		}
 		@media (min-width: 768px) {
+			.logo-paleta-movil{
+display: none;
+		}
 
 
 		}
@@ -402,6 +436,9 @@ tile-footer{
 			.fichaBotones {
 				text-align: center;;
 			}
+			.logo-paleta-movil{
+display: none;
+		}
 
 
 		}

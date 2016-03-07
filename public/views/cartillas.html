@@ -4,7 +4,8 @@
      <md-button  ng-click="toggleLeft()" class="md-icon-button" aria-label="Settings" >
        <md-icon md-svg-icon="img/icons/menu-icon.svg"></md-icon>
      </md-button>
-      <span layout-align="end center" flex><img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" alt=""></span>
+     <img class="logo-paleta" src="img/icons/paletaLogo-icon.svg" > <img class="letras-paleta" src="/img/colores-en-paleta-05.svg"/>
+      <span layout-align="end center" flex><img class="logo-paleta-movil" src="img/icons/paletaLogo-icon.svg" ></span>
 
      <md-button ng-click="toggleRight()" class="md-icon-button" aria-label="search" >
        <md-icon md-svg-icon="img/icons/search-icon.svg"></md-icon>
@@ -81,6 +82,9 @@
 <!--CHIPS COLORES-->
 
 <div class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
+  <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in ::colores | limitTo: 1" >
+    <h3><md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>DOMESTIC-WALL</h3>
+  </div>
 
 
   <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
@@ -89,22 +93,6 @@
 
     </md-grid-tile>
   </md-grid-list>
-
-
-    <div>
-      <div>
-
-
-        <div class="tam" ng-class="myVar">
-        </div>
-      </div>
-    </div>
-
-    <button ng-click="myVar='my-class'" type="button" name="button">click</button>
-    <button  ng-click="myVar=''" type="button" name="button" >clear</button>
-
-
-
 
 
     </div>

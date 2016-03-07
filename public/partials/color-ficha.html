@@ -1,5 +1,5 @@
 
-<md-bottom-sheet  layout="column"   class="md-grid" ng-class="Var" ng-controller="MeCtrl"  ng-cloak>
+<md-bottom-sheet  layout="column"   class="md-grid"  ng-controller="MeCtrl"  ng-cloak>
 <div >
 
   <div  layout="row" layout-align="center center" data-ng-controller="copiadoCtrl">
@@ -10,8 +10,8 @@
     </div>
     <div class="fichaInfo ficha tam" class="tam" ng-class="myVar" layout-align="center center"  flex="50">
       <div ng-repeat="chip in colores | limitTo: 1">{{chip.nombre}}</div>
+      <div  ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
       <div id="c" ng-repeat="chip in colores | limitTo: 1">#{{chip.hexadecimal}}</div>
-      <div ng-repeat="chip in colores | limitTo: 1">{{chip.cartilla}}</div>
 
     </div>
 
