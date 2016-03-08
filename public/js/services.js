@@ -4,7 +4,7 @@
     function all(){
       var deferred = $q.defer();
 
-      $http.get('/colores.json', {cache: true})
+      $http.get('http://teknigt.com/colores', {cache: true})
         .success(function(data){
           deferred.resolve(data);
 
@@ -56,7 +56,7 @@
 
   })
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
-        var baseUrl = "http://localhost:3001";
+        var baseUrl = "http://teknigt.com";
         function changeUser(user) {
             angular.extend(currentUser, user);
         }

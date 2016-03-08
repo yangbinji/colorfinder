@@ -28,7 +28,7 @@
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Wall
          </md-button>
 
-         <md-button href="/#/SOLID"  class="lineas magic-book md-whiteframe-5dp">
+         <md-button href="/#/MAGIC-BOOK"  class="lineas magic-book md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Magic Book
          </md-button>
          <md-button href="/#/DOMESTIC-PLUS"  class="lineas plus md-whiteframe-5dp">
@@ -43,15 +43,15 @@
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Gloss
          </md-button>
 
-         <md-button href="/#/DOMESTIC-ENAMMEL"  class="lineas enammel md-whiteframe-5dp">
+         <md-button href="/#/DOMESTIC-ENAMEL"  class="lineas enammel md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Domestic Enamel</a>
          </md-button>
 
-         <md-button href="/#/ESTANDAR"  class="lineas estandar md-whiteframe-5dp">
+         <md-button href="/#/STANDARD"  class="lineas estandar md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Standar</a>
          </md-button>
 
-         <md-button href="/#/ESTANDAR"  class="lineas royal md-whiteframe-5dp">
+         <md-button href="/#/ROYAL"  class="lineas royal md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Royal</a>
          </md-button>
 
@@ -61,7 +61,7 @@
          <md-button href="/#/ANTIGUA-GUATEMALA"  class="lineas antigua md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Antigua Guatemala</a>
          </md-button>
-         <md-button href="/#/Quetzaltenango"  class="lineas quetzal md-whiteframe-5dp">
+         <md-button href="/#/QUETZALTENANGO"  class="lineas quetzal md-whiteframe-5dp">
           <md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Quetzaltenango</a>
          </md-button>
 
@@ -89,7 +89,7 @@
     </div>
 
     <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
-      <md-grid-tile  ng-repeat="chip in ::colores | limitTo: 150" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
+      <md-grid-tile  ng-repeat="chip in ::colores " style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
         <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
 
       </md-grid-tile>
