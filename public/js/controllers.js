@@ -7,9 +7,7 @@
         $scope.colores = data;
       });
     } else{
-    colorService.all().then(function(data){
-      $scope.colores = data;
-    });
+
     }
   }])
 
@@ -31,9 +29,7 @@
         $scope.colores = data;
       });
     } else{
-    colorService.all().then(function(data){
-      $scope.colores = data;
-    });
+
     }
   }])
   .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', '$mdDialog', '$mdMedia','colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, $mdDialog, $mdMedia, colorService, captura, Main) {
