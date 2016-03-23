@@ -1,0 +1,36 @@
+
+	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right">
+      <md-toolbar class="md-theme-light colorblack" ng-controller="RightCtrl">
+
+					 <div class="md-toolbar-tools colorblack">
+						<md-button ng-click="close()"  class="md-icon-button" aria-label="Settings">
+							<md-icon md-svg-icon="img/icons/close-icon-right.svg"></md-icon>
+		 			 </md-button>
+					 <h2>
+						 <span></span>
+					 </h2>
+					 <span flex></span>
+					 <md-button  class="md-icon-button" aria-label="search">
+
+					 </md-button>
+					</div>
+	   </md-toolbar>
+
+      <md-content ng-controller="RightCtrl" layout-padding>
+          <md-input-container>
+            <label for="testInput">Buscar...</label>
+            <input type="text" id="testInput"
+                   ng-model="chipModel" >
+          </md-input-container>
+					<div class="viewport"  ng-controller="cartillasController">
+						<div>
+					<div class="searching" sf-virtual-repeat="chip in ::colores" ng-show="([chip] | filter:chipModel).length > 0">
+
+							{{chip.codigo}}
+
+					</div>
+				</div>
+					</div>
+
+      </md-content>
+    </md-sidenav>

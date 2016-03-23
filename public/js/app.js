@@ -46,8 +46,12 @@
       .when('/partials/ficha/', {
         templateUrl: 'partials/color-ficha.html',
         controller: 'codigoController'
-
       })
+      .when('/servicios/ayuda', {
+        templateUrl: 'views/ayuda.html',
+        controller: ''
+
+    })
 
       .otherwise({
         redirectTo: '/signin'

@@ -1,0 +1,26 @@
+
+
+<div layout="row" layout-align="center center" ng-controller="formCtrl"   class="ficha formulas"  ng-class="myVar"  ng-show="datos.mensaje" >
+
+  <div layout="column"   layout-align="center center"  flex>
+    <div ng-repeat="chip in ::colores | limitTo: 1 ">{{chip.cuarto1}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1 ">{{chip.cuarto2}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1 ">{{chip.cuarto3}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1 ">{{chip.cuarto4}}</div>
+
+  </div>
+  <div layout="column"  layout-align="center center"  flex>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.galon1}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.galon2}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.galon3}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.galon4}}</div>
+
+  </div>
+  <div layout="column"  layout-align="center center"  flex>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.cubeta1}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.cubeta2}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.cubeta3}}</div>
+    <div ng-repeat="chip in ::colores | limitTo: 1">{{chip.cubeta4}}</div>
+  </div>
+
+</div>

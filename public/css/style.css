@@ -9,6 +9,12 @@ a {
 	color: #ffffff !important;
 	text-decoration: none;
 }
+.ayuda-header {
+	text-align: center;
+}
+.box{
+	500px;
+}
 
 .colorblack{
 	background-color: black !important;
@@ -148,6 +154,9 @@ input[type=checkbox].glyphicon{
 
 .logo-finder{
 	height: 100px;
+}
+.logo-finder-blanco{
+	height: 80px;
 }
 .logo-paleta{
 	height: 70px;

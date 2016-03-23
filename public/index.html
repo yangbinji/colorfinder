@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="Es">
 	<head>
+		<title>Color Finder</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Color Finder</title>
+		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="css/angular-material.min.css">
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -13,128 +14,25 @@
 
 <body ng-app="myApp"  data-ng-controller="MeCtrl" ng-cloack>
 
+	<!-- contenedor-app-->
+	<div  ng-controller="AppCtrl"  class="box sidenavdemoBasicUsage" ng-cloak>
+	 <section id="sideNav">
+		 	<!--sidenavRight-->
+		 	<sidenav-right></sidenav-right>
+		  <!--end-sidenavRight-->
+					<md-content>
+						<div class="" ng-view></div>
+					</md-content>
+		<!--sidenavLeft-->
+			<sidenav-left></sidenav-left>
+		<!--end-sidenavLeft-->
+		</section>
+	</div>
 
-<div id="sideNav" ng-controller="AppCtrl"  style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" >
-
-
-
- <section >
-	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right">
-      <md-toolbar class="md-theme-light colorblack" ng-controller="RightCtrl">
-
-					 <div class="md-toolbar-tools colorblack">
-						<md-button ng-click="close()"  class="md-icon-button" aria-label="Settings">
-							<md-icon md-svg-icon="img/icons/close-icon-right.svg"></md-icon>
-		 			 </md-button>
-					 <h2>
-						 <span></span>
-					 </h2>
-					 <span flex></span>
-					 <md-button  class="md-icon-button" aria-label="search">
-
-					 </md-button>
-					</div>
-	   </md-toolbar>
-
-      <md-content ng-controller="RightCtrl" layout-padding>
-          <md-input-container>
-            <label for="testInput">Buscar...</label>
-            <input type="text" id="testInput"
-                   ng-model="chipModel" >
-          </md-input-container>
-					<div class="viewport"  ng-controller="cartillasController">
-						<div>
-					<div class="searching" sf-virtual-repeat="chip in ::colores" ng-show="([chip] | filter:chipModel).length > 0">
-
-							{{chip.codigo}}
-
-					</div>
-				</div>
-					</div>
-
-      </md-content>
-    </md-sidenav>
-	<md-content>
-		<!--navbar-->
-
-	 	<!--/navbar-->
-
-		<div class="" ng-view></div>
+	<!-- end-contenedor-app-->
 
 
-
-	</md-content>
-	<!--sidenavLeft-->
-	<md-sidenav    class="md-sidenav-left md-whiteframe-z2 colorblack nav-overflow" md-component-id="left" >
-				<div ng-controller="LeftCtrl">
-	      <md-toolbar class="" >
-					 <div class="md-toolbar-tools colorblack">
-					<md-button class="md-icon-button" aria-label="Settings">
-						<md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
-	 			 </md-button>
-				 <h2>
-					 <span>{{myDetails.data.username}}</span>
-				 </h2>
-				 <span flex></span>
-				 <md-button ng-click="close()"  class="md-icon-button" aria-label="search">
-					 <md-icon md-svg-icon="img/icons/close-icon.svg"></md-icon>
-
-				 </md-button>
-
-	      </md-toolbar>
-			</div>
-	      <md-content align="center" layout-padding="" class="colorblack" ng-controller="favCtrl">
-					<img class="logo-finder" src="img/logo-finder-white.png" alt="">
-
-					<md-card-actions layout="column" layout-align="" data-ng-controller="HomeCtrl">
-						<md-button ng-click="close()" href="/#/" class="menu-list"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Cartillas</md-button>
-          	<md-button ng-click="showAdvanced($event); close()" class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
-          <!--	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>-->
-						<md-button class="menu-list"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
-          	<md-button class="menu-list" ng-click="close(); logout()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
-         </md-card-actions>
-
-
-
-
-
-			  </md-content>
-			</div>
-  </md-sidenav>
-	<!--end-sidenavLeft-->
-
-
-<!-- contenedor-app-->
-
-
-
-
-
-
-
-	<!--paleta-->
-
-	<!--/paleta-->
-
-
-<!-- /contenedor-app-->
-
-</section>
-</div>
-
-
-<!--<div  id="footer" layout="row" layout-align="center end" >
-
-	<div ng-cloack>2016 Pinturas Paleta | Grupo Solid</div>
-
-</div>-->
-
-
-
-<!--end-paleta-->
-
-
-
+<!--Desarrollado por Alex Lopez, teknigt.com-->
 
 
 

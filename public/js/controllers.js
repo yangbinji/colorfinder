@@ -65,11 +65,13 @@
   };
 })
 
-  .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+  .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log, perfilService) {
+    $scope.muestra = perfilService;
     $scope.toggleLeft = buildDelayedToggler('left');
     $scope.toggleRight = buildToggler('right');
     $scope.isOpenRight = function(){
       return $mdSidenav('right').isOpen();
+
     };
 
     /**
@@ -169,7 +171,7 @@
     });
 
 }])
-.controller('HomeCtrl', ['$rootScope', '$scope', '$location',  '$localStorage', 'Main', function($rootScope, $scope, $location, $localStorage, Main) {
+.controller('HomeCtrl', ['$rootScope', '$scope', '$location', '$route', '$window', '$localStorage', 'Main', function($rootScope, $scope, $location, $route, $window, $localStorage, Main) {
 
     $rootScope.texto = 'alexanderlopez';
       $scope.signin = function() {
@@ -185,11 +187,13 @@
                  if (res.type == false) {
                      $scope.errorAuth = res.data;
                  } else {
-                   $scope.$storage = $localStorage.$default({
-                              counter: true
-                            });
                      $localStorage.token = res.data.token;
+
+
                      $location.path('/');
+
+
+
 
                  }
              }, function() {
@@ -218,21 +222,18 @@
       $scope.me = function() {
           Main.me(function(res) {
               $scope.myDetails = res;
-          }, function() {
-              $rootScope.error = 'Failed to fetch details';
-          })
-      };
-      $scope.test = function() {
-          Main.test(function(res) {
-              $scope.myDetails = res;
+              $route.reload();
           }, function() {
               $rootScope.error = 'Failed to fetch details';
           })
       };
 
+
       $scope.logout = function() {
           Main.logout(function() {
               $location.path('/signin');
+
+
           }, function() {
               $rootScope.error = 'Failed to logout';
           });
@@ -246,6 +247,9 @@
       }, function() {
           $rootScope.error = 'Failed to fetch details';
       })
+      $scope.limpiarDatos = function(){
+        $scope.myDetails = '';
+      }
 }])
 
 

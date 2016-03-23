@@ -4,7 +4,7 @@
     function all(){
       var deferred = $q.defer();
 
-      $http.get('http://teknigt.com/colores', {cache: true})
+      $http.get('http://teknigt.com:8082/cartilla/MAGIC-BOOK', {cache: true})
         .success(function(data){
           deferred.resolve(data);
 
@@ -26,7 +26,7 @@
       var deferred = $q.defer();
       all().then(function(data){
         var results = data.filter(function(color){
-          return color.cartilla === cartilla;
+          return color.libro === cartilla;
         });
         deferred.resolve(results);
       });
@@ -54,6 +54,9 @@
   .factory('formulasServices', function(){
     return {mensaje: false}
 
+  })
+  .factory('perfilService', function(){
+    return {perfil: false}
   })
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
         var baseUrl = "http://teknigt.com";

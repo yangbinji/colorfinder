@@ -1,0 +1,39 @@
+<md-sidenav    class="md-sidenav-left md-whiteframe-z2 colorblack nav-overflow" md-component-id="left" >
+      <div ng-controller="LeftCtrl">
+      <md-toolbar class="" >
+         <div class="md-toolbar-tools colorblack">
+        <md-button class="md-icon-button" aria-label="Settings" ng-click="perfil = 1">
+          <md-icon md-svg-icon="img/icons/user-icon.svg"></md-icon>
+       </md-button>
+
+         <div>
+         <h2>
+           <span>{{myDetails.data.username}}</span>
+         </h2>
+         </div>
+       <span flex></span>
+       <md-button ng-click="close(); muestra.perfil= false"  class="md-icon-button" aria-label="search">
+         <md-icon md-svg-icon="img/icons/close-icon.svg"></md-icon>
+
+       </md-button>
+
+      </md-toolbar>
+    </div>
+      <md-content align="center" layout-padding="" class="colorblack" ng-controller="favCtrl">
+        <img class="logo-finder-blanco" src="/img/LOGO-FINDER-BLANCO.svg" alt="">
+
+        <md-card-actions layout="column" layout-align="" data-ng-controller="HomeCtrl">
+          <md-button ng-click="close()" href="/#/" class="menu-list"><md-icon md-svg-icon="img/icons/linea-icon.svg"></md-icon>Cartillas</md-button>
+          <md-button ng-click="showAdvanced($event); close()" class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
+        <!--	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>-->
+          <md-button class="menu-list" ng-click="close()" href="/#/servicios/ayuda"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
+          <md-button class="menu-list" ng-click="close(); logout(); limpiarDatos()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesion</md-button>
+       </md-card-actions>
+
+
+
+
+
+      </md-content>
+    </div>
+</md-sidenav>
