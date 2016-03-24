@@ -4,7 +4,7 @@
     function all(){
       var deferred = $q.defer();
 
-      $http.get('http://teknigt.com:8082/cartilla/MAGIC-BOOK', {cache: true})
+      $http.get('http://162.243.47.51:8082/cartilla/MAGIC-BOOK', {cache: true})
         .success(function(data){
           deferred.resolve(data);
 
@@ -59,7 +59,7 @@
     return {perfil: false}
   })
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
-        var baseUrl = "http://teknigt.com";
+        var baseUrl = "http://162.243.47.51";
         function changeUser(user) {
             angular.extend(currentUser, user);
         }
