@@ -9,6 +9,10 @@ a {
 	color: #ffffff !important;
 	text-decoration: none;
 }
+.ayuda-finder{
+	overflow: auto;
+	max-height:  450px;
+}
 .ayuda-header {
 	text-align: center;
 }
@@ -240,6 +244,19 @@ nav-overflow{
     height: 45px !important;
     width: 45px;
     margin-right: 10px;
+}
+.tuto,.faqs{
+	background-color: white;
+	height: 350px;
+	width: 350px;
+
+
+}
+.tuto img, .faqs img {
+	  margin: 10px;
+		height: 200px;
+		width: 200px
+
 }
 .ultra{
 	background: #337ABE !important;
