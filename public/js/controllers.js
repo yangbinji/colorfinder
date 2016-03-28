@@ -26,12 +26,35 @@
      var codigo = captura.getCodes();
     if(codigo){
       colorService.byCodigo(codigo).then(function(data){
+        console.log(data);
         $scope.colores = data;
+
       });
     } else{
 
     }
   }])
+  .controller('loadCtrl',['$scope','$timeout',function($scope, $timeout){
+    $scope.showLoad = true;
+   setTimeout(function ()
+   {
+     $scope.$apply(function()
+     {
+       $scope.showLoad = false;
+     });
+   }, 2000);
+
+   $scope.showColors = false;
+  setTimeout(function ()
+  {
+    $scope.$apply(function()
+    {
+      $scope.showColors = true;
+    });
+  }, 2000);
+
+
+	}])
   .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', '$mdDialog', '$mdMedia','colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, $mdDialog, $mdMedia, colorService, captura, Main) {
 
     $scope.$storage =  $localStorage.$default({
@@ -173,7 +196,6 @@
 }])
 .controller('HomeCtrl', ['$rootScope', '$scope', '$location', '$route', '$window', '$localStorage', 'Main', function($rootScope, $scope, $location, $route, $window, $localStorage, Main) {
 
-    $rootScope.texto = 'alexanderlopez';
       $scope.signin = function() {
 
           var formData = {

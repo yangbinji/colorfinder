@@ -1,6 +1,7 @@
 
   (function () {
   var app = angular.module('myApp', [
+    'ionic',
     'ngStorage',
     'ngRoute',
     'ngclipboard',

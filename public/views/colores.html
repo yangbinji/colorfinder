@@ -18,8 +18,16 @@
 
 <div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak flex-xs="100" flex="60">
   <!--CHIPS COLORES-->
+<div ng-controller="loadCtrl">
 
-  <div class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
+        <div scroll="false" class="has-header" ng-if="showLoad" flex>
+          <p>
+            <ion-spinner icon="ripple" class="spinner-assertive"></ion-spinner>
+          </p>
+        </div>
+
+
+  <div ng-show="showColors" class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
     <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in ::colores | limitTo: 1" >
       <h3><md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>{{titulo.cartilla}}</h3>
     </div>
@@ -35,7 +43,7 @@
   </div>
   <!--CHIPS COLORES-->
 
-
+</div>
 </div>
 <!--END-COLORES-->
 </div>

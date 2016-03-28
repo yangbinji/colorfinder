@@ -4,8 +4,9 @@
     function all(){
       var deferred = $q.defer();
 
-      $http.get('http://162.243.47.51:8082/cartilla/MAGIC-BOOK', {cache: true})
+      $http.get('colors.json', {cache: true})
         .success(function(data){
+          console.log(data);
           deferred.resolve(data);
 
         });

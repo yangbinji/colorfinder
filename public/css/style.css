@@ -5,6 +5,16 @@ html, body{
 
 
 }
+.has-header p {
+  text-align: center;
+  margin-bottom: 40px !important;
+	margin-top: 75px !important;
+}
+.spinner svg {
+  width: 20% !important;
+  height: 225px !important;
+}
+
 a {
 	color: #ffffff !important;
 	text-decoration: none;
@@ -235,15 +245,18 @@ nav-overflow{
 }
 .titulo {
     color: white !important;
-    background: #4C4C4C;
-    padding: 1px 0px 1px 10px;
-    margin-bottom: 5px;
+    background: #4C4C4C !important;
+    padding: 1px 0px 1px 10px !important;
+    margin-bottom: 5px !important;
 }
 .titulo md-icon {
     color: white;
     height: 45px !important;
-    width: 45px;
-    margin-right: 10px;
+    width: 45px !important;
+    margin-right: 10px !important;
+}
+.titulo h3{
+	color: white !important
 }
 .tuto,.faqs{
 	background-color: white;
@@ -425,6 +438,15 @@ tile-footer{
 		.logo-paleta-movil{
 			height: 70px;
 		}
+		.has-header p {
+			text-align: center;
+			margin-bottom: 40px !important;
+			margin-top: 75px !important;
+		}
+		.spinner svg {
+			width: 200px !important;
+			height: 200px !important;
+		}
 
 
 }
@@ -437,6 +459,15 @@ tile-footer{
 			}
 			.fichaBotones {
 				text-align: center;;
+			}
+			.has-header p {
+			  text-align: center;
+			  margin-bottom: 40px !important;
+				margin-top: 75px !important;
+			}
+			.spinner svg {
+			  width: 200px !important;
+			  height: 200px !important;
 			}
 
 
