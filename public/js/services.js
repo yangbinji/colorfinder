@@ -59,6 +59,21 @@
   .factory('perfilService', function(){
     return {perfil: false}
   })
+  .factory('testRequest', function($http) { //declaramos la factory
+		var path = "http://162.243.47.51:8082/codigo/";//API path
+		return {
+			//Login
+	/*		posts : function(){ //Retornara la lista de posts
+				global = $http.get(path+'posts');
+				return global;
+			},*/
+
+			color : function(codigo){ //retornara el post por el id
+				global = $http.get(path+codigo);
+				return global;
+			}
+		}
+	})
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
         var baseUrl = "http://162.243.47.51";
         function changeUser(user) {

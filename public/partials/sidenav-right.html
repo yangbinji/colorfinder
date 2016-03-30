@@ -15,22 +15,25 @@
 					 </md-button>
 					</div>
 	   </md-toolbar>
-
+	<div ng-controller="testController">
       <md-content ng-controller="RightCtrl" layout-padding>
-          <md-input-container>
             <label for="testInput">Buscar...</label>
-            <input type="text" id="testInput"
-                   ng-model="chipModel" >
-          </md-input-container>
-					<div class="viewport"  ng-controller="cartillasController">
-						<div>
-					<div class="searching" sf-virtual-repeat="chip in ::colores" ng-show="([chip] | filter:chipModel).length > 0">
+						<input type="submit" value="Buscar" ng-click="getColor()"/>
+            <input type="text"  ng-model="color_codigo" >
+					<div class="" ng-controller="capturaCtrl">
+						<div ng-controller="BottomSheetExampleDos">
 
-							{{chip.codigo}}
 
-					</div>
-				</div>
+							<md-grid-list md-cols="2" md-cols-sm="2" md-cols-xs="2" md-gutter="1" md-row-height="2:2">
+					      <md-grid-tile  ng-repeat=" busqueda in unColor | limitTo: 1" style="background: #{{busqueda.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheet($event); close()">
+					        <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ busqueda.codigo }}</md-grid-tile-footer>
+
+					      </md-grid-tile>
+					    </md-grid-list>
+
+						</div>
 					</div>
 
       </md-content>
+		</div>
     </md-sidenav>

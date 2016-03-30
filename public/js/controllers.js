@@ -171,8 +171,22 @@
   }
 
 
+}])
+.controller('BottomSheetExampleDos', ['$scope','$routeParams', '$log', '$timeout',  '$mdBottomSheet', '$mdToast', 'captura','testRequest', function( $scope, $routeParams, $log, $timeout,  $mdBottomSheet, $mdToast, captura,testRequest) {
+$scope.alert = '';
+
+$scope.showListBottomSheet = function($event) {
+$scope.alert = '';
+$mdBottomSheet.show({
+  templateUrl: 'partials/color-ficha-dos.html',
+  controller: 'testController',
+  targetEvent: $event
+})
+}
+
 
 }])
+
 
 .controller('closeFicha',['$scope', '$mdBottomSheet', '$log', '$timeout',  function($scope, $mdBottomSheet, $log, $timeout){
   $scope.close = function () {
@@ -297,6 +311,24 @@
     );
   };
 })
+.controller('testController', ['$scope','$filter','testRequest', function testController($scope, $filter, testRequest) {
+  /*
+	$scope.getAllPosts = function(){
+		testRequest.posts().success(function (data){
+			$scope.posts=data; // Asignaremos los datos de todos los posts
+			$scope.posts.exist=1;
+		});
+	}*/
+	$scope.getColor = function(){
+		$scope.unColor={};
+		testRequest.color($filter('uppercase')(this.color_codigo)).success(function (data){
+			$scope.unColor=data; // Asignaremos los datos del post
+      console.log(data);
+
+		});
+	}
+}])
+
 .controller('formCtrl', function($scope,$timeout, formulasServices ) {
 
   $scope.datos = formulasServices;
@@ -318,7 +350,6 @@ function DialogController($scope, $mdDialog) {
 
 
 }
-
 
 
 
