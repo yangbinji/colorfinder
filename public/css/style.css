@@ -114,6 +114,18 @@ input[type=checkbox].glyphicon{
 	margin-left: 0;
 
 }
+.fichaInfo-busqueda {
+    width: 100%;
+    background: ;
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 0;
+}
+.fichaInfo-busqueda div{
+	border-bottom: 1px solid #D2D2D2;
+	padding: 10px 0 10px 0;
+}
 .fichaInfo div{
 	border-bottom: 1px solid #D2D2D2;
 	padding: 10px 0 10px 0;
@@ -298,6 +310,7 @@ nav-overflow{
     margin: 15px 0px 0px 50px;
     height: 80px;
 }
+
 
 .menu-list md-icon{
 	margin-right: 20px;

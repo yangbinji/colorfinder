@@ -327,6 +327,7 @@ $mdBottomSheet.show({
 
 		});
 	}
+  $scope.miColor = $scope.unColor;
 }])
 
 .controller('formCtrl', function($scope,$timeout, formulasServices ) {
