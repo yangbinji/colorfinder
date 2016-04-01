@@ -175,11 +175,11 @@
 .controller('BottomSheetExampleDos', ['$scope','$routeParams', '$log', '$timeout',  '$mdBottomSheet', '$mdToast', 'captura','testRequest', function( $scope, $routeParams, $log, $timeout,  $mdBottomSheet, $mdToast, captura,testRequest) {
 $scope.alert = '';
 
-$scope.showListBottomSheet = function($event) {
+$scope.showListBottomSheetDos = function($event) {
 $scope.alert = '';
 $mdBottomSheet.show({
   templateUrl: 'partials/color-ficha-dos.html',
-  controller: 'testController',
+  controller: 'fichaBusquedaCtrl',
   targetEvent: $event
 })
 }
@@ -299,6 +299,33 @@ $mdBottomSheet.show({
         .hideDelay(300)
     );
   };
+
+  $scope.nombreCopiado = function() {
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent(' Nombre copiado :D')
+        .position('bottom right')
+        .hideDelay(300)
+    );
+  };
+  $scope.codigoCopiado = function() {
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent(' Codigo copiado :D')
+        .position('bottom right')
+        .hideDelay(300)
+    );
+  };
+  $scope.cartillaCopiada = function() {
+    $mdToast.show(
+      $mdToast.simple()
+        .textContent(' Cartilla copiada :D')
+        .position('bottom right')
+        .hideDelay(300)
+    );
+  };
+
+
 })
 .controller('favoriteCtrl', function($scope, $mdToast) {
 
@@ -327,7 +354,17 @@ $mdBottomSheet.show({
 
 		});
 	}
-  $scope.miColor = $scope.unColor;
+}])
+.controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function testController($scope, $filter, testRequest, captura) {
+    var cod = captura.getCodes();
+
+		$scope.unCodigo={};
+		testRequest.color(cod).success(function (data){
+			$scope.unCodigo=data; // Asignaremos los datos del post
+      console.log(data);
+
+		});
+
 }])
 
 .controller('formCtrl', function($scope,$timeout, formulasServices ) {

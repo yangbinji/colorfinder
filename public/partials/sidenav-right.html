@@ -24,24 +24,27 @@
 	          </md-input-container>
 						<input type="submit" value="Buscar" ng-click="getColor()">
 
-					<div class="" data-ng-controller="copiadoCtrl">
+					<div style="margin-top: -20px;" ng-controller="capturaCtrl">
 						<div ng-controller="BottomSheetExampleDos">
 
 
 							<md-grid-list md-cols="1" md-cols-sm="1" md-cols-xs="1" md-gutter="1" md-row-height="5:2">
-					      <md-grid-tile  ng-repeat=" busqueda in unColor | limitTo: 1" style="background: #{{busqueda.hexadecimal}}" class="md-whiteframe-2dp">
-					        <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ busqueda.codigo }}</md-grid-tile-footer>
-					      </md-grid-tile>
+					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unColor | limitTo: 1" style="background: #{{busqueda.hexadecimal}}" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close()">
+					        <div > {{ busqueda.codigo }}</div>
+					      </div>
 					    </md-grid-list>
 
 						</div>
-					</div>
-					<div class="fichaInfo-busqueda ficha tam" class="tam" ng-class="myVar" layout-align="center center"  >
-			      <div ng-repeat="busqueda in ::unColor | limitTo: 1 ">{{busqueda.nombre}}</div>
-			      <div  ng-repeat="busqueda in ::unColor | limitTo: 1 ">{{busqueda.cartilla}}</div>
-			      <div id="c" ng-repeat="busqueda in ::unColor | limitTo: 1 ">#{{busqueda.hexadecimal}}</div>
 
-			    </div>
+						<div class="fichaInfo-busqueda ficha tam" class="tam" ng-class="myVar" layout-align="center center"  >
+  			      <div ng-repeat="busqueda in unColor | limitTo: 1 ">{{busqueda.nombre}}</div>
+  			      <div  ng-repeat="busqueda in unColor | limitTo: 1 ">{{busqueda.cartilla}}</div>
+  			      <div id="c" ng-repeat="busqueda in unColor | limitTo: 1 " ngclipboard data-clipboard-target="#c" >#{{busqueda.hexadecimal}}</div>
+
+  			    </div>
+
+					</div>
+
 
 
 

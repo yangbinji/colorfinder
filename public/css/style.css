@@ -1,3 +1,20 @@
+*{
+
+    outline: white;
+
+
+}
+
+
+.selector div::-moz-selection {
+
+    background: none;
+}
+.selector div::selection {
+
+    background: none;
+}
+
 html, body{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
@@ -28,6 +45,21 @@ a {
 }
 .box{
 	500px;
+}
+.chip-busqueda{
+	position: relative;
+	height: 90px;
+  margin: 0px 60px;
+}
+.chip-busqueda div{
+	color: white;
+	background: rgba(0, 0, 0, 0.21);
+	position: absolute;
+	height: 30px;
+	bottom: 0px;
+	padding-top: 3px;
+	text-align: center;
+	width: 100%;
 }
 
 .colorblack{
@@ -129,6 +161,7 @@ input[type=checkbox].glyphicon{
 .fichaInfo div{
 	border-bottom: 1px solid #D2D2D2;
 	padding: 10px 0 10px 0;
+	cursor: pointer;
 }
 
 .fichaBotones {
@@ -246,6 +279,10 @@ nav-overflow{
 }
 .moods{
 	background: #2d018b;
+}
+.md-button{
+	-webkit-user-select: text !important;
+	user-select: text !important;
 }
 .quetzal{
 	font-size: 24px;
