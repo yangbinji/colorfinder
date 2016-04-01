@@ -270,6 +270,10 @@ nav-overflow{
 .estandar{
 	background: #ffc20b;
 }
+.folio{
+	font-size: 20px;
+	background: #130c9c;
+}
 .gloss{
 	background: #ff7a00;
 }
@@ -278,7 +282,7 @@ nav-overflow{
 	background: #4184a4;
 }
 .moods{
-	background: #2d018b;
+	background: #cc6d1f;
 }
 .md-button{
 	-webkit-user-select: text !important;

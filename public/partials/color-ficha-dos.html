@@ -6,12 +6,12 @@
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
-      <md-button  ng-click="colorCopiado()" ng-repeat="busqueda in unCodigo | limitTo: 1" class="circulo md-fab" style="background: #{{busqueda.hexadecimal}};" md-ripple-size><div id="cod" ngclipboard data-clipboard-target="#cod" ng-click="codigoCopiado()">{{busqueda.codigo}}</div></md-button>
+      <md-button  ng-click="colorCopiado()" ng-repeat="busqueda in unCodigo | limitTo: 1" class="circulo md-fab" style="background: #{{busqueda.hexadecimal}};" md-ripple-size><div id="cod" ngclipboard data-clipboard-target="#cod">{{busqueda.codigo}}</div></md-button>
     </div>
     <div class="fichaInfo ficha "   layout-align="center center"  flex="50">
-      <div id="nombre" ng-repeat="busqueda in ::unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{busqueda.nombre}}</div>
-      <div id="cart" ng-repeat="busqueda in ::unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#cart" ng-click="cartillaCopiada()">{{busqueda.cartilla}}</div>
-      <div id="hexa" ng-repeat="busqueda in ::unCodigo | limitTo: 1" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">#{{busqueda.hexadecimal}}</div>
+      <div id="nombre" ng-repeat="busqueda in unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{busqueda.nombre}}</div>
+      <div id="cart" ng-repeat="busqueda in unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#cart" ng-click="cartillaCopiada()">{{busqueda.cartilla}}</div>
+      <div id="hexa" ng-repeat="busqueda in unCodigo | limitTo: 1" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">#{{busqueda.hexadecimal}}</div>
     </div>
 
     <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl"  flex>

@@ -296,7 +296,7 @@ $mdBottomSheet.show({
       $mdToast.simple()
         .textContent(' Color copiado :D')
         .position('bottom right')
-        .hideDelay(300)
+        .hideDelay(1000)
     );
   };
 
@@ -305,7 +305,7 @@ $mdBottomSheet.show({
       $mdToast.simple()
         .textContent(' Nombre copiado :D')
         .position('bottom right')
-        .hideDelay(300)
+        .hideDelay(1000)
     );
   };
   $scope.codigoCopiado = function() {
@@ -313,7 +313,7 @@ $mdBottomSheet.show({
       $mdToast.simple()
         .textContent(' Codigo copiado :D')
         .position('bottom right')
-        .hideDelay(300)
+        .hideDelay(1000)
     );
   };
   $scope.cartillaCopiada = function() {
@@ -321,7 +321,7 @@ $mdBottomSheet.show({
       $mdToast.simple()
         .textContent(' Cartilla copiada :D')
         .position('bottom right')
-        .hideDelay(300)
+        .hideDelay(1000)
     );
   };
 
@@ -334,7 +334,7 @@ $mdBottomSheet.show({
       $mdToast.simple()
         .textContent(' Favorito :D')
         .position('bottom left')
-        .hideDelay(300)
+        .hideDelay(1000)
     );
   };
 })

@@ -14,10 +14,10 @@
     <div class="md-dialog-content" ng-controller="favCtrl">
 <div layout="row">
     <div flex>
-      <div  ng-repeat="(key, value) in $storage[myDetails.data.username]" ng-controller="BottomSheetExample" >
+      <div  ng-repeat="(key, value) in $storage[myDetails.data.username]" ng-controller="BottomSheetExampleDos" >
           <div  ng-if="value" ng-controller="capturaCtrl" >
 
-           <div  ng-click="setCodigo(capturame = key); showListBottomSheet($event); cancel()" flex>{{key}}</div>
+           <div  ng-click="setCodigo(capturame = key); showListBottomSheetDos($event); cancel()" flex>{{key}}</div>
           </div>
       </div>
     </div>
