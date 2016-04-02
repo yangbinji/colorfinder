@@ -1,0 +1,49 @@
+<tool-bar></tool-bar>
+
+
+<div class="content-cartilla"  layout="row" data-ng-controller="MeCtrl">
+  <!--cartillas-->
+
+  <div class="cajon" id="lineas" layout="row" layout-wrap ng-cloak flex>
+    <!--lineas-buttons-->
+     <div class="scrolling" flex="">
+      <cartillas-button></cartillas-button>
+
+     </div>
+     	<!--end-lineas-buttons-->
+  </div>
+  <!--end-cartillas-->
+
+  <!--COLORES-->
+
+<div ng-controller="BottomSheetExampleDos" class="paleta md-padding bottomSheetdemoBasicUsage" ng-cloak flex-xs="100" flex="60">
+  <!--CHIPS COLORES-->
+<div ng-controller="loadmagicCtrl">
+
+        <div scroll="false" class="has-header" ng-if="showLoad" flex>
+          <p>
+            <ion-spinner icon="ripple" class="spinner-assertive"></ion-spinner>
+          </p>
+        </div>
+
+
+  <div ng-show="showColors" class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
+    <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in magic | limitTo: 1" >
+      <h3><md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>{{titulo.cartilla}}</h3>
+    </div>
+
+    <md-grid-list md-cols="8" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
+      <md-grid-tile  ng-repeat="chip in magic " style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheetDos($event)">
+        <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
+
+      </md-grid-tile>
+    </md-grid-list>
+
+
+  </div>
+  <!--CHIPS COLORES-->
+
+</div>
+</div>
+<!--END-COLORES-->
+</div>

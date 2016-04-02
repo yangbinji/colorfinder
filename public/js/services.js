@@ -69,7 +69,17 @@
 			},*/
 
 			color : function(codigo){ //retornara el post por el id
-				global = $http.get(path+codigo);
+				global = $http.get(path+codigo, {cache: true});
+				return global;
+			}
+		}
+	})
+  .factory('magicService', function($http) { //declaramos la factory
+		var path = "http://162.243.47.51:8082/libro/";//API path
+		return {
+
+			color : function(cart){ //retornara el post por el id
+				global = $http.get(path+cart, {cache: true});
 				return global;
 			}
 		}

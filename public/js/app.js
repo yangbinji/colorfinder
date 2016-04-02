@@ -11,7 +11,8 @@
     'colors.controller',
     'color.directives',
     'colores.services',
-    'sf.virtualScroll'
+    'sf.virtualScroll',
+    'clear-input'
 
   ]);
 
@@ -42,6 +43,10 @@
       .when('/:cartilla', {
         templateUrl: 'views/colores.html',
         controller: 'cartillasController'
+      })
+      .when('/views/:cartilla', {
+        templateUrl: 'views/coloresmagic.html',
+        controller: 'magicController'
       })
 
       .when('/partials/ficha/', {

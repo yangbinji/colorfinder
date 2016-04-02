@@ -55,6 +55,27 @@
 
 
 	}])
+  .controller('loadmagicCtrl',['$scope','$timeout',function($scope, $timeout){
+    $scope.showLoad = true;
+   setTimeout(function ()
+   {
+     $scope.$apply(function()
+     {
+       $scope.showLoad = false;
+     });
+   }, 5000);
+
+   $scope.showColors = false;
+  setTimeout(function ()
+  {
+    $scope.$apply(function()
+    {
+      $scope.showColors = true;
+    });
+  }, 5000);
+
+
+	}])
   .controller('favCtrl',[ '$rootScope','$scope', '$filter', '$localStorage', '$mdDialog', '$mdMedia','colorService', 'captura','Main', function ($rootScope, $scope, $filter, $localStorage, $mdDialog, $mdMedia, colorService, captura, Main) {
 
     $scope.$storage =  $localStorage.$default({
@@ -172,7 +193,7 @@
 
 
 }])
-.controller('BottomSheetExampleDos', ['$scope','$routeParams', '$log', '$timeout',  '$mdBottomSheet', '$mdToast', 'captura','testRequest', function( $scope, $routeParams, $log, $timeout,  $mdBottomSheet, $mdToast, captura,testRequest) {
+.controller('BottomSheetExampleDos', ['$scope','$routeParams', '$log', '$timeout',  '$mdBottomSheet', '$mdToast', 'captura', function( $scope, $routeParams, $log, $timeout,  $mdBottomSheet, $mdToast, captura) {
 $scope.alert = '';
 
 $scope.showListBottomSheetDos = function($event) {
@@ -180,6 +201,20 @@ $scope.alert = '';
 $mdBottomSheet.show({
   templateUrl: 'partials/color-ficha-dos.html',
   controller: 'fichaBusquedaCtrl',
+  targetEvent: $event
+})
+}
+
+
+}])
+.controller('BottomSheetExampleTres', ['$scope','$routeParams', '$log', '$timeout',  '$mdBottomSheet', '$mdToast', 'captura', function( $scope, $routeParams, $log, $timeout,  $mdBottomSheet, $mdToast, captura) {
+$scope.alert = '';
+
+$scope.showListBottomSheetTres = function($event) {
+$scope.alert = '';
+$mdBottomSheet.show({
+  templateUrl: 'partials/color-ficha-tres.html',
+  controller: 'magicController',
   targetEvent: $event
 })
 }
@@ -355,7 +390,7 @@ $mdBottomSheet.show({
 		});
 	}
 }])
-.controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function testController($scope, $filter, testRequest, captura) {
+.controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function($scope, $filter, testRequest, captura) {
     var cod = captura.getCodes();
 
 		$scope.unCodigo={};
@@ -366,6 +401,20 @@ $mdBottomSheet.show({
 		});
 
 }])
+.controller('magicController', ['$scope','$filter','$routeParams','magicService','captura', function($scope, $filter,$routeParams, magicService, captura) {
+    var cart = $routeParams.cartilla;
+
+		$scope.magic={};
+		magicService.color(cart).success(function (data){
+			$scope.magic=data; // Asignaremos los datos del post
+      console.log(data);
+
+		});
+
+}])
+
+
+
 
 .controller('formCtrl', function($scope,$timeout, formulasServices ) {
 
