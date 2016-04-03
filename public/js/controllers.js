@@ -60,7 +60,7 @@
    {
      $scope.showCircle = false;
    });
- }, 1000);
+ }, 1500);
 
  $scope.showFicha = false;
 setTimeout(function ()
@@ -69,7 +69,7 @@ setTimeout(function ()
   {
     $scope.showFicha = true;
   });
-}, 1000);
+}, 1500);
 
 
 	}])

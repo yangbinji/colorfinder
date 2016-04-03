@@ -116,11 +116,42 @@ input[type=checkbox].glyphicon{
 	height: 150px;
 	color: black;
 
+
 }
 .fichaRoseta{
 	background: ;
 
 
+}
+.formulas{
+  margin: 0px -15px;
+}
+.formulaCaja{
+  min-height: 150px;
+  border-top:  1px solid #D2D2D2;
+  padding-left: 5px;
+
+}
+.formulaCaja div{
+  font-size: 12px;
+
+}
+
+.medio{
+  border-left:  1px solid #D2D2D2;
+  border-right: 1px solid #D2D2D2;
+}
+.formulasTitulos{
+  background-color: blue;
+  color: white;
+  padding:  10px;
+  /*border: 1px solid;*/
+}
+.formulasTitulos strong{
+  margin: 0px 15px 0px 10px;
+}
+.formulasTitulos select{
+  color: black;
 }
 .circulo {
      width: 85px !important;

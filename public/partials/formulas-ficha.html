@@ -1,13 +1,15 @@
-<div ng-controller="formCtrl" ng-show="datos.mensaje">
- <div layout="row" layout-align="space-around start">
-    <div layout="row" style="margin-right: 10px; width: 50px;">
-      <strong>LINEA: </strong>
-      <select  id="selectLinea" ng-model="selectLinea" ng-options="c.linea for c in unCodigo">
-        <option value="">-Elejir linea-</option>
+<div ng-controller="formCtrl" ng-show="datos.mensaje" class="formulas">
+
+ <div class="formulasTitulos" layout="row" >
+
+    <div layout="row" loyut-align="center center"  flex>
+      <strong>LÍNEA:  </strong>
+      <select  id="selectLinea" ng-model="selectLinea" ng-options="c.linea for c in unCodigo" >
+        <option value="">-Elejir línea-</option>
       </select>
     </div>
 
-    <div><strong>BASE: </strong>{{selectLinea.base.join(' ')}}</div>
+    <div layout="row" loyut-align="center center" flex><strong>BASE: </strong>{{selectLinea.base.join(' ')}}</div>
  </div>
 
 
@@ -15,7 +17,7 @@
 
 
 
-    <div layout="column"   layout-align="center center"  flex>
+    <div class="formulaCaja" layout="column"   layout-align="center center"  flex>
       <strong>CUARTO</strong>
       <div >{{selectLinea.cuarto1}}</div>
       <div >{{selectLinea.cuarto2}}</div>
@@ -23,15 +25,15 @@
       <div >{{selectLinea.cuarto4}}</div>
 
     </div>
-    <div layout="column"  layout-align="center center"  flex>
-      <strong>GALON</strong>
+    <div  class="formulaCaja medio"layout="column"  layout-align="center center"  flex>
+      <strong>GALÓN</strong>
       <div >{{selectLinea.galon1}}</div>
       <div >{{selectLinea.galon2}}</div>
       <div >{{selectLinea.galon3}}</div>
       <div >{{selectLinea.galon4}}</div>
 
     </div>
-    <div layout="column"  layout-align="center center"  flex>
+    <div class="formulaCaja" layout="column"  layout-align="center center"  flex>
       <strong>CUBETA</strong>
       <div >{{selectLinea.cubeta1}}</div>
       <div >{{selectLinea.cubeta2}}</div>
