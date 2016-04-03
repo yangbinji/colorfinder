@@ -1,5 +1,5 @@
 
-	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right">
+	 <md-sidenav class="md-sidenav-right md-whiteframe-z2 nav-overflow" md-component-id="right" >
       <md-toolbar class="md-theme-light colorblack" ng-controller="RightCtrl">
 
 					 <div class="md-toolbar-tools colorblack">
@@ -17,30 +17,29 @@
 	   </md-toolbar>
 	<div ng-controller="testController">
       <md-content ng-controller="RightCtrl" layout-padding layout-align="center center">
-
+					<form  role="form"   ng-submit="getColor()">
 						<md-input-container>
 	            <label for="testInput">Buscar por codigo</label>
 							<input id="testInput" type="text"  ng-model="color_codigo" clearable/>
 	          </md-input-container>
-						<input type="submit" value="Buscar" ng-click="getColor()">
+						<input class="btn btn-primary" type="submit" value="Buscar">
+					</form>
 
-					<div style="margin-top: -20px;" ng-controller="capturaCtrl">
+					<div class="selector" style="margin-top: -20px;" ng-controller="capturaCtrl">
 						<div ng-controller="BottomSheetExampleDos">
 
 
 							<md-grid-list md-cols="1" md-cols-sm="1" md-cols-xs="1" md-gutter="1" md-row-height="5:2">
-					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unColor | limitTo: 1" style="background: #{{busqueda.hexadecimal}}" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close()">
-					        <div > {{ busqueda.codigo }}</div>
+					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unColor | limitTo: 1" style="background: #{{busqueda.hexadecimal}}" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
+					        <div id="r" ngclipboard data-clipboard-target="#r" > {{ busqueda.codigo }}</div>
 					      </div>
 					    </md-grid-list>
 
 						</div>
 
-						<div class="fichaInfo-busqueda ficha tam" class="tam" ng-class="myVar" layout-align="center center"  >
-  			      <div ng-repeat="busqueda in unColor | limitTo: 1 ">{{busqueda.nombre}}</div>
-  			      <div  ng-repeat="busqueda in unColor | limitTo: 1 ">{{busqueda.cartilla}}</div>
-  			      <div id="c" ng-repeat="busqueda in unColor | limitTo: 1 " ngclipboard data-clipboard-target="#c" >#{{busqueda.hexadecimal}}</div>
-
+						<div class="fichaInfo-busqueda ficha " layout-align="center center"  >
+							<div  ng-repeat="busqueda in unColor  | limitTo: 1" >{{busqueda.nombre}}</div>
+				      <div  ng-repeat="busqueda in unColor  | limitTo: 1" >{{busqueda.cartilla}}</div>
   			    </div>
 
 					</div>
@@ -49,6 +48,5 @@
 
 
       </md-content>
-
 		</div>
     </md-sidenav>

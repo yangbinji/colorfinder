@@ -4,10 +4,12 @@
   <div class="ribbon"></div>
 
 <div align="center" ng-controller="HomeCtrl" layout="column" layout-padding ng-cloak class="login-box">
-  <img class="logo-finder" src="img/LOGO-FINDER.svg" alt="">
+
   <md-content>
 
     <form autocomplete="off" role="form" class="login-form"  ng-submit="signin()">
+      <p class="errorMessage">{{errorAuth}}</p>
+      <img class="logo-finder" src="img/LOGO-FINDER.svg" alt="">
       <md-input-container class="md-icon-float md-block">
         <label>Email</label>
         <md-icon md-svg-src="img/icons/email-icon.svg" ></md-icon>
@@ -17,7 +19,7 @@
         <label>Contraseña</label>
         <md-icon md-svg-src="img/icons/password-icon.svg" ></md-icon>
         <input type="password" id="password" ng-model="password" required>
-          <p class="errorMessage">{{errorAuth}}</p>
+
       </md-input-container>
 
       <md-button type="submit" class="md-warn md-raised md-hue-2">Acceder</md-button>

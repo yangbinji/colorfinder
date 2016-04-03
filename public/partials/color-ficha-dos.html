@@ -1,12 +1,17 @@
 
 <md-bottom-sheet  layout="column"   class="md-grid selector"  ng-controller="MeCtrl"  ng-cloak>
-<div >
+<div ng-controller="loadCtrl">
 
-  <div  layout="row" layout-align="center center" data-ng-controller="copiadoCtrl">
+
+  <div scroll="false" class="has-header" ng-if="showCircle" layout="row" layout-align="center center" flex>
+    <md-progress-circular  md-mode="indeterminate" md-diameter="150"></md-progress-circular>
+  </div>
+
+  <div ng-show="showFicha" layout="row" layout-align="center center" data-ng-controller="copiadoCtrl">
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
-      <md-button  ng-click="colorCopiado()" ng-repeat="busqueda in unCodigo | limitTo: 1" class="circulo md-fab" style="background: #{{busqueda.hexadecimal}};" md-ripple-size><div id="cod" ngclipboard data-clipboard-target="#cod">{{busqueda.codigo}}</div></md-button>
+      <md-button  ng-click="codigoCopiado()" ng-repeat="busqueda in unCodigo | limitTo: 1" class="circulo md-fab" style="background: #{{busqueda.hexadecimal}};" md-ripple-size><div id="cod" ngclipboard data-clipboard-target="#cod">{{busqueda.codigo}}</div></md-button>
     </div>
     <div class="fichaInfo ficha "   layout-align="center center"  flex="50">
       <div id="nombre" ng-repeat="busqueda in unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{busqueda.nombre}}</div>
@@ -15,27 +20,19 @@
     </div>
 
     <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl"  flex>
-      <!--<div flex>
-        <md-button id="btnSave"  class="md-icon-button " aria-label="More">
-          <md-icon  md-svg-icon="img/icons/compartir-icon.svg" md-ripple-size	></md-icon>
-        </md-button>
-      </div>-->
       <div ng-controller="favoriteCtrl" flex>
           <md-icon>
           <input ng-repeat="chip in unCodigo | limitTo: 1" type="checkbox" class=" glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()" style="cursor: pointer;">
          </md-icon>
-
       </div>
 
       <div ng-controller="formCtrl" flex>
-        <!--<button type="button" ng-click="Var='tuclass'" class="md-icon-button">
-          <md-icon md-svg-icon="img/icons/formula-icon.svg" md-ripple-size	></md-icon>
-        </button>-->
         <input type="checkbox" class=" glyphicon glyphicon-tint" ng-model="datos.mensaje" style="cursor: pointer;">
       </div>
 
     </div>
   </div>
+
 
 <formulas-ficha></formulas-ficha>
 

@@ -1,13 +1,8 @@
 *{
-
     outline: white;
-
-
 }
 
-
 .selector div::-moz-selection {
-
     background: none;
 }
 .selector div::selection {

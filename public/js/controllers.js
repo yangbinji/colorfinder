@@ -53,6 +53,24 @@
     });
   }, 2000);
 
+  $scope.showCircle = true;
+ setTimeout(function ()
+ {
+   $scope.$apply(function()
+   {
+     $scope.showCircle = false;
+   });
+ }, 1000);
+
+ $scope.showFicha = false;
+setTimeout(function ()
+{
+  $scope.$apply(function()
+  {
+    $scope.showFicha = true;
+  });
+}, 1000);
+
 
 	}])
   .controller('loadmagicCtrl',['$scope','$timeout',function($scope, $timeout){
@@ -383,22 +401,33 @@ $mdBottomSheet.show({
 	}*/
 	$scope.getColor = function(){
 		$scope.unColor={};
+
 		testRequest.color($filter('uppercase')(this.color_codigo)).success(function (data){
 			$scope.unColor=data; // Asignaremos los datos del post
       console.log(data);
 
-		});
+		})
+    .error(function(response, status){
+      console.log("The request failed with response ");
+
+
+    });
+
+
 	}
 }])
 .controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function($scope, $filter, testRequest, captura) {
     var cod = captura.getCodes();
 
-		$scope.unCodigo={};
+		$scope.unCodigo=[];
 		testRequest.color(cod).success(function (data){
 			$scope.unCodigo=data; // Asignaremos los datos del post
       console.log(data);
 
 		});
+
+   $scope.selectLinea = '435X';
+
 
 }])
 .controller('magicController', ['$scope','$filter','$routeParams','magicService','captura', function($scope, $filter,$routeParams, magicService, captura) {
