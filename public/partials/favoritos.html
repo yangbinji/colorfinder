@@ -10,14 +10,18 @@
       </md-button>
     </div>
   </md-toolbar>
-  <md-dialog-content>
+  <md-dialog-content ng-controller="loadCtrl">
     <div class="md-dialog-content" ng-controller="favCtrl">
-<div layout="row">
+      <div scroll="false" class="has-header" ng-if="showCircle" layout="row" layout-align="center center" flex>
+        <md-progress-circular  md-mode="indeterminate" md-diameter="150"></md-progress-circular>
+      </div>
+
+<div ng-show="showFicha" layout="row">
     <div flex>
       <div  ng-repeat="(key, value) in $storage[myDetails.data.username]" ng-controller="BottomSheetExampleDos" >
           <div  ng-if="value" ng-controller="capturaCtrl" >
 
-           <div  ng-click="setCodigo(capturame = key); showListBottomSheetDos($event); cancel()" flex>{{key}}</div>
+           <div class="favoritoCodigo" ng-click="setCodigo(capturame = key); showListBottomSheetDos($event); cancel()" flex>{{key}}</div>
           </div>
       </div>
     </div>
@@ -26,7 +30,7 @@
       <div  ng-repeat="(x, y) in $storage[myDetails.data.username + '-hex']" ng-controller="BottomSheetExample" >
           <div  ng-if="y" ng-controller="capturaCtrl" >
 
-           <div  ng-click="setCodigo(capturame = x); showListBottomSheet($event); cancel()" style="background:#{{x}};" flex>___</div>
+           <div class="favoritoCuadro" style="background:#{{x}};" flex></div>
           </div>
       </div>
    </div>

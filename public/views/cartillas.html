@@ -7,6 +7,12 @@
 
 <div layout="row" layout-wrap flex ng-cloak ng-controller="HomeCtrl">
   <!--lineas-buttons-->
+  <md-tooltip layout="row" layout-align="center center" md-autohide="false" md-direction="right"	 style="height: 50px;">
+    <div layout="row" >
+      <md-icon md-svg-icon="img/icons/arrows.svg"></md-icon>
+      <h3>Selecciona una cartilla <br> para ver los colores.</h3>
+    </div>
+  </md-tooltip>
    <div class="scrolling" flex="">
 
   <cartillas-button></cartillas-button>
@@ -21,17 +27,32 @@
 <div ng-controller="BottomSheetExample" class="paleta md-padding bottomSheetdemoBasicUsage cajon" ng-cloak flex-xs="100" flex="60">
 <!--CHIPS COLORES-->
 
-<div class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
-  <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in ::colores | limitTo: 1" >
-    <h3><md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>DOMESTIC-WALL</h3>
+<div class="" layout-align="space-around" ng-controller="capturaCtrl">
+
+  <div class="inicioFinder md-whiteframe-1dp">
+    <img  src="img/LOGO-FINDER.svg" alt="">
+    <md-divider></md-divider>
+    <br>
+    <h4>COLORFINDER es tu asistente que te ayuda a buscar y ver cualquier color <br>con su informacion de la basta gama que Pinturas Paleta tiene disponible.</h4>
+
   </div>
 
-  <md-grid-list md-cols="12" md-cols-sm="8" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
-    <md-grid-tile  ng-repeat="chip in ::colores | limitTo: 15" style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
-      <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
 
-    </md-grid-tile>
-  </md-grid-list>
+  <div class="ayuda"  layout-xs="column" layout="row" layout-align="center center">
+
+    <md-button class="tutoInicio md-whiteframe-1dp"  flex>
+
+      <img src="/img/tutoriales.svg" alt="">
+      <h5 class="md-title">Tutoriales</h5>
+    </md-button>
+
+    <md-button  class="faqsInicio md-whiteframe-1dp" flex>
+      <img src="/img/faqs.svg" alt="">
+      <h5 class="md-title">Preguntas <br>Frecuentes</h5>
+    </md-button>
+  </div>
+
+
 
 
     </div>
