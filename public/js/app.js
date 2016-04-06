@@ -58,6 +58,11 @@
         controller: ''
 
     })
+    .when('/servicios/ayuda/faqs', {
+      templateUrl: 'views/faqs.html',
+      controller: 'faqsCtrl'
+
+  })
 
       .otherwise({
         redirectTo: '/signin'

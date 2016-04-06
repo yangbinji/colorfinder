@@ -14,6 +14,7 @@ html, body{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
 	overflow: hidden !important;
+  overflow:
 
 
 }
@@ -41,12 +42,23 @@ a {
 .inicioFinder img{
   height: 150px;
 }
+
 .ayuda md-tooltip{
   height: 150px !important;
 }
 .ayuda-finder{
 	overflow: auto;
 	max-height:  450px;
+}
+
+
+.ayuda-finder h2, .ayuda h5{
+  color: black;
+}
+.ayuda-finder #faqs{
+  margin: 5px 10px;
+  background: white;
+  padding: 5px 10px;
 }
 .ayuda-header {
 	text-align: center;

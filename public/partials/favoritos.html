@@ -18,16 +18,18 @@
 
 <div ng-show="showFicha" layout="row">
     <div flex>
-      <div  ng-repeat="(key, value) in $storage[myDetails.data.username]" ng-controller="BottomSheetExampleDos" >
+
+      <div  ng-repeat="(key, value) in $storage[myDetails.data.username] | limitTo: 2" ng-controller="BottomSheetExampleDos" >
           <div  ng-if="value" ng-controller="capturaCtrl" >
 
            <div class="favoritoCodigo" ng-click="setCodigo(capturame = key); showListBottomSheetDos($event); cancel()" flex>{{key}}</div>
           </div>
       </div>
+
     </div>
     <div flex>
 
-      <div  ng-repeat="(x, y) in $storage[myDetails.data.username + '-hex']" ng-controller="BottomSheetExample" >
+      <div  ng-repeat="(x, y) in $storage[myDetails.data.username + '-hex'] | limitTo: 2" ng-controller="BottomSheetExample" >
           <div  ng-if="y" ng-controller="capturaCtrl" >
 
            <div class="favoritoCuadro" style="background:#{{x}};" flex></div>

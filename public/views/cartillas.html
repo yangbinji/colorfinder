@@ -29,11 +29,14 @@
 
 <div class="" layout-align="space-around" ng-controller="capturaCtrl">
 
-  <div class="inicioFinder md-whiteframe-1dp">
+  <div layout="column" layout-align="center center" class="inicioFinder md-whiteframe-1dp">
     <img  src="img/LOGO-FINDER.svg" alt="">
-    <md-divider></md-divider>
     <br>
-    <h4>COLORFINDER es tu asistente que te ayuda a buscar y ver cualquier color <br>con su informacion de la basta gama que Pinturas Paleta tiene disponible.</h4>
+    <div layout="row" layout-align-"center center">
+      <span flex="15"></span>
+    <h4  flex="70">ColorFinder es un asistente que te ayudara a buscar colores con su respectiva información, los cuales solo Pinturas la Paleta te puede ofrecer.</h4>
+    <span flex="15"> </span>
+  </div>
 
   </div>
 
@@ -46,7 +49,7 @@
       <h5 class="md-title">Tutoriales</h5>
     </md-button>
 
-    <md-button  class="faqsInicio md-whiteframe-1dp" flex>
+    <md-button ng-href="#/servicios/ayuda/faqs" class="faqsInicio md-whiteframe-1dp" flex>
       <img src="/img/faqs.svg" alt="">
       <h5 class="md-title">Preguntas <br>Frecuentes</h5>
     </md-button>
