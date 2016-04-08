@@ -74,6 +74,16 @@
 			}
 		}
 	})
+  .factory('palabraService', function($http) { //declaramos la factory
+		var path = "http://162.243.47.51:8082/nombre/";//API path
+		return {
+
+			color : function(palabra){ //retornara el post por el id
+				global = $http.get(path+palabra, {cache: true});
+				return global;
+			}
+		}
+	})
   .factory('magicService', function($http) { //declaramos la factory
 		var path = "http://162.243.47.51:8082/libro/";//API path
 		return {

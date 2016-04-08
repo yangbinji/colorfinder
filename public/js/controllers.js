@@ -416,6 +416,25 @@ $mdBottomSheet.show({
 
 	}
 }])
+.controller('searchpalabraCtrl', ['$scope','$filter','palabraService', function testController($scope, $filter, palabraService) {
+
+	$scope.getPalabra = function(){
+		$scope.unaPalabra={};
+
+		palabraService.color(this.color_palabra).success(function (data){
+			$scope.unaPalabra=data; // Asignaremos los datos del post
+      console.log(data);
+
+		})
+    .error(function(response, status){
+      console.log("The request failed with response ");
+
+
+    });
+
+
+	}
+}])
 .controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function($scope, $filter, testRequest, captura) {
     var cod = captura.getCodes();
 

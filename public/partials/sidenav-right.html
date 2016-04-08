@@ -17,10 +17,18 @@
 	   </md-toolbar>
 	<div ng-controller="testController">
       <md-content ng-controller="RightCtrl" layout-padding layout-align="center center">
+				<div ng-controller="searchpalabraCtrl">
 					<form  role="form"   ng-submit="getColor()">
 						<md-input-container>
 	            <label for="testInput">Buscar por codigo</label>
 							<input id="testInput" type="text"  ng-model="color_codigo" clearable/>
+	          </md-input-container>
+						<input class="btn btn-primary" type="submit" value="Buscar">
+					</form>
+					<form  role="form"   ng-submit="getPalabra()">
+						<md-input-container>
+	            <label for="testInput">Buscar por nombre</label>
+							<input id="testInput" type="text"  ng-model="color_palabra" clearable/>
 	          </md-input-container>
 						<input class="btn btn-primary" type="submit" value="Buscar">
 					</form>
@@ -44,9 +52,28 @@
 
 					</div>
 
+					<!-- palabra -->
+					<div class="selector" style="margin-top: -20px;" ng-controller="capturaCtrl">
+						<div ng-controller="BottomSheetExampleDos">
 
 
+							<md-grid-list md-cols="1" md-cols-sm="1" md-cols-xs="1" md-gutter="1" md-row-height="5:2">
+					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unaPalabra | limitTo: 1" style="background: #{{busqueda.hexadecimal}}; cursor:pointer;" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
+					        <div id="r" ngclipboard data-clipboard-target="#r" > {{ busqueda.codigo }}</div>
+					      </div>
+					    </md-grid-list>
 
+						</div>
+
+						<div class="fichaInfo-busqueda ficha " layout-align="center center"  >
+							<div  ng-repeat="busqueda in unaPalabra  | limitTo: 1" >{{busqueda.nombre}}</div>
+				      <div  ng-repeat="busqueda in unaPalabra  | limitTo: 1" >{{busqueda.cartilla}}</div>
+  			    </div>
+
+					</div>
+
+
+</div>
       </md-content>
 		</div>
     </md-sidenav>
