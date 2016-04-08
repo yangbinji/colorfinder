@@ -75,7 +75,7 @@
 		}
 	})
   .factory('palabraService', function($http) { //declaramos la factory
-		var path = "http://162.243.47.51:8082/nombre/";//API path
+		var path = "http://162.243.47.51:8082/palabra/";//API path
 		return {
 
 			color : function(palabra){ //retornara el post por el id

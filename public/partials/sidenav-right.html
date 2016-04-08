@@ -58,17 +58,17 @@
 
 
 							<md-grid-list md-cols="1" md-cols-sm="1" md-cols-xs="1" md-gutter="1" md-row-height="5:2">
-					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unaPalabra | limitTo: 1" style="background: #{{busqueda.hexadecimal}}; cursor:pointer;" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
+					      <div class="chip-busqueda md-whiteframe-2dp" ng-repeat=" busqueda in unaPalabra" style="background: #{{busqueda.hexadecimal}}; cursor:pointer;" class="md-whiteframe-2dp" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
 					        <div id="r" ngclipboard data-clipboard-target="#r" > {{ busqueda.codigo }}</div>
 					      </div>
 					    </md-grid-list>
 
 						</div>
 
-						<div class="fichaInfo-busqueda ficha " layout-align="center center"  >
-							<div  ng-repeat="busqueda in unaPalabra  | limitTo: 1" >{{busqueda.nombre}}</div>
-				      <div  ng-repeat="busqueda in unaPalabra  | limitTo: 1" >{{busqueda.cartilla}}</div>
-  			    </div>
+						<!-- <div class="fichaInfo-busqueda ficha " layout-align="center center"  >
+							<div  ng-repeat="busqueda in unaPalabra " >{{busqueda.nombre}}</div>
+				      <div  ng-repeat="busqueda in unaPalabra " >{{busqueda.cartilla}}</div>
+  			    </div> -->
 
 					</div>
 
