@@ -60,7 +60,7 @@
     return {perfil: false}
   })
   .factory('testRequest', function($http) { //declaramos la factory
-		var path = "http://162.243.47.51:8082/codigo/";//API path
+		var path = "http://162.243.47.51:8082/";//API path
 		return {
 			//Login
 	/*		posts : function(){ //Retornara la lista de posts
@@ -68,8 +68,8 @@
 				return global;
 			},*/
 
-			color : function(codigo){ //retornara el post por el id
-				global = $http.get(path+codigo, {cache: true});
+			color : function(palabra,codigo){ //retornara el post por el id
+				global = $http.get(path+palabra+"/"+codigo, {cache: true});
 				return global;
 			}
 		}

@@ -68,18 +68,16 @@ a {
 }
 .chip-busqueda{
 	position: relative;
-	height: 90px;
-  margin: 0px 60px;
+	height: 60px;
+  margin-bottom: 5px;
 }
 .chip-busqueda div{
-	color: white;
-	background: rgba(0, 0, 0, 0.21);
-	position: absolute;
-	height: 30px;
+	color: black;
+  background: white;
+	/*background: rgba(0, 0, 0, 0.21);*/
+	height: 60px;
 	bottom: 0px;
-	padding-top: 3px;
 	text-align: center;
-	width: 100%;
 }
 
 .colorblack{

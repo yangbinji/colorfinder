@@ -391,7 +391,7 @@ $mdBottomSheet.show({
     );
   };
 })
-.controller('testController', ['$scope','$filter','testRequest', function testController($scope, $filter, testRequest) {
+.controller('testController', ['$scope','$filter','testRequest','palabraService', function testController($scope, $filter, testRequest,palabraService) {
   /*
 	$scope.getAllPosts = function(){
 		testRequest.posts().success(function (data){
@@ -400,9 +400,10 @@ $mdBottomSheet.show({
 		});
 	}*/
 	$scope.getColor = function(){
+
 		$scope.unColor={};
 
-		testRequest.color($filter('uppercase')(this.color_codigo)).success(function (data){
+		testRequest.color(this.modelPalabra,this.color_codigo).success(function (data){
 			$scope.unColor=data; // Asignaremos los datos del post
       console.log(data);
 
@@ -415,26 +416,29 @@ $mdBottomSheet.show({
 
 
 	}
+
+
+
 }])
-.controller('searchpalabraCtrl', ['$scope','$filter','palabraService', function testController($scope, $filter, palabraService) {
-
-	$scope.getPalabra = function(){
-		$scope.unaPalabra={};
-
-		palabraService.color(this.color_palabra).success(function (data){
-			$scope.unaPalabra=data; // Asignaremos los datos del post
-      console.log(data);
-
-		})
-    .error(function(response, status){
-      console.log("The request failed with response ");
-
-
-    });
-
-
-	}
-}])
+// .controller('searchpalabraCtrl', ['$scope','$filter','palabraService', function testController($scope, $filter, palabraService) {
+//
+// 	$scope.getPalabra = function(){
+// 		$scope.unaPalabra={};
+//
+// 		palabraService.color(this.color_palabra).success(function (data){
+// 			$scope.unaPalabra=data; // Asignaremos los datos del post
+//       console.log(data);
+//
+// 		})
+//     .error(function(response, status){
+//       console.log("The request failed with response ");
+//
+//
+//     });
+//
+//
+// 	}
+// }])
 .controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function($scope, $filter, testRequest, captura) {
     var cod = captura.getCodes();
 
