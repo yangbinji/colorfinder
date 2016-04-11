@@ -62,9 +62,8 @@
     return {perfil: false}
   })
   .factory('testRequest', function($http) { //declaramos la factory
-		var path = "http://162.243.47.51:8082/";//API path
+		var path = "http://162.243.47.51:8083/";//API path
 		return {
-
 
 			color : function(palabra,codigo){ //retornara el post por el id
 				global = $http.get(path+palabra+"/"+codigo, {cache: true});
@@ -72,16 +71,17 @@
 			}
 		}
 	})
-  .factory('palabraService', function($http) { //declaramos la factory
-		var path = "http://162.243.47.51:8082/palabra/";//API path
+  .factory('fichaService', function($http) { //declaramos la factory
+		var path = "http://162.243.47.51:8082/";//API path
 		return {
 
-			color : function(palabra){ //retornara el post por el id
-				global = $http.get(path+palabra, {cache: true});
+			color : function(palabra,codigo){ //retornara el post por el id
+				global = $http.get(path+palabra+"/"+codigo, {cache: true});
 				return global;
 			}
 		}
 	})
+
   .factory('magicService', function($http) { //declaramos la factory
 		var path = "http://162.243.47.51:8083/libro/";//API path
 		return {

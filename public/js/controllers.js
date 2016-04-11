@@ -402,7 +402,7 @@ $mdBottomSheet.show({
     );
   };
 })
-.controller('testController', ['$scope','$filter','testRequest','palabraService', function testController($scope, $filter, testRequest,palabraService) {
+.controller('testController', ['$scope','$filter','testRequest', function testController($scope, $filter, testRequest) {
   /*
 	$scope.getAllPosts = function(){
 		testRequest.posts().success(function (data){
@@ -450,11 +450,11 @@ $mdBottomSheet.show({
 //
 // 	}
 // }])
-.controller('fichaBusquedaCtrl', ['$scope','$filter','testRequest','captura', function($scope, $filter, testRequest, captura) {
+.controller('fichaBusquedaCtrl', ['$scope','$filter','fichaService','captura', function($scope, $filter, fichaService, captura) {
     var cod = captura.getCodes();
 
 		$scope.unCodigo=[];
-		testRequest.color('codigo',cod).success(function (data){
+		fichaService.color('codigo',cod).success(function (data){
 			$scope.unCodigo=data; // Asignaremos los datos del post
       console.log(data);
 
