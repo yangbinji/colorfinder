@@ -5,6 +5,7 @@
     if(cartilla){
       colorService.byCartilla(cartilla).then(function(data){
         $scope.colores = data;
+        console.log(data);
       });
     } else{
 
@@ -25,11 +26,21 @@
   .controller('codigoController', ['$scope','colorService','captura', function($scope, colorService, captura){
      var codigo = captura.getCodes();
     if(codigo){
+
       colorService.byCodigo(codigo).then(function(data){
         console.log(data);
         $scope.colores = data;
 
       });
+      // testRequest.color('codigo',codigo).success(function (data){
+      //   $scope.unCodigo=data; // Asignaremos los datos del post
+      //   console.log(data);
+      //
+      // });
+
+
+
+
     } else{
 
     }
@@ -42,7 +53,7 @@
      {
        $scope.showLoad = false;
      });
-   }, 2000);
+   }, 1000);
 
    $scope.showColors = false;
   setTimeout(function ()
@@ -51,7 +62,7 @@
     {
       $scope.showColors = true;
     });
-  }, 2000);
+  }, 1000);
 
   $scope.showCircle = true;
  setTimeout(function ()
@@ -403,7 +414,7 @@ $mdBottomSheet.show({
 
 		$scope.unColor={};
 
-		testRequest.color(this.modelPalabra,this.color_codigo).success(function (data){
+		testRequest.color(this.modelNombre,$filter('uppercase')(this.color_codigo)).success(function (data){
 			$scope.unColor=data; // Asignaremos los datos del post
       console.log(data);
 
@@ -443,7 +454,7 @@ $mdBottomSheet.show({
     var cod = captura.getCodes();
 
 		$scope.unCodigo=[];
-		testRequest.color(cod).success(function (data){
+		testRequest.color('codigo',cod).success(function (data){
 			$scope.unCodigo=data; // Asignaremos los datos del post
       console.log(data);
 
@@ -495,6 +506,17 @@ $mdBottomSheet.show({
   ];
 
 }])
+// .filter('normalize', function () {
+//      return function (input) {
+//        if (!input) return "";
+//
+//          input = input
+//                  .replace('261A', 'xxxx')
+//                  .replace('♂', 'm')
+//                  .replace(/\W+/g, "");
+//          return input.toLowerCase();
+//      };
+//    })
 
 
 function DialogController($scope, $mdDialog) {

@@ -18,15 +18,17 @@
 	<div ng-controller="testController">
       <md-content ng-controller="RightCtrl" layout-padding layout-align="center center">
 				<div >
-					<form  role="form" ng-init="modelPalabra='codigo'"    ng-submit="getColor()">
-						<label>
-						<input type="radio"  ng-model="modelPalabra" value="codigo" checked>Código
-					</label>
-					<label>
-						<input type="radio" ng-model="modelPalabra" value="palabra">Palabra
-					</label><br>
+					<h5>Qué deseas buscar?</h5>
+					<form  role="form" ng-init="modelNombre='codigo'"    ng-submit="getColor()">
+					 <md-radio-group layout="row" ng-model="modelNombre">
+						<md-radio-button   class="md-primary" value="codigo" checked>Código</md-radio-button>
+
+
+						<md-radio-button  class="md-primary" value="nombre">Nombre</md-radio-button>
+					</md-radio-group>
+					<br>
 						<md-input-container>
-	            <label for="testInput">Buscar por {{modelPalabra}}</label>
+	            <label for="testInput">Buscar por {{modelNombre}}</label>
 							<input id="testInput" type="text"  ng-model="color_codigo" clearable/>
 	          </md-input-container>
 						<input class="btn btn-primary" type="submit" value="Buscar">

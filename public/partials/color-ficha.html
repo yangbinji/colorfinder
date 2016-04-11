@@ -6,7 +6,8 @@
 
 
     <div  class="fichaRoseta ficha" layout-align="center center" layout="row"  flex>
-      <md-button   ng-repeat="chip in ::colores" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size  value="{{chip.codigo}}"><div id="cod" ngclipboard data-clipboard-target="#cod" ng-click="codigoCopiado()">{{chip.codigo}}</div></md-button>
+      <md-button   ng-repeat="chip in ::colores" class="circulo md-fab" style="background: #{{chip.hexadecimal}};" md-ripple-size  value="{{chip.codigo}}">
+        <div id="cod" ngclipboard data-clipboard-target="#cod" ng-click="codigoCopiado()" layou="row" layout-align="center center">{{chip.codigo}}</div></md-button>
     </div>
     <div class="fichaInfo ficha"  layout-align="center center"  flex="50">
       <div id="nombre" ng-repeat="chip in ::colores " ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{chip.nombre}}</div>
@@ -34,7 +35,14 @@
       <p style="font-size: 10px; margin-top: 5px;">Fórmula</p>
 
     </div>
+
   </div>
+  <div ng-repeat="chip in ::colores" style="margin-top: -15px; font-size: 12px;">
+    {{chip.rgb}}<br>
+    <p style="font-size: 10px;">Los colores son aproximados a los reales.</p>
+  </div>
+
+
 
 <formulas-ficha></formulas-ficha>
 

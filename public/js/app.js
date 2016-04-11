@@ -36,10 +36,7 @@
           templateUrl: 'partials/me.html',
           controller: 'HomeCtrl'
       })
-      .when('/colores/:codigo', {
-        templateUrl: 'partials/color-ficha.html',
-        controller: 'codigoController'
-      })
+
       .when('/:cartilla', {
         templateUrl: 'views/colores.html',
         controller: 'cartillasController'
@@ -49,10 +46,7 @@
         controller: 'magicController'
       })
 
-      .when('/partials/ficha/', {
-        templateUrl: 'partials/color-ficha.html',
-        controller: 'codigoController'
-      })
+
       .when('/servicios/ayuda', {
         templateUrl: 'views/ayuda.html',
         controller: ''

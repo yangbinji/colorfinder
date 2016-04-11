@@ -1,0 +1,1528 @@
+[
+  {
+    "nombre":"Amarillo",
+    "codigo":"1406",
+    "hexadecimal":"D59E04",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul",
+    "codigo":"1408",
+    "hexadecimal":"19376A",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo",
+    "codigo":"1404",
+    "hexadecimal":"A31310",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Naranja",
+    "codigo":"1432",
+    "hexadecimal":"CF4216",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Cromo",
+    "codigo":"1414",
+    "hexadecimal":"071D12",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Menta ",
+    "codigo":"1427",
+    "hexadecimal":"3E8863",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Marfil",
+    "codigo":"1420",
+    "hexadecimal":"CAB587",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste",
+    "codigo":"1425",
+    "hexadecimal":"5195A0",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Arrecife ",
+    "codigo":"1436",
+    "hexadecimal":"146374",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melocotón",
+    "codigo":"1477",
+    "hexadecimal":"CD9A71",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Beige",
+    "codigo":"1440",
+    "hexadecimal":"C3AC8C",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Teja",
+    "codigo":"1439",
+    "hexadecimal":"983625",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Suave",
+    "codigo":"1441",
+    "hexadecimal":"E5D393",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Turquesa",
+    "codigo":"1418",
+    "hexadecimal":"1E8175",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Fucsia",
+    "codigo":"1422",
+    "hexadecimal":"CC3546",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Chocolate",
+    "codigo":"1476",
+    "hexadecimal":"4C3134",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Césped",
+    "codigo":"1428",
+    "hexadecimal":"16612B",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"1442",
+    "hexadecimal":"D0C8B2",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Cielo",
+    "codigo":"1438",
+    "hexadecimal":"7492B8",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Óxido",
+    "codigo":"1430",
+    "hexadecimal":"540B0B",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rosado",
+    "codigo":"1421",
+    "hexadecimal":"C5696B",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco",
+    "codigo":"1400",
+    "hexadecimal":"FFFFFF",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Negro",
+    "codigo":"1402",
+    "hexadecimal":"020202",
+    "cartilla":"Domestic-Gloss",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aqual",
+    "codigo":"4216",
+    "hexadecimal":"94C2C5",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Marfil",
+    "codigo":"4212",
+    "hexadecimal":"D3D2BE",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Mandarina",
+    "codigo":"4229",
+    "hexadecimal":"C7914B",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Jardín",
+    "codigo":"4230",
+    "hexadecimal":"4D9645",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Celeste",
+    "codigo":"4228",
+    "hexadecimal":"72A3C2",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Lilas",
+    "codigo":"4227",
+    "hexadecimal":"D6A2B7",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"4211",
+    "hexadecimal":"D7CBB3",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Menta",
+    "codigo":"4217",
+    "hexadecimal":"A1C3B6",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melón",
+    "codigo":"4220",
+    "hexadecimal":"CAA86B",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste",
+    "codigo":"4219",
+    "hexadecimal":"A7B3B3",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rosado",
+    "codigo":"4225",
+    "hexadecimal":"BB997E",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco",
+    "codigo":"4210",
+    "hexadecimal":"FFFFFF",
+    "cartilla":"Royal",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Knockout Red",
+    "codigo":"261A",
+    "hexadecimal":"B34242",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Senate Blue",
+    "codigo":"5223D",
+    "hexadecimal":"475677",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Graycloth",
+    "codigo":"4211P",
+    "hexadecimal":"AFAFAD",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Amarillo Azteca",
+    "codigo":"4328",
+    "hexadecimal":"D2AB1F",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Ladrillo",
+    "codigo":"4338",
+    "hexadecimal":"54211A",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Horizonte",
+    "codigo":"4367",
+    "hexadecimal":"333D53",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Florence Blue",
+    "codigo":"1183D",
+    "hexadecimal":"0094B4",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"4322",
+    "hexadecimal":"D1C08E",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Puritan Black",
+    "codigo":"4213D",
+    "hexadecimal":"2B3239",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Bordeau Brow",
+    "codigo":"154A",
+    "hexadecimal":"492D36",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Stairstep",
+    "codigo":"4054T",
+    "hexadecimal":"AA8D62",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Coral Brust",
+    "codigo":"127",
+    "hexadecimal":"D07C8E",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Amarillo Tostado",
+    "codigo":"4358",
+    "hexadecimal":"AA8338",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Cazador",
+    "codigo":"4348",
+    "hexadecimal":"1A433F",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Teja",
+    "codigo":"4334",
+    "hexadecimal":"D0583D",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Full Wine",
+    "codigo":"192A",
+    "hexadecimal":"49283F",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Blanco Antiguo",
+    "codigo":"4321",
+    "hexadecimal":"FAF3D3",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Piel De Durazno",
+    "codigo":"4359",
+    "hexadecimal":"E7B389",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Pueblo Blue",
+    "codigo":"3163D",
+    "hexadecimal":"106375",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Koralle",
+    "codigo":"7093D",
+    "hexadecimal":"F35B4D",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Young Yellow",
+    "codigo":"279",
+    "hexadecimal":"FBE883",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Colleen Green",
+    "codigo":"23A",
+    "hexadecimal":"63963c",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Acacia Aire",
+    "codigo":"118",
+    "hexadecimal":"E4B6A7",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Alpine Pink",
+    "codigo":"7143D",
+    "hexadecimal":"E84A6D",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Sorbete Naranja",
+    "codigo":"4308",
+    "hexadecimal":"EB6234",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Manzana",
+    "codigo":"4309",
+    "hexadecimal":"82A851",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melón Dulce",
+    "codigo":"4360",
+    "hexadecimal":"FF793E",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Carriage Red",
+    "codigo":"191A",
+    "hexadecimal":"82363D",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Oliva Verde",
+    "codigo":"4314",
+    "hexadecimal":"867237",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Arena Blanca",
+    "codigo":"4357",
+    "hexadecimal":"BBB58B",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Red Purple",
+    "codigo":"193A",
+    "hexadecimal":"6C3657",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Prophetic Purple",
+    "codigo":"7183D",
+    "hexadecimal":"65467F",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Marsh Marigold",
+    "codigo":"7043D",
+    "hexadecimal":"ED9100",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Mountain Shadow",
+    "codigo":"203A",
+    "hexadecimal":"312B4E",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Light Lichen",
+    "codigo":"3084T",
+    "hexadecimal":"9DAD7E",
+    "cartilla":"Domestic-Wall",
+    "rgb":""
+  },
+  {
+    "nombre":"Celeste París",
+    "codigo":"4335",
+    "hexadecimal":"6B84A3",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco",
+    "codigo":"4320",
+    "hexadecimal":"FFFFFF",
+    "cartilla":"Domestic-Wall",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aqua Marina",
+    "codigo":"5350",
+    "hexadecimal":"26735D",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Acero",
+    "codigo":"5345",
+    "hexadecimal":"8B9298",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Teja",
+    "codigo":"5339",
+    "hexadecimal":"541C1F",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"5340",
+    "hexadecimal":"FFE17C",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Natural",
+    "codigo":"5313",
+    "hexadecimal":"152A13",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Profundo",
+    "codigo":"5349",
+    "hexadecimal":"7F060B",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melocotón",
+    "codigo":"5330",
+    "hexadecimal":"FD9968",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Manzana",
+    "codigo":"5347",
+    "hexadecimal":"689f3b",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Pastel",
+    "codigo":"5348",
+    "hexadecimal":"64A3FF",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Caterpillar",
+    "codigo":"5344",
+    "hexadecimal":"D89802",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Naranja",
+    "codigo":"5346",
+    "hexadecimal":"FF2D00",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Terracota",
+    "codigo":"5318",
+    "hexadecimal":"350F0E",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Vainilla",
+    "codigo":"5308",
+    "hexadecimal":"F7B55D",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Jade",
+    "codigo":"5306",
+    "hexadecimal":"16543c",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Arveja",
+    "codigo":"5342",
+    "hexadecimal":"D2F67B",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Imperio",
+    "codigo":"5341",
+    "hexadecimal":"283E5C",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Alerta",
+    "codigo":"5309",
+    "hexadecimal":"BC2723",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Maple",
+    "codigo":"5315",
+    "hexadecimal":"31272A",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Dorado",
+    "codigo":"5343",
+    "hexadecimal":"986B1D",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aluminio",
+    "codigo":"5319",
+    "hexadecimal":"9D9D9D",
+    "cartilla":"Domestic-Enamel",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rosa Güipil",
+    "codigo":"3E3-4",
+    "hexadecimal":"F99677",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Clásico",
+    "codigo":"3I16",
+    "hexadecimal":"F4B34E",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Cochinilla",
+    "codigo":"3D3-7",
+    "hexadecimal":"BA2F0F",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Liberal",
+    "codigo":"6N1-5",
+    "hexadecimal":"82AFC9",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Gris Cantera",
+    "codigo":"6K1-6",
+    "hexadecimal":"786751",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Hormigo",
+    "codigo":"4E2-6",
+    "hexadecimal":"C2462E",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Culahá",
+    "codigo":"5P2-3",
+    "hexadecimal":"95CDD7",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Añil",
+    "codigo":"5R1-6",
+    "hexadecimal":"314769",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Trigo",
+    "codigo":"2H3-6",
+    "hexadecimal":"FF9B00",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Tecomate",
+    "codigo":"3D3-5",
+    "hexadecimal":"F56F72",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Luna",
+    "codigo":"6M2-3",
+    "hexadecimal":"9BB6CC",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Xelajú",
+    "codigo":"1N1-4",
+    "hexadecimal":"7DF8b5",
+    "cartilla":"Quetzaltenango",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rafael",
+    "codigo":"Rafael",
+    "hexadecimal":"F6F1E1",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Corpus",
+    "codigo":"Corpus",
+    "hexadecimal":"FFF8D8",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Reforma",
+    "codigo":"Reforma",
+    "hexadecimal":"FFEAB3",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Minerma",
+    "codigo":"Minerma",
+    "hexadecimal":"F5D05E",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Frappé",
+    "codigo":"Frappé",
+    "hexadecimal":"FFE5B6",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Tamarindo",
+    "codigo":"Tamarindo",
+    "hexadecimal":"EFCDBE",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Shakespeare",
+    "codigo":"Shakespeare",
+    "hexadecimal":"FAC2A7",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Fatima",
+    "codigo":"Fatima",
+    "hexadecimal":"F5B7BC",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Noviembre",
+    "codigo":"Noviembre",
+    "hexadecimal":"FF97A2",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Yerbabuena",
+    "codigo":"Yerbabuena",
+    "hexadecimal":"82FFE5",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Capricce",
+    "codigo":"Capricce",
+    "hexadecimal":"82FFE5",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Moss",
+    "codigo":"Moss",
+    "hexadecimal":"7F8C3E",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Romance",
+    "codigo":"Romance",
+    "hexadecimal":"FFFDBA",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Atardecer",
+    "codigo":"Atardecer",
+    "hexadecimal":"D5933C",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Mocca",
+    "codigo":"Mocca",
+    "hexadecimal":"443529",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Estación Central",
+    "codigo":"Estación Central",
+    "hexadecimal":"856E3D",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Encaje",
+    "codigo":"Encaje",
+    "hexadecimal":"FFC5C2",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Pilastra",
+    "codigo":"Pilastra",
+    "hexadecimal":"7E8287",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Sixtina",
+    "codigo":"Sixtina",
+    "hexadecimal":"33527B",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Podium",
+    "codigo":"Podium",
+    "hexadecimal":"004EC2",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Altar",
+    "codigo":"Altar",
+    "hexadecimal":"FFF8FD",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Renacimiento",
+    "codigo":"Renacimiento",
+    "hexadecimal":"F7F9FF",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Jet",
+    "codigo":"Blanco Jet",
+    "hexadecimal":"DADBD5",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Citron",
+    "codigo":"Citron",
+    "hexadecimal":"FFFF61",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Ebony",
+    "codigo":"Ebony",
+    "hexadecimal":"F0DEAB",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Latte",
+    "codigo":"Latte",
+    "hexadecimal":"F3AF57",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melba",
+    "codigo":"Melba",
+    "hexadecimal":"FF8A50",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Vainilla",
+    "codigo":"Vainilla",
+    "hexadecimal":"F0B26C",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Tiffany",
+    "codigo":"Tiffany",
+    "hexadecimal":"F9F1FF",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Flamingo",
+    "codigo":"Flamingo",
+    "hexadecimal":"FF708C",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Deco",
+    "codigo":"Celeste Deco",
+    "hexadecimal":"90AAFF",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Cielo",
+    "codigo":"Celeste Cielo",
+    "hexadecimal":"809EB5",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Pistaccio",
+    "codigo":"Pistaccio",
+    "hexadecimal":"BDAD80",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Boulevard",
+    "codigo":"Boulevard",
+    "hexadecimal":"D9C2A6",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rooseveth",
+    "codigo":"Rooseveth",
+    "hexadecimal":"FEFFF4",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Revolucion ",
+    "codigo":"Revolucion ",
+    "hexadecimal":"BAA59E",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Gris Sexta ",
+    "codigo":"Gris Sexta ",
+    "hexadecimal":"8C7C74",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Catedral",
+    "codigo":"Catedral",
+    "hexadecimal":"D9A300",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Ovalle",
+    "codigo":"Ovalle",
+    "hexadecimal":"FF8E48",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Olvido",
+    "codigo":"Olvido",
+    "hexadecimal":"986129",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Ferrocarril",
+    "codigo":"Ferrocarril",
+    "hexadecimal":"A32829",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verbena",
+    "codigo":"Verbena",
+    "hexadecimal":"D12326",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Dulce Zapote",
+    "codigo":"Dulce Zapote",
+    "hexadecimal":"913328",
+    "cartilla":"Centro-Historico",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Almendra",
+    "codigo":"3625",
+    "hexadecimal":"9C8564",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Amanecer",
+    "codigo":"3624",
+    "hexadecimal":"FFC651",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Albaricoque",
+    "codigo":"3626",
+    "hexadecimal":"FA9763",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Menta Clara ",
+    "codigo":"3616",
+    "hexadecimal":"B3FFB8",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rosa Suave",
+    "codigo":"3630",
+    "hexadecimal":"FFA2B2",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Brisa",
+    "codigo":"3634",
+    "hexadecimal":"A1BEE3",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Gris Mineral",
+    "codigo":"3633",
+    "hexadecimal":"878181",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Café Quemado",
+    "codigo":"3629",
+    "hexadecimal":"453133",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Antiguo",
+    "codigo":"3628",
+    "hexadecimal":"B25A00",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aqua Intenso",
+    "codigo":"3619",
+    "hexadecimal":"27828C",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Verano",
+    "codigo":"3617",
+    "hexadecimal":"BEC833",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Naranaja Otoño",
+    "codigo":"3627",
+    "hexadecimal":"DE6012",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Palo Rosa",
+    "codigo":"3631",
+    "hexadecimal":"A54457",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Nacional",
+    "codigo":"3635",
+    "hexadecimal":"1948A1",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Lavanda",
+    "codigo":"3632",
+    "hexadecimal":"9365CF",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Óxido",
+    "codigo":"3641",
+    "hexadecimal":"96473D",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Teja",
+    "codigo":"3642",
+    "hexadecimal":"9F432A",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Intenso",
+    "codigo":"3603",
+    "hexadecimal":"2A4B44",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aqua Vivo",
+    "codigo":"3618",
+    "hexadecimal":"45D1C5",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Intenso",
+    "codigo":"3601",
+    "hexadecimal":"9A1D23",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Intenso",
+    "codigo":"3600",
+    "hexadecimal":"DDBD1F",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Antiguo",
+    "codigo":"3668",
+    "hexadecimal":"FFF4C2",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"3657",
+    "hexadecimal":"F3D2AC",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melocotón",
+    "codigo":"3692",
+    "hexadecimal":"D1A794",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Vainilla",
+    "codigo":"3623",
+    "hexadecimal":"FFE79F",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Marfil",
+    "codigo":"3669",
+    "hexadecimal":"E3C57B",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco",
+    "codigo":"3650",
+    "hexadecimal":"FFFFFF",
+    "cartilla":"Standard",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Pensativo",
+    "codigo":"4G3-6",
+    "hexadecimal":"ED914F",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarllo Tridentino",
+    "codigo":"4H1-8",
+    "hexadecimal":"7C380C",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Concepcion",
+    "codigo":"3E2-6",
+    "hexadecimal":"CE3E2D",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Ocre",
+    "codigo":"4F2-8",
+    "hexadecimal":"A44815",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Santo Domingo",
+    "codigo":"4C2-8",
+    "hexadecimal":"361714",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo La Merced",
+    "codigo":"3G2-6",
+    "hexadecimal":"EB8554",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Jocotenango",
+    "codigo":"3I2-7",
+    "hexadecimal":"FCC854",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Santiago",
+    "codigo":"1Q1-4",
+    "hexadecimal":"78BFCE",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Celeste Colonial",
+    "codigo":"4R2-5",
+    "hexadecimal":"9CB2D1",
+    "cartilla":"Antigua-Guatemala",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Antiguo",
+    "codigo":"2354",
+    "hexadecimal":"FEFACC",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Rústico",
+    "codigo":"2311",
+    "hexadecimal":"F3EFBC",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"2303",
+    "hexadecimal":"FFE9B4",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Mostaza",
+    "codigo":"2316",
+    "hexadecimal":"F2A94B",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Mandarina",
+    "codigo":"2307",
+    "hexadecimal":"FF5506",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Tulipan",
+    "codigo":"2310",
+    "hexadecimal":"FFB507",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Turquesa",
+    "codigo":"2308",
+    "hexadecimal":"56DF9E",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Selva",
+    "codigo":"2309",
+    "hexadecimal":"427D46",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Teja",
+    "codigo":"2312",
+    "hexadecimal":"C45336",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Concreto",
+    "codigo":"2313",
+    "hexadecimal":"755856",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Kiwi",
+    "codigo":"2314",
+    "hexadecimal":"87BA3D",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo",
+    "codigo":"2315",
+    "hexadecimal":"AF373A",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Aqua",
+    "codigo":"2317",
+    "hexadecimal":"0D9C84",
+    "cartilla":"Domestic-Plus",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Verano",
+    "codigo":"5704",
+    "hexadecimal":"E3A532",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Melocoton",
+    "codigo":"EN-57-01",
+    "hexadecimal":"FFB074",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Media Noche ",
+    "codigo":"5717",
+    "hexadecimal":"060A1C",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Ostra",
+    "codigo":"EN-57-06",
+    "hexadecimal":"9E9B95",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Rojo Fuego",
+    "codigo":"5707",
+    "hexadecimal":"8C0011",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Beige Claro ",
+    "codigo":"EN-57-02",
+    "hexadecimal":"D7C07D",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Amarillo Girasol",
+    "codigo":"5705",
+    "hexadecimal":"FEA51A",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Olivo",
+    "codigo":"EN-57-07",
+    "hexadecimal":"457F47",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Azul Laser",
+    "codigo":"5716",
+    "hexadecimal":"82952",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Verde Limon",
+    "codigo":"EN-57-03",
+    "hexadecimal":"589C57",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Gris Piedra",
+    "codigo":"5718",
+    "hexadecimal":"3F413A",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Vainilla",
+    "codigo":"EN-57-08",
+    "hexadecimal":"CABE80",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Pino Viejo",
+    "codigo":"5714",
+    "hexadecimal":"0D231C",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Beige Obscuro",
+    "codigo":"EN-57-04",
+    "hexadecimal":"99825F",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Champagne",
+    "codigo":"5703",
+    "hexadecimal":"FCC174",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Brillante",
+    "codigo":"5700",
+    "hexadecimal":"FCFFFA",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Hueso",
+    "codigo":"5702",
+    "hexadecimal":"E0CC92",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Gris Granito",
+    "codigo":"EN-57-05",
+    "hexadecimal":"635E5F",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Tabaco",
+    "codigo":"5711",
+    "hexadecimal":"29191C",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Blanco Mate",
+    "codigo":"5701",
+    "hexadecimal":"FCFFFA",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Negro Brillante",
+    "codigo":"5719",
+    "hexadecimal":"020202",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  },
+  {
+    "nombre":"Negro Mate",
+    "codigo":"720",
+    "hexadecimal":"020202",
+    "cartilla":"Domestic-Ultra",
+    "rgb":"Color de Línea"
+  }
+]

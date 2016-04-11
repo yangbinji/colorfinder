@@ -33,6 +33,10 @@
 
     </div>
   </div>
+  <div ng-repeat="chip in unCodigo | limitTo: 1" style="margin-top: -15px; font-size: 12px;">
+    {{chip.rgb}}<br>
+    <p style="font-size: 10px;">Los colores son aproximados a los reales.</p>
+  </div>
 
 
 <formulas-ficha></formulas-ficha>

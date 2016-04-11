@@ -4,7 +4,7 @@
     function all(){
       var deferred = $q.defer();
 
-      $http.get('colors.json', {cache: true})
+      $http.get('color.json', {cache: true})
         .success(function(data){
           console.log(data);
           deferred.resolve(data);
@@ -13,6 +13,17 @@
         return deferred.promise;
     }
 
+
+    function byCartilla(cartilla){
+      var deferred = $q.defer();
+      all().then(function(data){
+        var results = data.filter(function(color){
+          return color.cartilla === cartilla;
+        });
+        deferred.resolve(results);
+      });
+      return deferred.promise;
+    }
     function byCodigo(codigo){
       var deferred = $q.defer();
       all().then(function(data){
@@ -23,20 +34,11 @@
       });
       return deferred.promise;
     }
-    function byCartilla(cartilla){
-      var deferred = $q.defer();
-      all().then(function(data){
-        var results = data.filter(function(color){
-          return color.libro === cartilla;
-        });
-        deferred.resolve(results);
-      });
-      return deferred.promise;
-    }
     return{
       all: all,
-      byCodigo: byCodigo,
-      byCartilla: byCartilla
+      byCartilla: byCartilla,
+      byCodigo: byCodigo
+
     }
   }])
 
@@ -62,11 +64,7 @@
   .factory('testRequest', function($http) { //declaramos la factory
 		var path = "http://162.243.47.51:8082/";//API path
 		return {
-			//Login
-	/*		posts : function(){ //Retornara la lista de posts
-				global = $http.get(path+'posts');
-				return global;
-			},*/
+
 
 			color : function(palabra,codigo){ //retornara el post por el id
 				global = $http.get(path+palabra+"/"+codigo, {cache: true});
