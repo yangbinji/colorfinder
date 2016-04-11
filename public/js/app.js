@@ -16,7 +16,7 @@
 
   ]);
 
-  app.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
+  app.config(['$routeProvider', '$httpProvider','$locationProvider', function($routeProvider, $httpProvider, $locationProvider){
     $routeProvider
       .when('/', {
         templateUrl: 'views/cartillas.html',
@@ -62,6 +62,8 @@
         redirectTo: '/signin'
       });
 
+
+
       $httpProvider.interceptors.push(['$q', '$location', '$localStorage', function($q, $location, $localStorage) {
         return {
             'request': function (config) {
@@ -79,6 +81,11 @@
             }
         };
     }]);
+
+//     $locationProvider.html5Mode({
+//   enabled: true,
+//   requireBase: false
+// });
 
 
   }

@@ -403,13 +403,8 @@ $mdBottomSheet.show({
   };
 })
 .controller('testController', ['$scope','$filter','testRequest', function testController($scope, $filter, testRequest) {
-  /*
-	$scope.getAllPosts = function(){
-		testRequest.posts().success(function (data){
-			$scope.posts=data; // Asignaremos los datos de todos los posts
-			$scope.posts.exist=1;
-		});
-	}*/
+
+
 	$scope.getColor = function(){
 
 		$scope.unColor={};
@@ -417,18 +412,17 @@ $mdBottomSheet.show({
 		testRequest.color(this.modelNombre,$filter('uppercase')(this.color_codigo)).success(function (data){
 			$scope.unColor=data; // Asignaremos los datos del post
       console.log(data);
+      // console.log($scope.unColor);
+      // if(data==="[]"){
+      //   console.log('nada');
+      // }else {
+      //   console.log('nada dije');
+      // }
 
 		})
-    .error(function(response, status){
-      console.log("The request failed with response ");
 
 
-    });
-
-
-	}
-
-
+    };
 
 }])
 // .controller('searchpalabraCtrl', ['$scope','$filter','palabraService', function testController($scope, $filter, palabraService) {

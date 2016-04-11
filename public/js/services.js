@@ -93,7 +93,7 @@
 		}
 	})
   .factory('Main', ['$http', '$localStorage', function($http, $localStorage){
-        var baseUrl = "http://162.243.47.51";
+        var baseUrl = "http://162.243.47.51:9000";
         function changeUser(user) {
             angular.extend(currentUser, user);
         }
