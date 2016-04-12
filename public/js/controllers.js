@@ -71,7 +71,7 @@
    {
      $scope.showCircle = false;
    });
- }, 1500);
+ }, 3000);
 
  $scope.showFicha = false;
 setTimeout(function ()
@@ -80,7 +80,7 @@ setTimeout(function ()
   {
     $scope.showFicha = true;
   });
-}, 1500);
+}, 3000);
 
 
 	}])
@@ -92,7 +92,7 @@ setTimeout(function ()
      {
        $scope.showLoad = false;
      });
-   }, 5000);
+   }, 7000);
 
    $scope.showColors = false;
   setTimeout(function ()
@@ -101,7 +101,7 @@ setTimeout(function ()
     {
       $scope.showColors = true;
     });
-  }, 5000);
+  }, 7000);
 
 
 	}])
@@ -216,7 +216,8 @@ setTimeout(function ()
     $mdBottomSheet.show({
       templateUrl: 'partials/color-ficha.html',
       controller: 'codigoController',
-      targetEvent: $event
+      targetEvent: $event,
+      clickOutsideToClose: false
     })
   //   $scope.$on('$locationChangeStart', function(event, next, current, $mdBottomSheet, $timeout, $log, $mdToast){
   //     // Here you can take the control and call your own functions:
@@ -239,7 +240,8 @@ $scope.alert = '';
 $mdBottomSheet.show({
   templateUrl: 'partials/color-ficha-dos.html',
   controller: 'fichaBusquedaCtrl',
-  targetEvent: $event
+  targetEvent: $event,
+  clickOutsideToClose: false
 })
 }
 
@@ -485,6 +487,8 @@ $mdBottomSheet.show({
 .controller('formCtrl', function($scope,$timeout, formulasServices ) {
 
   $scope.datos = formulasServices;
+
+
 
 /*  if($scope.datos){
     $timeout(function(){$scope.datos.mensaje = false}, 3000);

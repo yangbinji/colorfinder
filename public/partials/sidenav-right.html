@@ -43,7 +43,7 @@
 
 								<div layout="row" class="chip-busqueda md-whiteframe-1dp" ng-repeat=" busqueda in unColor " style="background: #{{busqueda.hexadecimal}}; cursor:pointer;" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
 									<span flex="40"></span>
-										<div  layout="column" layout-aling="center center" id="r" ngclipboard data-clipboard-target="#r" flex="60">
+										<div  layout="column" layout-aling="center center" flex="60">
 											<div>{{ busqueda.nombre }}</div>
 											<md-divider></md-divider>
 											<div>{{ busqueda.codigo}}</div>

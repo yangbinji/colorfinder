@@ -1,7 +1,8 @@
 
 <md-bottom-sheet  layout="column"   class="md-grid selector"  ng-controller="MeCtrl" md-component-id="fi" ng-cloak>
+  <div ng-controller="formCtrl">
 <div ng-controller="closeFicha">
-  <md-button class="cerrarFicha" ng-click="close()"><md-icon md-svg-icon="img/icons/close-ficha.svg"></md-icon></md-button>
+  <md-button class="cerrarFicha" ng-click="close();datos.mensaje = false" aria-label="cerrar"><md-icon md-svg-icon="img/icons/close-ficha.svg"></md-icon></md-button>
 
   <div  layout="row" layout-align="center center" data-ng-controller="copiadoCtrl">
 
@@ -30,7 +31,7 @@
 
       </div>
 
-      <div ng-controller="formCtrl" flex>
+      <div flex>
         <input type="checkbox" class=" glyphicon glyphicon-tint" ng-model="datos.mensaje" style="cursor: pointer;">
       </div>
       <p style="font-size: 10px; margin-top: 5px;">Fórmula</p>
@@ -44,11 +45,10 @@
   </div>
 
 
-
 <formulas-ficha></formulas-ficha>
 
 
 </div>
 
-
+</div>
 </md-bottom-sheet>
