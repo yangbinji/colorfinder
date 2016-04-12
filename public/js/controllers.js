@@ -218,6 +218,15 @@ setTimeout(function ()
       controller: 'codigoController',
       targetEvent: $event
     })
+  //   $scope.$on('$locationChangeStart', function(event, next, current, $mdBottomSheet, $timeout, $log, $mdToast){
+  //     // Here you can take the control and call your own functions:
+  //     alert('Sorry ! Back Button is disabled');
+  //     console.log('bloqueado');
+  //     // Prevent the browser default action (Going back):
+  //     $mdBottomSheet.cancel();
+  //     // event.preventDefault();
+  // });
+
   }
 
 
@@ -252,12 +261,10 @@ $mdBottomSheet.show({
 }])
 
 
-.controller('closeFicha',['$scope', '$mdBottomSheet', '$log', '$timeout',  function($scope, $mdBottomSheet, $log, $timeout){
+.controller('closeFicha',['$scope', '$mdToast','$mdBottomSheet', '$log', '$timeout',  function($scope,$mdToast, $mdBottomSheet, $log, $timeout){
   $scope.close = function () {
-    $mdBottomSheet('fi').close()
-      .then(function () {
-        $log.debug("close ficha is done");
-      });
+    $mdBottomSheet.cancel();
+
   };
 
 }])
@@ -350,6 +357,8 @@ $mdBottomSheet.show({
       $scope.limpiarDatos = function(){
         $scope.myDetails = '';
       }
+
+
 }])
 
 

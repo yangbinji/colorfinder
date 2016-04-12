@@ -1,5 +1,7 @@
 
 <md-bottom-sheet  layout="column"   class="md-grid selector"  ng-controller="MeCtrl"  ng-cloak>
+  <div ng-controller="closeFicha">
+    <md-button class="cerrarFicha" ng-click="close()"><md-icon md-svg-icon="img/icons/close-ficha.svg"></md-icon></md-button>
 <div ng-controller="loadCtrl">
 
 
@@ -44,5 +46,5 @@
 
 </div>
 
-
+</div>
 </md-bottom-sheet>

@@ -66,6 +66,17 @@ a {
 .box{
 	500px;
 }
+.cerrarFicha{
+  position: absolute;
+  z-index: -1;
+  top: -45px;
+  background: rgb(250,250,250)!important;
+  right: -10px;
+  color: red;
+  min-height: 40px !important;
+  min-width: 70px !important;
+
+}
 .chip-busqueda{
 	position: relative;
 	height: 60px;
