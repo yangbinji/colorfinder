@@ -219,14 +219,11 @@ setTimeout(function ()
       targetEvent: $event,
       clickOutsideToClose: false
     })
-  //   $scope.$on('$locationChangeStart', function(event, next, current, $mdBottomSheet, $timeout, $log, $mdToast){
-  //     // Here you can take the control and call your own functions:
-  //     alert('Sorry ! Back Button is disabled');
-  //     console.log('bloqueado');
-  //     // Prevent the browser default action (Going back):
-  //     $mdBottomSheet.cancel();
-  //     // event.preventDefault();
-  // });
+    $scope.$on('$locationChangeStart', function(event,next, current){
+
+        $mdBottomSheet.cancel();
+
+  });
 
   }
 
@@ -243,6 +240,12 @@ $mdBottomSheet.show({
   targetEvent: $event,
   clickOutsideToClose: false
 })
+
+$scope.$on('$locationChangeStart', function(){
+
+    $mdBottomSheet.cancel();
+
+});
 }
 
 
