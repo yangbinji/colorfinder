@@ -458,12 +458,7 @@ nav-overflow{
 .menu-list md-icon{
 	margin-right: 20px;
 }
-.scrolling{
-	overflow: auto;
-	height: 400px;
 
-
-}
 
 #footer{
 
@@ -576,12 +571,8 @@ tile-footer{
 			}
 
 
-    @media only screen and (max-width: 400px) {
 
-
-    }
-
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 800px) {
 
 		.cajon{
 			display: none;
@@ -603,6 +594,9 @@ tile-footer{
 		.logo-paleta-movil{
 			height: 70px;
 		}
+    .logo-paleta-log{
+      display: none;
+    }
 		.has-header p {
 			text-align: center;
 			margin-bottom: 40px !important;
@@ -612,55 +606,93 @@ tile-footer{
 			width: 200px !important;
 			height: 200px !important;
 		}
+    .fichaBotones {
+      text-align: center;;
+    }
 
 
 }
 
-		@media only screen and (min-height: 601px) {
-
-			.scrolling{
-				overflow: auto;
-				height: 500px;
-			}
-			.fichaBotones {
-				text-align: center;;
-			}
-			.has-header p {
-			  text-align: center;
-			  margin-bottom: 40px !important;
-				margin-top: 75px !important;
-			}
-			.spinner svg {
-			  width: 200px !important;
-			  height: 200px !important;
-			}
 
 
 
-
-
-		}
-		@media (min-width: 768px) {
+		@media (min-width: 801px) {
+      /*.scrolling{
+        overflow: auto;
+        height: 550px;
+      }*/
 			.logo-paleta-movil{
-display: none;
-		}
+      display: none;
+  		}
+      .logo-paleta-log{
+        height: 70px;
+      }
 
 
 		}
 
 		@media (min-width: 1304px) {
 
-
+/*
 			.scrolling{
 				overflow: auto;
 				height: 700px;
-			}
+			}*/
 			.fichaBotones {
 				text-align: center;;
 			}
 			.logo-paleta-movil{
-display: none;
-		}
+        display: none;
+	  	}
 
 
 		}
+
+    /*.scrolling{
+      overflow: auto;
+      height: 750px;
+
+
+    }*/
+
+
+    /*mediaquery height*/
+    @media only screen and (max-height: 600px) {
+      .scrolling{
+      	overflow: auto;
+      	height: 400px;
+
+
+      }
+
+
+      }
+
+    @media only screen and (min-height: 601px) and (max-height: 700px) {
+      .scrolling{
+        overflow: auto;
+        height: 500px;
+
+
+      }
+    }
+
+    @media only screen and (min-height: 701px) and (max-height: 800px) {
+      .scrolling{
+        overflow: auto;
+        height: 600px;
+
+
+      }
+
+    }
+    	@media only screen and (min-height: 801px) and (max-height: 1500px){
+        .scrolling{
+        	overflow: scroll;
+        	height: 750px !important;
+
+
+        }
+
+      }
+  
