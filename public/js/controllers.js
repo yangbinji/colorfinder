@@ -286,6 +286,7 @@ $mdBottomSheet.show({
 }])
 .controller('HomeCtrl', ['$rootScope', '$scope', '$location', '$route', '$window', '$localStorage', 'Main', function($rootScope, $scope, $location, $route, $window, $localStorage, Main) {
 
+
       $scope.signin = function() {
 
           var formData = {
@@ -349,6 +350,15 @@ $mdBottomSheet.show({
           }, function() {
               $rootScope.error = 'Failed to logout';
           });
+      };
+      if($localStorage.token ){
+        $scope.showAll = true;
+        console.log('hay token');
+      }else{
+        $scope.showAll = false;
+        console.log('no hay token');
+
+
       };
   }])
 
