@@ -40,6 +40,16 @@
 					<div class="selector" style="margin-top: -20px;" ng-controller="capturaCtrl">
 						<div ng-controller="BottomSheetExampleDos">
 
+							<div style="text-align: center;" ng-if="errorChip">
+								<br>
+								<md-icon md-svg-icon="img/icons/sad-icon.svg"></md-icon>
+								<br>
+								<br>
+								Lo sentimos,
+								<br> <p>no se encontró el dato! </p>
+
+							</div>
+
 
 								<div layout="row" class="chip-busqueda md-whiteframe-1dp" ng-repeat=" busqueda in unColor " style="background: #{{busqueda.hexadecimal}}; cursor:pointer;" layout-align="center center" ng-click="setCodigo(capturame = busqueda.codigo); showListBottomSheetDos($event); close();codigoCopiado()">
 									<span flex="40"></span>

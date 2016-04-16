@@ -436,12 +436,16 @@ $mdBottomSheet.show({
 		testRequest.color(this.modelNombre,$filter('uppercase')(this.color_codigo)).success(function (data){
 			$scope.unColor=data; // Asignaremos los datos del post
       console.log(data);
-      // console.log($scope.unColor);
-      // if(data==="[]"){
-      //   console.log('nada');
-      // }else {
-      //   console.log('nada dije');
-      // }
+
+      console.log($scope.unColor);
+      if($scope.unColor.length < 1){
+        console.log('no hay');
+        $scope.errorChip = true;
+
+      }else {
+        console.log('si hay');
+        $scope.errorChip = false;
+      }
 
 		})
 
