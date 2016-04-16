@@ -388,13 +388,15 @@ nav-overflow{
 .titulo {
     color: white !important;
     background: #4C4C4C !important;
-    padding: 1px 0px 1px 10px !important;
+    padding: 10px 0px 10px 10px !important;
     margin-bottom: 5px !important;
+    font-size: 25px !important;
+    margin-top:1px;
 }
 .titulo md-icon {
     color: white;
-    height: 45px !important;
-    width: 45px !important;
+    height: 28px !important;
+    width: 28px !important;
     margin-right: 10px !important;
 }
 .titulo h3{
@@ -662,6 +664,10 @@ tile-footer{
       	overflow: auto;
       	height: 400px;
 
+      }
+      .scrolling-chips{
+        overflow: auto;
+        height: 340px;
 
       }
 
@@ -672,7 +678,11 @@ tile-footer{
       .scrolling{
         overflow: auto;
         height: 500px;
+      }
 
+      .scrolling-chips{
+        overflow: auto;
+        height: 440px;
 
       }
     }
@@ -681,7 +691,10 @@ tile-footer{
       .scrolling{
         overflow: auto;
         height: 600px;
-
+      }
+      .scrolling-chips{
+        overflow: auto;
+        height: 540px;
 
       }
 
@@ -691,8 +704,11 @@ tile-footer{
         	overflow: scroll;
         	height: 750px !important;
 
+        }
+        .scrolling-chips{
+          overflow: auto;
+          height: 690px;
 
         }
 
       }
-  

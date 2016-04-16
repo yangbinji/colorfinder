@@ -26,13 +26,15 @@
           </p>
         </div>
 
+<div ng-show="showColors">
 
-  <div ng-show="showColors" class="scrolling" layout-align="space-around" ng-controller="capturaCtrl">
-    <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in ::colores | limitTo: 1" >
-      <h3><md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>{{titulo.cartilla}}</h3>
-    </div>
+  <div class="titulo md-whiteframe-5dp" ng-repeat="titulo in ::colores | limitTo: 1" >
+    <md-icon md-svg-icon="img/icons/rodillo-icon.svg"></md-icon>{{titulo.cartilla}}
+  </div>
+  <div  class="scrolling-chips" layout-align="space-around" ng-controller="capturaCtrl">
 
-    <md-grid-list md-cols="8" md-cols-sm="6" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
+
+    <md-grid-list md-cols="6" md-cols-sm="6" md-cols-xs="4" md-gutter="5" md-row-height="1:1">
       <md-grid-tile  ng-repeat="chip in ::colores " style="background: #{{chip.hexadecimal}};cursor:pointer;" class="md-whiteframe-2dp" ng-click="setCodigo(capturame = chip.codigo); showListBottomSheet($event)">
         <md-grid-tile-footer style="height: 24px; padding-left: 6px;"> {{ chip.codigo }}</md-grid-tile-footer>
 
@@ -41,6 +43,7 @@
 
 
   </div>
+</div>
   <!--CHIPS COLORES-->
 
 </div>
