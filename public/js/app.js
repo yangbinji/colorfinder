@@ -55,7 +55,11 @@
       controller: 'faqsCtrl'
 
   })
+  .when('/servicios/ayuda/tutorial', {
+    templateUrl: 'views/tutorial.html',
+    controller: 'tutoCtrl'
 
+  })
       .otherwise({
         redirectTo: '/signin'
       });

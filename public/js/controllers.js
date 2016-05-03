@@ -530,6 +530,41 @@ $mdBottomSheet.show({
   ];
 
 }])
+.controller('tutoCtrl',['$scope', function($scope){
+    $scope.items = [
+      {
+        titulo: "Cartillas y Abanicos de color",
+        descripcion: "Acá podrás ver todas las cartillas o categorías de color, para visualizar los colores que están contenidos en ellas debes seleccionar dando clic , lo cual      te mostrara todos los colores pertenecientes a la cartilla que seleccionaste.",
+        imagen: "/img/tuto/cartilla.jpg"
+      },
+      {
+        titulo: "Fichas de Color",
+        descripcion: "Puedes seleccionar uno de los colores haciendo clic en el, lo cual te mostrará una ficha con toda la información correspondiente a este color, como el código, nombre, cartilla que pertenece y código hexadecimal.",
+        imagen: "/img/tuto/cartilla.jpg"
+      },
+      {
+        titulo: "Copiado de Información",
+        descripcion: "Una de las funciones más útiles de ColorFinder es la capacidad de poder copiar la información del color con tan solo dar un clic sobre el texto que esta en la ficha y automáticamente se copiará, posterior a esto podrás pegar dicha información en cualquier documentó dentro de tu pc.",
+        imagen: "/img/tuto/cartilla.jpg"
+      },
+      {
+        titulo: "Favoritos",
+        descripcion: "Otra de las funciones más útiles de ColorFinder es el poder guardar los colores como favoritos. Para ello solo has clic sobre el icono de la estrella en la ficha del color que deseas guardar como favorito y listo.Ahora para ver tus favoritos, ve al menú y en la opción de favoritos podrás ver los colores que marcaste como favoritos y poder acceder a ellos desde allí.",
+        imagen:"/img/tuto/cartilla.jpg"
+      },
+      {
+        titulo: "Fórmulas",
+        descripcion: "Hay colores que tienen que ser preparados en entintadora a través de fórmulas de entintado, para ello ColorFinder cuenta con el registro de fórmulas para estos colores. Para verlas has  clic en el icono de la gotita la cual descubrirá una nueva sección en la ficha con información de la base y fórmulas que corresponde a cada línea de color según la presentacion.",
+        imagen: "/img/tuto/cartilla.jpg"
+      },
+      {
+        titulo: " ",
+        descripcion: " ",
+        imagen: " "
+      }
+
+    ]
+}])
 // .filter('normalize', function () {
 //      return function (input) {
 //        if (!input) return "";

@@ -13,8 +13,7 @@
 html, body{
 	background-color: #f3f3f3 !important;
 	margin: 0px;
-	overflow: hidden !important;
-  overflow:
+	/*overflow: hidden !important;*/
 
 
 }
@@ -495,6 +494,15 @@ nav-overflow{
 	vertical-align: text-bottom; !important;
 	margin-bottom: 0px;
 
+}
+
+.tutorial-texto{
+  font-size: 18px;
+  padding: 100px 25px 50px 50px;
+}
+.tutorial-gif{
+  text-align: center;
+  padding: 100px 25px 50px 25px
 }
 
 tile-footer{
