@@ -516,15 +516,18 @@ $mdBottomSheet.show({
 .controller('faqsCtrl',[ '$scope',function($scope){
   $scope.preguntas = [
     { titulo: "1. ¿Por qué algunos colores no tiene fórmulas?",
-      respuesta: "Porque esos colores ya vienen preparados de fabrica, no es necesaria una formula para prepararlos."},
-    { titulo: "2.¿Puedo buscar los colores por su nombre o unicamente por el código de color?",
-      respuesta: "Por ahora unicamente por código."},
-    { titulo: "3. La app necesita de una conexión a internet?",
-      respuesta: "Si, ya que necesita verificar los colores en una base de datos externa y de gran tamaño, por lo que si necesitas una conexion de internet estable."},
+      respuesta: "Porque esos colores ya vienen preparados de fábrica, vienen marcados como colores de línea, no es necesaria una fórmula para prepararlos. "},
+    { titulo: "2.¿Puedo buscar los colores por su nombre o únicamente por el código de color?",
+      respuesta: " Puedes buscar por código, por nombre y escribiendo también una sola palabra haciendo referencia al nombre."},
+    { titulo: "3. La aplicacion necesita de una conexión a internet?",
+      respuesta: " Si, ya que necesita verificar los colores en una base de datos externa y de gran tamaño, por lo que si necesitas una conexión de internet  estable."},
     { titulo: "4.¿Cómo puedo recuperar mi contraseña?",
-      respuesta: "Tienes que solicitarla al administrador. "},
-    { titulo: "5.¿Cúantos colores como favorito puedo tener?",
-      respuesta: "Muchos...los que necesites, solo recuerda no ser un acumulador. "},
+      respuesta: "Por el momento tienes que solicitarla al administrador. "},
+    { titulo: "5. ¿Cuántos colores como favorito puedo tener?",
+      respuesta: "Los que necesites"},
+    { titulo: "",
+      respuesta: "" 		
+	}	
 
 
   ];
