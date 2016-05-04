@@ -19,7 +19,7 @@
     <div class="fichaInfo ficha "   layout-align="center center"  flex="45">
       <div id="nombre" ng-repeat="busqueda in unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{busqueda.nombre}}</div>
       <div id="cart" ng-repeat="busqueda in unCodigo  | limitTo: 1" ngclipboard data-clipboard-target="#cart" ng-click="cartillaCopiada()">{{busqueda.cartilla}}</div>
-      <div id="hexa" ng-repeat="busqueda in unCodigo | limitTo: 1" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">{{busqueda.hexadecimal}}</div>
+      <div id="hexa" ng-repeat="busqueda in unCodigo | limitTo: 1" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">#{{busqueda.hexadecimal}}</div>
     </div>
 
     <div class="fichaBotones ficha"   layout-align="center center" ng-controller="favCtrl"  flex='20'>
