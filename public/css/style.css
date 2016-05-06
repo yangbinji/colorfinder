@@ -495,6 +495,24 @@ nav-overflow{
 	margin-bottom: 0px;
 
 }
+.tutorial-portada{
+  background: #888888;
+}
+.tutorial-portada-letras{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.tutorial-portada-banner{
+  text-align: center;
+  padding-right: 5px;
+
+}
+.tutorial-portada-banner img{
+  width:  100%;
+  height: auto;
+
+}
 
 .tutorial-texto{
   font-size: 18px;
@@ -503,6 +521,10 @@ nav-overflow{
 .tutorial-gif{
   text-align: center;
   padding: 100px 25px 50px 25px
+}
+.tutorial-divider{
+  width: 25%;
+  margin: 0 auto;
 }
 
 tile-footer{
