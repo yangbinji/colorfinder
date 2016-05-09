@@ -100,6 +100,12 @@ a {
 .content-cartilla{
 	margin-top: 10px;
 }
+/*.content-cartilla, .sidenavRight-content{
+  padding-top: 70px;
+}*/
+
+
+
 .ribbon{
 	background-color: black;
 	height: 56px;
@@ -307,6 +313,9 @@ input[type=checkbox].glyphicon{
   height: 50px;
   width: 50px
 }
+/*md-toolbar {
+    position: fixed !important;
+  }*/
 
 .md-grid.tuclass{
 
@@ -319,9 +328,9 @@ height: 300px !important;
 	text-align: left !important;
 
 }
-/*nav-overflow{
+nav-overflow{
 	overflow: hidden !important;
-}*/
+}
 .lineas{
 	color: white;
 	text-transform: none;
