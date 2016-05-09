@@ -410,6 +410,7 @@ nav-overflow{
 .titulo h3{
 	color: white !important
 }
+
 .tuto,.faqs{
 	background-color: white;
 	height: 350px;
@@ -503,6 +504,9 @@ nav-overflow{
 	vertical-align: text-bottom; !important;
 	margin-bottom: 0px;
 
+}
+.tutorial{
+  background: white !important;
 }
 .tutorial-portada{
   background: #888888;
@@ -651,6 +655,37 @@ tile-footer{
       text-align: center;;
     }
 
+    .tuto{
+      display: none;
+    }
+    .tuto-movil,.faqs{
+    	background-color: white;
+    	height: 350px;
+    	width: 350px;
+
+
+    }
+    .tuto-movil img, .faqs img {
+    	  margin: 10px;
+    		height: 200px;
+    		width: 200px
+
+    }
+    .tutorial-texto {
+    font-size: 18px;
+    padding: 25px 25px 25px 50px;
+    }
+    .tutorial-portada-letras{
+        text-align: center;
+font-weight: bolder;
+        padding-top: 10px;
+        color: white;
+    }
+    .tutorial-gif {
+    text-align: center;
+    padding: 25px 25px 0px 25px;
+    }
+
 
 }
 
@@ -667,6 +702,9 @@ tile-footer{
   		}
       .logo-paleta-log{
         height: 70px;
+      }
+      .tuto-movil{
+        display: none;
       }
 
 
@@ -685,6 +723,9 @@ tile-footer{
 			.logo-paleta-movil{
         display: none;
 	  	}
+      .tuto-movil{
+        display: none;
+      }
 
 
 		}

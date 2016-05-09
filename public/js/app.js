@@ -60,6 +60,11 @@
     controller: 'tutoCtrl'
 
   })
+  .when('/servicios/ayuda/tutorial-movil', {
+    templateUrl: 'views/tutorial-mob.html',
+    controller: 'tutoCtrl'
+
+  })
       .otherwise({
         redirectTo: '/signin'
       });
