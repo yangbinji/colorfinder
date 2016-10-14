@@ -14,7 +14,7 @@
     <div class="fichaInfo ficha"  layout-align="center center"  flex="45">
       <div id="nombre" ng-repeat="chip in ::colores " ngclipboard data-clipboard-target="#nombre" ng-click="nombreCopiado()">{{chip.nombre}}</div>
       <div id="cart" ng-repeat="chip in ::colores " ngclipboard data-clipboard-target="#cart" ng-click="cartillaCopiada()">{{chip.cartilla}}</div>
-      <div id="hexa" ng-repeat="chip in ::colores" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">#{{chip.hexadecimal}}</div>
+      <div id="hexa" ng-repeat="chip in ::colores" ngclipboard data-clipboard-target="#hexa" ng-click="colorCopiado()">{{chip.hexadecimal}}</div>
 
     </div>
 
