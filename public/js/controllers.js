@@ -526,8 +526,8 @@ $mdBottomSheet.show({
     { titulo: "5. ¿Cuántos colores como favorito puedo tener?",
       respuesta: "Los que necesites"},
     { titulo: "",
-      respuesta: "" 		
-	}	
+      respuesta: ""
+	}
 
 
   ];

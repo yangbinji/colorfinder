@@ -17,6 +17,8 @@ html, body{
 
 
 }
+
+
 .has-header p {
   text-align: center;
   margin-bottom: 40px !important;
@@ -64,6 +66,9 @@ a {
 }
 .box{
 	500px;
+}
+.busquedaInput{
+  width: 50%;
 }
 .cerrarFicha{
   position: absolute;
