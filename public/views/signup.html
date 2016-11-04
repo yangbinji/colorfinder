@@ -2,7 +2,7 @@
   <div class="ribbon"></div>
 
 <div align="center" ng-controller="HomeCtrl" layout="column" layout-padding ng-cloak class="login-box">
-  <h1>Registro de nuevo usuario</h1>
+  <h1>Nuevo usuario</h1>
   <md-content>
 
     <form autocomplete="off" role="form" class="login-form"  ng-submit="signup()">
@@ -10,6 +10,17 @@
         <label>nombre</label>
         <md-icon md-svg-src="img/icons/user-icon.svg" ></md-icon>
         <input type="text" id="nombre" ng-model="username"required>
+      </md-input-container>
+      <md-input-container class="md-icon-float md-block">
+        <label>Roll</label>
+          <md-icon md-svg-src="img/icons/rol-icon.svg" ></md-icon>
+          <md-select name="type" ng-model="roll" required>
+            <md-option value="administrador">administrador</md-option>
+            <md-option value="tienda">tienda</md-option>
+            <md-option value="wcoloristaeb">colorista</md-option>
+            <md-option value="freelance">freelance</md-option>
+            <md-option value="moderador">moderador</md-option>
+          </md-select>
       </md-input-container>
       <md-input-container class="md-icon-float md-block">
         <label>Email</label>
@@ -23,7 +34,7 @@
           <p class="errorMessage">{{errorSignup}}</p>
       </md-input-container>
 
-      <md-button type="submit" class="md-warn md-raised md-hue-2">Crear cuenta</md-button>
+      <md-button type="submit" class="md-warn md-raised md-hue-2">Crear Usuario</md-button>
     </form>
 
   </md-content>

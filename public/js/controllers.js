@@ -317,6 +317,7 @@ $mdBottomSheet.show({
       $scope.signup = function() {
             var formData = {
                 username: $scope.username,
+                roll: $scope.roll,
                 email: $scope.email,
                 password: $scope.password
             }
