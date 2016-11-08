@@ -28,12 +28,12 @@
           <input ng-repeat="chip in unCodigo | limitTo: 1" type="checkbox" class=" glyphicon glyphicon-star-empty" name="{{chip.codigo}}" id="{{chip.codigo}}" ng-model="chip.checked" ng-checked="$storage[myDetails.data.username][chip.codigo]" ng-click="$storage[myDetails.data.username][chip.codigo] = chip.checked; $storage[myDetails.data.username + '-hex'][chip.hexadecimal] = chip.checked = chip.checked; colorFav()" style="cursor: pointer;">
          </md-icon>
       </div>
-
-      <div flex>
-        <input type="checkbox" class=" glyphicon glyphicon-tint" ng-model="datos.mensaje" style="cursor: pointer;">
+      <div ng-if="myDetails.data.roll=='administrador' || myDetails.data.roll=='tienda'" >
+        <div flex>
+          <input type="checkbox" class=" glyphicon glyphicon-tint" ng-model="datos.mensaje" style="cursor: pointer;">
+        </div>
+        <p style="font-size: 10px; margin-top: 5px;">Fórmula</p>
       </div>
-      <p style="font-size: 10px; margin-top: 5px;">Fórmula</p>
-
     </div>
   </div>
   <div ng-show="showFicha" ng-repeat="chip in unCodigo | limitTo: 1" style="margin-top: -15px; font-size: 12px;">

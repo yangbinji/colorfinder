@@ -324,9 +324,19 @@ $mdBottomSheet.show({
 
             Main.save(formData, function(res) {
                 if (res.type == false) {
+                  console.log('no creado');
                     $scope.errorSignup = res.data;
                 } else {
-                    $location.path('/signin');
+                  console.log('usuario creado');
+
+                      $scope.username = "";
+                      $scope.roll = "";
+                      $scope.email = "";
+                      $scope.password = "";
+
+                    $scope.successFull = { mensaje: "!Creado con éxito¡"};
+                    $location.path('/signup');
+
                 }
             }, function() {
                 $rootScope.error = 'Failed to signup';

@@ -27,6 +27,7 @@
           <md-button ng-click="showAdvanced($event); close()" class="menu-list"><md-icon md-svg-icon="img/icons/star-icon.svg"></md-icon>Favoritos</md-button>
         <!--	<md-button class="menu-list"><md-icon md-svg-icon="img/icons/cards-icon.svg"></md-icon>ColorCards</md-button>-->
           <md-button class="menu-list" ng-click="close()" href="/#/servicios/ayuda"><md-icon md-svg-icon="img/icons/faqs-icon.svg"></md-icon>Ayuda</md-button>
+          <md-button ng-if="myDetails.data.roll=='administrador'" class="menu-list" ng-click="close()" href="/#/signup"><md-icon md-svg-icon="img/icons/usuarios-icon.svg"></md-icon>Usuarios</md-button>
           <md-button class="menu-list" ng-click="close(); logout(); limpiarDatos()"><md-icon md-svg-icon="img/icons/logout-icon.svg"></md-icon>Cerrar Sesión</md-button>
        </md-card-actions>
 
