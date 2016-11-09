@@ -48,7 +48,9 @@ a {
 }
 .ayuda-finder{
 	overflow: auto;
-	max-height:  450px;
+	/*max-height:  450px;*/
+  max-height:  550px;
+
 }
 
 
