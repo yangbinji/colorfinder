@@ -1,0 +1,45 @@
+<div ng-controller="formCtrl" ng-show="datos.mensaje" class="formulas">
+
+ <div class="formulasTitulos" layout="row" >
+
+    <div layout="row" loyut-align="center center"  flex>
+      <strong>LÍNEA:  </strong>
+      <select  id="selectLinea" ng-model="selectLinea" ng-options="c.linea for c in unCodigo" >
+        <option value="">-Elegir línea-</option>
+      </select>
+    </div>
+
+    <div layout="row" loyut-align="center center" flex><strong>BASE: </strong>{{selectLinea.base.join(' ')}}</div>
+ </div>
+
+
+  <div layout="row" layout-align="center start"  class="ficha" >
+
+
+
+    <div class="formulaCaja" layout="column"   layout-align="center center"  flex>
+      <strong>CUARTO</strong>
+      <div >{{selectLinea.cuarto1}}</div>
+      <div >{{selectLinea.cuarto2}}</div>
+      <div >{{selectLinea.cuarto3}}</div>
+      <div >{{selectLinea.cuarto4}}</div>
+
+    </div>
+    <div  class="formulaCaja medio"layout="column"  layout-align="center center"  flex>
+      <strong>GALÓN</strong>
+      <div >{{selectLinea.galon1}}</div>
+      <div >{{selectLinea.galon2}}</div>
+      <div >{{selectLinea.galon3}}</div>
+      <div >{{selectLinea.galon4}}</div>
+
+    </div>
+    <div class="formulaCaja" layout="column"  layout-align="center center"  flex>
+      <strong>CUBETA</strong>
+      <div >{{selectLinea.cubeta1}}</div>
+      <div >{{selectLinea.cubeta2}}</div>
+      <div >{{selectLinea.cubeta3}}</div>
+      <div >{{selectLinea.cubeta4}}</div>
+    </div>
+
+  </div>
+</div>

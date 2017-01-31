@@ -1,15 +1,24 @@
 <div ng-controller="formCtrl" ng-show="datos.mensaje" class="formulas">
 
- <div class="formulasTitulos" layout="row" >
+ <div class="formulasTitulos" layout="column" layout-align="end">
 
-    <div layout="row" loyut-align="center center"  flex>
+    <!-- <div layout="row" loyut-align="center center"  flex>
       <strong>LÍNEA:  </strong>
       <select  id="selectLinea" ng-model="selectLinea" ng-options="c.linea for c in unCodigo" >
         <option value="">-Elegir línea-</option>
       </select>
-    </div>
+    </div> -->
 
-    <div layout="row" loyut-align="center center" flex><strong>BASE: </strong>{{selectLinea.base.join(' ')}}</div>
+    <div class="btn-group" layout="row"  >
+       <label ng-repeat="c in unCodigo" class="btn btn-primary " ng-click="getNumber(c)" >{{c.linea}}</label>
+       <!-- <label  class="btn btn-primary" ng-model="selectLinea" uib-btn-radio="1" >1</label>
+       <label  class="btn btn-primary" ng-model="selectLinea" uib-btn-radio="2" >2</label>
+       <label  class="btn btn-primary" ng-model="selectLinea" uib-btn-radio="3" >3</label> -->
+
+   </div>
+
+
+    <div layout="row" loyut-align="center center" flex><strong>BASE: </strong>{{currentItem.base.join(' ')}}</div>
  </div>
 
 
@@ -19,26 +28,26 @@
 
     <div class="formulaCaja" layout="column"   layout-align="center center"  flex>
       <strong>CUARTO</strong>
-      <div >{{selectLinea.cuarto1}}</div>
-      <div >{{selectLinea.cuarto2}}</div>
-      <div >{{selectLinea.cuarto3}}</div>
-      <div >{{selectLinea.cuarto4}}</div>
+      <div >{{currentItem.cuarto1}}</div>
+      <div >{{currentItem.cuarto2}}</div>
+      <div >{{currentItem.cuarto3}}</div>
+      <div >{{currentItem.cuarto4}}</div>
 
     </div>
     <div  class="formulaCaja medio"layout="column"  layout-align="center center"  flex>
       <strong>GALÓN</strong>
-      <div >{{selectLinea.galon1}}</div>
-      <div >{{selectLinea.galon2}}</div>
-      <div >{{selectLinea.galon3}}</div>
-      <div >{{selectLinea.galon4}}</div>
+      <div >{{currentItem.galon1}}</div>
+      <div >{{currentItem.galon2}}</div>
+      <div >{{currentItem.galon3}}</div>
+      <div >{{currentItem.galon4}}</div>
 
     </div>
     <div class="formulaCaja" layout="column"  layout-align="center center"  flex>
       <strong>CUBETA</strong>
-      <div >{{selectLinea.cubeta1}}</div>
-      <div >{{selectLinea.cubeta2}}</div>
-      <div >{{selectLinea.cubeta3}}</div>
-      <div >{{selectLinea.cubeta4}}</div>
+      <div >{{currentItem.cubeta1}}</div>
+      <div >{{currentItem.cubeta2}}</div>
+      <div >{{currentItem.cubeta3}}</div>
+      <div >{{currentItem.cubeta4}}</div>
     </div>
 
   </div>

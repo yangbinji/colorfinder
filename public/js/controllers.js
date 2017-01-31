@@ -493,7 +493,11 @@ $mdBottomSheet.show({
 
 		});
 
-   $scope.selectLinea = '435X';
+  //  $scope.selectLinea = '435X';
+
+   $scope.getNumber = function(acutalClick){
+    	$scope.currentItem = acutalClick;
+    }
 
 
 }])
