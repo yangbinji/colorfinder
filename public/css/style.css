@@ -384,6 +384,10 @@ nav-overflow{
 	font-size: 24px;
 	background: #4184a4;
 }
+.magic-book-nuevo{
+  font-size: 22px;
+  background: #77d03b !important;
+}
 .moods{
 	background: #cc6d1f;
 }
